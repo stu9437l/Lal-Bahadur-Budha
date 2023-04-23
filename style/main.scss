@@ -268,9 +268,10 @@ label {
 // header css
 
 header {
+  padding: 10px 0;
   .brand-logo {
     img {
-      height: 80px;
+      height: 60px;
     }
   }
   .nav-link {
@@ -290,9 +291,8 @@ header {
 
 .banner-section {
   position: relative;
-  height: 100vh;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
+  padding-top: 64px;
 
   .banner-profile__image {
     text-align: center;
@@ -459,6 +459,10 @@ header {
 }
 .contact-section {
   padding: 64px 0;
+  position: relative;
+  // height: 100vh;
+  // display: flex;
+  // align-items: center;
 }
 .startup-project-section {
   padding-bottom: 64px;

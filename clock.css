@@ -1,14 +1,12 @@
 .clock-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 7%;
-  box-sizing: border-box;
-  width: 85%;
-  height: 85%;
+  position: relative;
+  height: 400px;
 }
 
+.clock {
+  position: relative;
+  height: 100%;
+}
 .clock__big-tick {
   position: absolute;
   left: 50%;
