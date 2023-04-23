@@ -184,3 +184,61 @@ function tiktok() {
 }
 
 const tickingTimeline = tiktok();
+
+
+// click anywhere
+const shape = new mojs.Burst({
+  radius: { 0: 50 },
+  angle: "rand(0, 360)",
+  count: 5,
+  top: 0,
+  left: 0,
+  children: {
+    shape: "polygon",
+    fill: ["#6e07f3", "#32caa9", "#b375f5", "#13ceef", "#ffef77"],
+    radius: 15,
+    angle: { 0: 360 },
+    duration: 750,
+  },
+});
+
+document.addEventListener("click", (e) => {
+  shape.tune({ x: e.pageX, y: e.pageY }).generate().replay();
+});
+
+// cutom cursor
+var cursor = document.querySelector(".cursor");
+var cursorinner = document.querySelector(".cursor2");
+var a = document.querySelectorAll("a");
+
+document.addEventListener("mousemove", function (e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
+});
+
+document.addEventListener("mousemove", function (e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  cursorinner.style.left = x + "px";
+  cursorinner.style.top = y + "px";
+});
+
+document.addEventListener("mousedown", function () {
+  cursor.classList.add("click");
+  cursorinner.classList.add("cursorinnerhover");
+});
+
+document.addEventListener("mouseup", function () {
+  cursor.classList.remove("click");
+  cursorinner.classList.remove("cursorinnerhover");
+});
+
+a.forEach((item) => {
+  item.addEventListener("mouseover", () => {
+    cursor.classList.add("hover");
+  });
+  item.addEventListener("mouseleave", () => {
+    cursor.classList.remove("hover");
+  });
+});
