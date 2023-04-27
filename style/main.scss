@@ -6,12 +6,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
 
-
-
 //varibles
 
 $black-color: #141c3a;
-$indigo-color: #6e07f3;
+$indigo-color: #2f4fff;
 $white-color: #fff;
 $rounded-md: 20px;
 $rounded: 10px;
@@ -49,6 +47,9 @@ h2,
 h3,
 h4 {
   font-family: "Berkshire Swash", cursive;
+}
+.box-shadow {
+  box-shadow: $box-shadow;
 }
 
 //typography
@@ -153,7 +154,7 @@ label {
   }
   .contact-form__body {
     position: relative;
-    background-color: rgba($color: $indigo-color, $alpha: 0.05);
+    background-color: white;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
@@ -244,38 +245,29 @@ label {
 }
 
 //fixed-right-centered nav links
-.sticky-link__list {
+.success-step__list {
   display: flex;
   align-items: center;
   flex-direction: column;
   .vertical__line {
-    height: 100px;
+    height: 70px;
     width: 2px;
-    background-color: #141c3a;
+    background-color: #fd5f76;
     margin-top: 20px;
   }
-  .nav-link__item {
-    padding: 10px 15px;
-    color: $black-color;
-    font-size: 30px;
-    white-space: nowrap;
-    cursor: pointer;
-    transition: $transition;
-    &:hover {
-      color: $indigo-color;
-      transform: translateY(-5px);
-    }
+  img {
+    height: 60px;
+    margin-bottom: 10px;
   }
-  &.fixed-right-center {
+
+  &.fixed-left-bottom {
     position: fixed;
     left: 0;
     bottom: 0;
     z-index: 999;
   }
 }
-
 // header css
-
 header {
   padding: 10px 0;
   .brand-logo {
@@ -308,13 +300,14 @@ header {
     margin-bottom: 40px;
     img {
       height: auto;
-      width: 200px;
+      width: 300px;
     }
   }
   .banner__title {
     font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
+    color: $indigo-color;
   }
   .banner__description {
     text-align: center;
@@ -352,7 +345,7 @@ header {
       .skill-icon__image {
         margin-bottom: 30px;
         img {
-          width: 80px;
+          height: 100px;
         }
       }
     }
@@ -368,9 +361,8 @@ header {
   .recent-work__list {
     margin-top: 40px;
     position: relative;
-
-    li {
-      margin-bottom: 72px;
+    > li {
+      margin-bottom: 100px;
       &:nth-child(2n + 1) {
         .tools__list {
           justify-content: flex-end;
@@ -446,7 +438,8 @@ header {
       .project-description {
         margin: 32px 0;
         padding: 20px;
-        background-color: $indigo-color;
+        background-color: white;
+        border: 2px solid $indigo-color;
         z-index: 99;
         position: relative;
         border-radius: $rounded;
@@ -469,6 +462,9 @@ header {
 .contact-section {
   padding: 64px 0;
   position: relative;
+  .coversation-icon {
+    height: 80px;
+  }
   // height: 100vh;
   // display: flex;
   // align-items: center;
@@ -516,6 +512,10 @@ header {
 }
 .testimonial-section {
   padding: 64px 0;
+  .padding-lg {
+    padding: 64px;
+    border-radius: 40px;
+  }
   .testimony-user__image-list {
     display: flex;
     align-items: center;
@@ -526,13 +526,14 @@ header {
       height: 80px;
       border-radius: 50%;
       margin: 0 20px;
+      cursor: pointer;
       transform: scale(1);
       &.active {
         transform: scale(1.5);
         padding: 1px;
         border: 2px dashed $indigo-color;
         &::after {
-          content: "👻";
+          content: "\f10e";
           position: absolute;
           top: 10px;
           right: -10px;
@@ -542,19 +543,34 @@ header {
           display: flex;
           align-items: center;
           justify-content: center;
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
           border-radius: 50%;
+          color: white;
+          border: 2px solid white;
         }
       }
       img {
         width: 100%;
         height: 100%;
         border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
       }
     }
   }
   .testimony-content__list {
     .testimony-content__item {
       text-align: center;
+      display: none;
+      &.show {
+        display: block !important;
+      }
+      .description-lg {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 500;
+      }
     }
   }
 }
@@ -666,6 +682,7 @@ footer {
     }
   }
   .subtitle {
+    color: white;
     margin-bottom: 40px;
   }
   .social-media__list {
@@ -686,13 +703,12 @@ footer {
       &:hover {
         opacity: 1;
         background-color: $white-color;
-        svg {
+        i {
           color: $indigo-color;
         }
       }
-      svg {
-        height: 24px;
-        width: 24px;
+      i {
+        font-size: 24px;
         color: #eaeaea;
       }
     }
@@ -702,7 +718,7 @@ footer {
     font-size: 16px;
     font-style: italic;
     margin-bottom: 0;
-    color: #cea9ff;
+    color: #7389ff;
   }
   .footer-back {
     position: absolute;
@@ -712,7 +728,6 @@ footer {
     width: 100%;
   }
 }
-
 
 // hover effect
 
@@ -735,14 +750,35 @@ footer {
   height: 20px;
   border-radius: 100%;
   background-color: $indigo-color;
-  opacity: .3;
+  opacity: 0.3;
   position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  transition: width .3s, height .3s, opacity .3s;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
   z-index: 9999;
 }
 .hover {
   background-color: $indigo-color;
   opacity: 0.3;
+}
+
+// tooltip color
+.tooltip-inner {
+  background-color: $indigo-color;
+  box-shadow: $box-shadow;
+}
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: $indigo-color;
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: $indigo-color;
+}
+
+.tooltip.bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: $indigo-color;
+}
+
+.tooltip.bs-tooltip-end .tooltip-arrow::before {
+  border-right-color: $indigo-color;
 }

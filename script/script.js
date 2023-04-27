@@ -58,13 +58,9 @@ let secs = now.getSeconds();
 let mins = now.getMinutes();
 let hours = now.getHours();
 
-console.log(secs, mins, hours);
-
 let secRotate = Math.round((secs / 60) * 360);
 let bigRotate = Math.round((mins / 60) * 360 + (6 * secs) / 60);
 let smallRotate = Math.round((hours % 12) * 30 + (30 * mins) / 60);
-
-console.log(bigRotate);
 
 // let secRotate = 6;
 // let smallRotate = 30 + 6 * Math.random(50);
@@ -107,7 +103,6 @@ function handleSmall(start = 0) {
     translateX: -2,
     easing: "linear",
     complete: (target) => {
-      console.log(document.querySelector(".sec-hand").style.translateX);
       handleSmall(start + 30);
     },
   });
@@ -125,7 +120,6 @@ function handleSecGSAP() {
 }
 
 function handleBigGSAP(start = 0) {
-  console.log("startttt", start);
   gsap.fromTo(
     ".big-hand",
     {
@@ -185,7 +179,6 @@ function tiktok() {
 
 const tickingTimeline = tiktok();
 
-
 // click anywhere
 const shape = new mojs.Burst({
   radius: { 0: 50 },
@@ -240,5 +233,51 @@ a.forEach((item) => {
   });
   item.addEventListener("mouseleave", () => {
     cursor.classList.remove("hover");
+  });
+});
+
+// initialization of tooltip
+var tooltipTriggerList = [].slice.call(
+  document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl);
+});
+
+// custom faqs
+
+const faqsQuestion = $(".faqs__list .faq__item .faq__question");
+const faqsAnswers = $(".faqs__list .faq__item  .faq__content");
+faqsQuestion.each(function () {
+  $(this).click(function (e) {
+    e.preventDefault();
+    const targetId = $(this).data("target");
+    $(`#${targetId}`).slideToggle();
+    if ($(`#${targetId}`).css("display") === "block") {
+      $(`#${targetId}`)
+        .closest(".faq__item")
+        .find(".icon-wrapper")
+        .html('<i class="bi bi-chevron-up"></i>');
+    } else {
+      $(`#${targetId}`)
+        .closest(".faq__item")
+        .find(".icon-wrapper")
+        .html('<i class="bi bi-chevron-down"></i>');
+    }
+  });
+});
+
+// custom testimonials
+
+const testimonyPerson = $(".testimony-user__image-list .testimony-user__image");
+const testimonyContent = $(".testimony-content__list .testimony-content__item");
+
+testimonyPerson.each(function () {
+  $(this).click(function () {
+    const targetId = $(this).data("target");
+    testimonyPerson.removeClass("active");
+    testimonyContent.removeClass("show");
+    $(this).addClass("active");
+    $(`#${targetId}`).addClass("show");
   });
 });

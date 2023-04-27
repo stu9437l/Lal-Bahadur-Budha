@@ -1,1293 +1,1221 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <!-- bootstrap 5 cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- animate css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- custom css -->
-    <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./clock.css">
-</head>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./clock.css" />
+  </head>
 
-<body>
+  <body>
     <!-- cutom cursor -->
     <div class="cursor"></div>
     <div class="cursor2"></div>
 
     <!-- contact up popup -->
-    <div class="modal contact-form__popup" id="contact__popup">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="contact-form__body">
-                    <button class="modal-close__button" data-bs-dismiss="modal">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-x-lg" viewBox="0 0 16 16">
-                            <path
-                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
-                        </svg>
-                    </button>
-                    <div class="container">
-                        <div class="row justify-content-between align-items-center">
-                            <div class="col-md-5">
-                                <div class="contact-form">
-                                    <form action="">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="mb-4">
-                                                    <label for="first__name">First Name</label>
-                                                    <input id="first__name" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="mb-4">
-                                                    <label for="first__name">Last Name</label>
-                                                    <input id="last__name" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="mb-4">
-                                                    <label for="email">Email Address</label>
-                                                    <input id="email" type="email" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="mb-4">
-                                                    <label for="subject">Subject</label>
-                                                    <input id="subject" type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="mb-4">
-                                                    <label for="additional__info">Additional Information</label>
-                                                    <textarea class="form-control" name="" id="additional__info"
-                                                        rows="3"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <button class="submit__button">
-                                                    <span class="me-2">Send Message</span> 🚀
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <!-- <div class="contact__detail">
-                                                <h3 class="title text--black">
-                                                    Contact Information
-                                                </h3>
-                                                <p class="decription text--black">
-                                                    📲 <span class="ms-3">9800123456</span>
-                                                </p>
-                                                <p class="decription text--black">
-                                                    📧 <span class="ms-3">lalbahadurbc2054@gmail.com</span>
-                                                </p>
-                                                <p class="decription text--black mb-0">
-                                                    🔎 <span class="ms-3">Kathmandu, Nepal</span>
-                                                </p>
-                                            </div> -->
-                                </div>
-
-
-                            </div>
-                            <div class="col-6">
-                                <div class="mb-4">
-                                    <h3 class="title text--black">
-                                        How can i help you?
-                                    </h3>
-                                    <p class="description text--black">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quisquam
-                                        labore maxime dolorum iusto est.s
-                                    </p>
-                                </div>
-                                <ul class="faqs__list">
-                                    <li>
-                                        <div class="faq__item">
-                                            <div class="faq__question">
-                                                <p class="subtitle text--black">
-                                                    What is my mobile number?
-                                                </p>
-                                                <div class="icon-wrapper">
-                                                    <i class="bi bi-chevron-down"></i>
-                                                </div>
-                                            </div>
-                                            <div class="faq__content">
-                                                <p class="description text--black">
-                                                    📲 9800123456
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="faq__item">
-                                            <div class="faq__question">
-                                                <p class="subtitle text--black">
-                                                    What is my email Address?
-                                                </p>
-                                                <div class="icon-wrapper">
-                                                    <i class="bi bi-chevron-down"></i>
-                                                </div>
-                                            </div>
-                                            <div class="faq__content">
-                                                <p class="description text--black">
-                                                    📲 9800123456
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="faq__item">
-                                            <div class="faq__question">
-                                                <p class="subtitle text--black">
-                                                    Where i live?
-                                                </p>
-                                                <div class="icon-wrapper">
-                                                    <i class="bi bi-chevron-down"></i>
-                                                </div>
-                                            </div>
-                                            <div class="faq__content">
-                                                <p class="description text--black">
-                                                    📲 9800123456
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="trusted-client__list">
-                                    <p class="description text--indigo text--black mb-4 text-center text--bold">
-                                        <span class="me-2">Trusted By</span> 👨‍🎓
-                                    </p>
-                                    <div class="row">
-                                        <div class="col-md-3 mb-4">
-                                            <div class="client-logo__image">
-                                                <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 mb-4">
-                                            <div class="client-logo__image">
-                                                <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 mb-4">
-                                            <div class="client-logo__image">
-                                                <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 mb-4">
-                                            <div class="client-logo__image">
-                                                <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 mb-4">
-                                            <div class="client-logo__image">
-                                                <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 mb-4">
-                                            <div class="client-logo__image">
-                                                <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 mb-4">
-                                            <div class="client-logo__image">
-                                                <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 mb-4">
-                                            <div class="client-logo__image">
-                                                <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                                    alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <div
+      class="offcanvas offcanvas-end w-100 h-100 contact-form__popup border-0"
+      id="contact__popup"
+    >
+      <div class="contact-form__body">
+        <button class="modal-close__button" data-bs-dismiss="offcanvas">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+        </button>
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-md-5">
+              <div class="contact-form">
+                <form action="">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="mb-4">
+                        <label for="first__name">First Name</label>
+                        <input
+                          id="first__name"
+                          type="text"
+                          class="form-control"
+                        />
+                      </div>
                     </div>
-                </div>
+                    <div class="col-6">
+                      <div class="mb-4">
+                        <label for="first__name">Last Name</label>
+                        <input
+                          id="last__name"
+                          type="text"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="mb-4">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="mb-4">
+                        <label for="subject">Subject</label>
+                        <input id="subject" type="text" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="mb-4">
+                        <label for="additional__info"
+                          >Additional Information</label
+                        >
+                        <textarea
+                          class="form-control"
+                          name=""
+                          id="additional__info"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="submit__button">
+                        <span class="me-2">Send Message</span> 🚀
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
+            <div class="col-6">
+              <div class="mb-4">
+                <h3 class="title text--black">How can i help you?</h3>
+                <p class="description text--black">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                  quisquam labore maxime dolorum iusto est.s
+                </p>
+              </div>
+              <ul class="faqs__list">
+                <li>
+                  <div class="faq__item">
+                    <div class="faq__question" data-target="my_mobile_number">
+                      <p class="subtitle text--black">
+                        What is my mobile number?
+                      </p>
+                      <div class="icon-wrapper">
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                    </div>
+                    <div class="faq__content" id="my_mobile_number">
+                      <p class="description text--black">9800123456</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq__item">
+                    <div class="faq__question" data-target="my_mobile_email">
+                      <p class="subtitle text--black">
+                        What is my email Address?
+                      </p>
+                      <div class="icon-wrapper">
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                    </div>
+                    <div class="faq__content" id="my_mobile_email">
+                      <p class="description text--black">
+                        lalbahadurbc2054@gmail.com
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq__item">
+                    <div class="faq__question" data-target="my_mobile_address">
+                      <p class="subtitle text--black">Where i live?</p>
+                      <div class="icon-wrapper">
+                        <i class="bi bi-chevron-down"></i>
+                      </div>
+                    </div>
+                    <div class="faq__content" id="my_mobile_address">
+                      <p class="description text--black">
+                        Kathmandu, Nepal (originally form Dhangadhi)
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="trusted-client__list">
+                <p
+                  class="description text--indigo text--black mb-4 text-center text--bold"
+                >
+                  <span class="me-2">Trusted By</span> 👨‍🎓
+                </p>
+                <div class="row">
+                  <div class="col-md-3 mb-4">
+                    <div class="client-logo__image">
+                      <img
+                        src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-4">
+                    <div class="client-logo__image">
+                      <img
+                        src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-4">
+                    <div class="client-logo__image">
+                      <img
+                        src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-4">
+                    <div class="client-logo__image">
+                      <img
+                        src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-4">
+                    <div class="client-logo__image">
+                      <img
+                        src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-4">
+                    <div class="client-logo__image">
+                      <img
+                        src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-4">
+                    <div class="client-logo__image">
+                      <img
+                        src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-4">
+                    <div class="client-logo__image">
+                      <img
+                        src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- fixed navlinks -->
-    <ul class="sticky-link__list fixed-right-center">
-        <li>
-            <a class="nav-link__item">😂</a>
-        </li>
-        <li><a class="nav-link__item">😂</a></li>
-        <li><a class="nav-link__item">😂</a></li>
-        <li class="vertical__line">
+    <ul class="success-step__list fixed-left-bottom">
+      <li>
+        <img
+          class="animate__animated animate__bounce animate__infinite animate__slower-6s animate__delay-1s"
+          src="./image/success-life/or-plan.png"
+          title="Planning"
+          alt="plan"
+          data-bs-toggle="tooltip"
+          data-bs-placement="right"
+        />
+      </li>
+      <li>
+        <img
+          class="animate__animated animate__bounce animate__infinite animate__slower animate__delay-2s"
+          src="./image/success-life/or-goal.png"
+          title="Set Goal"
+          alt="plan"
+          data-bs-toggle="tooltip"
+          data-bs-placement="right"
+        />
+      </li>
+      <li>
+        <img
+          class="animate__animated animate__bounce animate__infinite animate__slower animate__delay-3s"
+          src="./image/success-life/or-action.png"
+          title="Do Action"
+          alt="plan"
+          data-bs-toggle="tooltip"
+          data-bs-placement="right"
+        />
+      </li>
 
-        </li>
+      <li>
+        <img
+          class="animate__animated animate__bounce animate__infinite animate__slower animate__delay-4s"
+          src="./image/success-life/or-scale-2.png"
+          title="Scale"
+          alt="plan"
+          data-bs-toggle="tooltip"
+          data-bs-placement="right"
+        />
+      </li>
+      <li>
+        <img
+          class="animate__animated animate__bounce animate__infinite animate__slower animate__delay-5s"
+          src="./image/success-life/or-keepwork.png"
+          data-bs-toggle="tooltip"
+          data-bs-placement="right"
+          title="Complete Steps"
+          alt="plan"
+        />
+      </li>
+
+      <li>
+        <img
+          class="animate__animated animate__bounce animate__infinite animate__slower animate__delay-6s"
+          src="./image/success-life/or-success.png"
+          title="Success"
+          alt="plan"
+          data-bs-toggle="tooltip"
+          data-bs-placement="right"
+        />
+      </li>
+
+      <li class="vertical__line"></li>
     </ul>
     <header>
-        <div class="container">
-            <nav class="d-flex align-items-center justify-content-between ">
-                <a href="" class="brand-logo">
-                    <img class="brand-logo__image" src="./image/logo.svg" alt="brand-logo" />
-                </a>
-                <ul class="nav-link__list">
-                    <li>
-                        <a type="button" class="nav-link__item" data-bs-toggle="modal" data-bs-target="#contact__popup">
-                            Lets Talk </a>
-                    </li>
-                    <li>
-                        <a class="button-outline button--indigo button--rounded">
-                            🤓
-                            <span class="ms-2">Download Resume</span></a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <nav class="d-flex align-items-center justify-content-between">
+          <a href="" class="brand-logo">
+            <img
+              class="brand-logo__image"
+              src="./image/logo.svg"
+              alt="brand-logo"
+            />
+          </a>
+          <ul class="nav-link__list">
+            <li>
+              <a
+                type="button"
+                class="nav-link__item"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#contact__popup"
+              >
+                Lets Talk
+              </a>
+            </li>
+            <li>
+              <a class="button-outline button--indigo button--rounded">
+                <span class="me-2">Download Resume</span>
+                <i class="fa-solid fa-download"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-        <section class="banner-section">
-            <!-- <div class="container">
-                <div class="clock-container">
-                    <div class="clock">
-                        <div class="clock__big-tick clock__big-tick--1"></div>
-                        <div class="clock__big-tick clock__big-tick--2"></div>
-                        <div class="clock__big-tick clock__big-tick--3"></div>
-                        <div class="clock__big-tick clock__big-tick--4"></div>
-                        <div class="clock__big-tick clock__big-tick--5"></div>
-                        <div class="clock__big-tick clock__big-tick--6"></div>
-                        <div class="clock__big-tick clock__big-tick--7"></div>
-                        <div class="clock__big-tick clock__big-tick--8"></div>
-                        <div class="clock__big-tick clock__big-tick--9"></div>
-                        <div class="clock__big-tick clock__big-tick--10"></div>
-                        <div class="clock__big-tick clock__big-tick--11"></div>
-                        <div class="clock__big-tick clock__big-tick--12"></div>
+      <section class="banner-section">
+        <div class="container">
+          <div class="banner-profile__image">
+            <img
+              src="https://img.freepik.com/premium-vector/one-happy-boy-with-big-smile_1308-68533.jpg"
+              alt="profile-image"
+            />
+          </div>
+          <h1 class="banner__title">
+            Designer, Frontend Developer & MERN Developer
+          </h1>
+          <p class="banner__description">
+            Creating beautiful and simple designs through coding is my passion.
+          </p>
 
-                        <div class="clock__small-tick clock__small-tick--1"></div>
-                        <div class="clock__small-tick clock__small-tick--2"></div>
-                        <div class="clock__small-tick clock__small-tick--3"></div>
-                        <div class="clock__small-tick clock__small-tick--4"></div>
-                        <div class="clock__small-tick clock__small-tick--5"></div>
-                        <div class="clock__small-tick clock__small-tick--6"></div>
-                        <div class="clock__small-tick clock__small-tick--7"></div>
-                        <div class="clock__small-tick clock__small-tick--8"></div>
-                        <div class="clock__small-tick clock__small-tick--9"></div>
-                        <div class="clock__small-tick clock__small-tick--10"></div>
-                        <div class="clock__small-tick clock__small-tick--11"></div>
-                        <div class="clock__small-tick clock__small-tick--12"></div>
-                        <div class="clock__small-tick clock__small-tick--13"></div>
-                        <div class="clock__small-tick clock__small-tick--14"></div>
-                        <div class="clock__small-tick clock__small-tick--15"></div>
-                        <div class="clock__small-tick clock__small-tick--16"></div>
-                        <div class="clock__small-tick clock__small-tick--17"></div>
-                        <div class="clock__small-tick clock__small-tick--18"></div>
-                        <div class="clock__small-tick clock__small-tick--19"></div>
-                        <div class="clock__small-tick clock__small-tick--20"></div>
-                        <div class="clock__small-tick clock__small-tick--21"></div>
-                        <div class="clock__small-tick clock__small-tick--22"></div>
-                        <div class="clock__small-tick clock__small-tick--23"></div>
-                        <div class="clock__small-tick clock__small-tick--24"></div>
-                        <div class="clock__small-tick clock__small-tick--25"></div>
-                        <div class="clock__small-tick clock__small-tick--26"></div>
-                        <div class="clock__small-tick clock__small-tick--27"></div>
-                        <div class="clock__small-tick clock__small-tick--28"></div>
-                        <div class="clock__small-tick clock__small-tick--29"></div>
-                        <div class="clock__small-tick clock__small-tick--30"></div>
-                        <div class="clock__small-tick clock__small-tick--31"></div>
-                        <div class="clock__small-tick clock__small-tick--32"></div>
-                        <div class="clock__small-tick clock__small-tick--33"></div>
-                        <div class="clock__small-tick clock__small-tick--34"></div>
-                        <div class="clock__small-tick clock__small-tick--35"></div>
-                        <div class="clock__small-tick clock__small-tick--36"></div>
-                        <div class="clock__small-tick clock__small-tick--37"></div>
-                        <div class="clock__small-tick clock__small-tick--38"></div>
-                        <div class="clock__small-tick clock__small-tick--39"></div>
-                        <div class="clock__small-tick clock__small-tick--40"></div>
-                        <div class="clock__small-tick clock__small-tick--41"></div>
-                        <div class="clock__small-tick clock__small-tick--42"></div>
-                        <div class="clock__small-tick clock__small-tick--43"></div>
-                        <div class="clock__small-tick clock__small-tick--44"></div>
-                        <div class="clock__small-tick clock__small-tick--45"></div>
-                        <div class="clock__small-tick clock__small-tick--46"></div>
-                        <div class="clock__small-tick clock__small-tick--47"></div>
-                        <div class="clock__small-tick clock__small-tick--48"></div>
-                    </div>
-                    <div class="center-bottom"></div>
-                    <div class="sec-hand"></div>
-                    <div class="small-hand"></div>
-                    <div class="big-hand"></div>
-                    <div class="center-up"></div>
-                </div>
-            </div> -->
-            <div class="container">
-                <div class="banner-profile__image">
-                    <img src="https://mattfarley.ca/img/mf-avatar.svg" alt="profile-image" />
-                </div>
-                <h1 class="banner__title">
-                    Desinger, Frontend Developer & MERN Developer
-                </h1>
-                <p class="banner__description">
-                    I Design and code beutiful simple things, and i love what i do
+          <div class="banner__animation"></div>
+        </div>
+      </section>
+      <section class="overlapping-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+              <div class="text-center">
+                <h2 class="title text--white">
+                  Hi, I'm Lal Bahadur. It is a pleasure to make your
+                  acquaintance.
+                </h2>
+                <p class="description text--white">
+                  "Expert in developing user-facing web applications" <br />
+                  As a web designer with 3 years of experience & Committed to
+                  delivering high-quality code and exceptional user experiences.
                 </p>
-                <!-- <div class="banner__animation">
-                    <img src="https://cdn.midjourney.com/3ef89d69-037c-42fe-a8b0-dd99aa6a824e/grid_0.png" alt="">
-                </div> -->
+              </div>
             </div>
-        </section>
-        <section class="overlapping-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 mx-auto">
-                        <div class="text-center">
-                            <h2 class="title text--white">
-                                Hi, I'm Lal Bahadur. Nice to meet you.
-                            </h2>
-                            <p class="description text--white">
-                                Since beginning my journey as a freelance designer over 11 years
-                                ago, I've done remote work for agencies, consulted for startups,
-                                and collaborated with talented people to create digital products
-                                for both business and consumer use. I'm quietly confident,
-                                naturally curious, and perpetually working on improving my chops
-                                one design problem at a time.
-                            </p>
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </section>
+      <section class="skill-section">
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="skill-card">
+                <div class="head">
+                  <div class="skill-icon__image">
+                    <img
+                      src="./image/skills/logo-graphics-design.png"
+                      alt="skill"
+                    />
+                  </div>
+                  <h3 class="subtitle text--black">Graphics Design</h3>
+                  <p class="description text--black">
+                    Design to inspire, create to captivate, and communicate to
+                    connect with the audience
+                  </p>
                 </div>
-            </div>
-        </section>
-        <section class="skill-section">
-
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <div class="skill-card">
-                            <div class="head">
-                                <div class="skill-icon__image">
-                                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/graphic-designer-logo-template-9458b639d3e7333cb50cf5db40be7850_screen.jpg?ts=1658998865"
-                                        alt="skill" />
-                                </div>
-                                <h3 class="subtitle text--black">Desinger</h3>
-                                <p class="description text--black">
-                                    I value simple content structure, clean design patterns, and
-                                    thoughtful interactions.
-                                </p>
-                            </div>
-                            <div class="body">
-                                <p class="description text--indigo">
-                                    Things i enjoy designing
-                                </p>
-                                <p class="description text--dark">
-                                    UI, UX , Logos, Web, App
-                                </p>
-                            </div>
-                            <div class="foot">
-                                <p class="decription text--indigo">
-                                    Design Tools:
-                                </p>
-                                <ul class="tools__list">
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="skill-card">
-                            <div class="head">
-                                <div class="skill-icon__image">
-                                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/graphic-designer-logo-template-9458b639d3e7333cb50cf5db40be7850_screen.jpg?ts=1658998865"
-                                        alt="skill" />
-                                </div>
-                                <h3 class="subtitle text--black">Desinger</h3>
-                                <p class="description text--black">
-                                    I value simple content structure, clean design patterns, and
-                                    thoughtful interactions.
-                                </p>
-                            </div>
-                            <div class="body">
-                                <p class="description text--indigo">
-                                    Things i enjoy designing
-                                </p>
-                                <p class="description text--dark">
-                                    UI, UX , Logos, Web, App
-                                </p>
-                            </div>
-                            <div class="foot">
-                                <p class="decription text--indigo">
-                                    Design Tools:
-                                </p>
-                                <ul class="tools__list">
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="skill-card">
-                            <div class="head">
-                                <div class="skill-icon__image">
-                                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/graphic-designer-logo-template-9458b639d3e7333cb50cf5db40be7850_screen.jpg?ts=1658998865"
-                                        alt="skill" />
-                                </div>
-                                <h3 class="subtitle text--black">Desinger</h3>
-                                <p class="description text--black">
-                                    I value simple content structure, clean design patterns, and
-                                    thoughtful interactions.
-                                </p>
-                            </div>
-                            <div class="body">
-                                <p class="description text--indigo">
-                                    Things i enjoy designing
-                                </p>
-                                <p class="description text--dark">
-                                    UI, UX , Logos, Web, App
-                                </p>
-                            </div>
-                            <div class="foot">
-                                <p class="decription text--indigo">
-                                    Design Tools:
-                                </p>
-                                <ul class="tools__list">
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p class="description text--black">
-                                            Affinity Designer
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="body">
+                  <p class="description text--indigo">
+                    Graphics Design Fluencies
+                  </p>
+                  <p class="description text--dark">UX, UI, Web, Apps, Logos</p>
                 </div>
-            </div>
-        </section>
-        <section class="recent-work-section">
-            <div class="container">
-                <div class="section-heading">
-                    <h2 class="title text--dark">
-                        My Recent Work
-                    </h2>
-                    <p class="description text--dark">
-                        Here are a few past desing projects i ve worked on. Wnat to see more?
-                    </p>
-                </div>
-
-                <ul class="recent-work__list">
+                <div class="foot">
+                  <p class="decription text--indigo">Design Tools:</p>
+                  <ul class="tools__list">
                     <li>
-                        <div class="recent-work__item">
-                            <div class="row">
-                                <div class="col-7">
-                                    <div class="project__thumbnail">
-                                        <img src="https://images.pexels.com/photos/941555/pexels-photo-941555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            alt="">
-                                        <a href="" class="button-outline button--white button--rounded">
-                                            <span class="me-2">Visit Website</span> 👉
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-5">
-                                    <div class="text-end">
-                                        <p class="description text--indigo">Featured Product</p>
-                                        <a href="" class="title text--black mb-0">
-                                            <h3>
-                                                Halcyon Theme
-                                            </h3>
-                                        </a>
-                                        <div class="project-description">
-                                            <p class="decription text--white mb-0">
-                                                A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and
-                                                more.
-                                                Available on Visual Studio Marketplace,
-                                                Package Control, Atom Package Manager, and npm.
-                                            </p>
-                                        </div>
-                                        <ul class="tools__list">
-                                            <li>
-                                                <p class="description text--black">
-                                                    VS Code
-                                                </p>
-
-                                            </li>
-                                            <li>
-                                                <p class="description text--black">
-                                                    VS Code
-                                                </p>
-
-                                            </li>
-                                            <li>
-                                                <p class="description text--black">
-                                                    VS Code
-                                                </p>
-
-                                            </li>
-                                            <li>
-                                                <p class="description text--black">
-                                                    VS Code
-                                                </p>
-
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                      <p class="description text--black">Figma</p>
                     </li>
                     <li>
-                        <div class="recent-work__item">
-                            <div class="row">
-                                <div class="col-5">
-                                    <div class="text-y">
-                                        <p class="description text--indigo">Featured Product</p>
-                                        <a href="" class="title text--black mb-0">
-                                            <h3>
-                                                Halcyon Theme
-                                            </h3>
-                                        </a>
-                                        <div class="project-description">
-                                            <p class="decription text--white mb-0">
-                                                A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and
-                                                more.
-                                                Available on Visual Studio Marketplace,
-                                                Package Control, Atom Package Manager, and npm.
-                                            </p>
-                                        </div>
-                                        <ul class="tools__list">
-                                            <li>
-                                                <p class="description text--black">
-                                                    VS Code
-                                                </p>
-
-                                            </li>
-                                            <li>
-                                                <p class="description text--black">
-                                                    VS Code
-                                                </p>
-
-                                            </li>
-                                            <li>
-                                                <p class="description text--black">
-                                                    VS Code
-                                                </p>
-
-                                            </li>
-                                            <li>
-                                                <p class="description text--black">
-                                                    VS Code
-                                                </p>
-
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-7">
-                                    <div class="project__thumbnail">
-                                        <img src="https://images.pexels.com/photos/941555/pexels-photo-941555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            alt="">
-                                        <a href="" class="button-outline button--white button--rounded">
-                                            <span class="me-2">Visit Website</span> 👉
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                      <p class="description text--black">Adobe Photoshop</p>
                     </li>
-                </ul>
-                <div class="d-flex justify-content-center pt-5">
-                    <a href="" class="button-outline button--indigo button--rounded">
-                        <span class="me-2">See more on gitlab</span> 🧑‍🍳
-                    </a>
+                    <li>
+                      <p class="description text--black">Font Awesome</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Pen & Paper</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Sketch</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Vector</p>
+                    </li>
+                  </ul>
                 </div>
-
+              </div>
             </div>
-        </section>
-        <section class="client-section">
-            <div class="container">
-                <div class="section-heading">
-                    <h3 class="title text--black">
-                        I'm proud to have collaborated with <br>
-                        some awesome companies 🏚:
-                    </h3>
+            <div class="col-md-4">
+              <div class="skill-card">
+                <div class="head">
+                  <div class="skill-icon__image">
+                    <img
+                      src="https://www.stackmediadesign.com/templates/slick-host/images/Partners/HTML-CSS-JS-Logo-min.png"
+                      alt="skill"
+                    />
+                  </div>
+                  <h3 class="subtitle text--black">Frontend Developer</h3>
+                  <p class="description text--black">
+                    User experience is key. Let's make it accessible, intuitive,
+                    and delightful.
+                  </p>
                 </div>
-                <div class="row">
-                    <div class="col-md-3 mb-4">
-                        <div class="client-logo__image">
-                            <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="client-logo__image">
-                            <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="client-logo__image">
-                            <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="client-logo__image">
-                            <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-0">
-                        <div class="client-logo__image">
-                            <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-0">
-                        <div class="client-logo__image">
-                            <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-0">
-                        <div class="client-logo__image">
-                            <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-0">
-                        <div class="client-logo__image">
-                            <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                alt="">
-                        </div>
-                    </div>
+                <div class="body">
+                  <p class="description text--indigo">
+                    Frontend Language Stack
+                  </p>
+                  <p class="description text--dark">
+                    HTML, Javascript, JQuery, CSS, Sass, React JS, Next JS
+                  </p>
                 </div>
+                <div class="foot">
+                  <p class="decription text--indigo">Design Tools:</p>
+                  <ul class="tools__list">
+                    <li>
+                      <p class="description text--black">Crome Devtools</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Typescript</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Bootstrap</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">VS Code</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Vercel</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">NPM</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="overlapping-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 mx-auto">
-                        <div class="text-center">
-                            <h2 class="title text--white">
-                                My Startup Projects
-
-                            </h2>
-                            <p class="description text--white">
-                                I'm a bit of a digital product junky. Over the years, I've used hundreds of web and
-                                mobile apps in different industries
-                                and verticals. Eventually, I decided that it would be a fun challenge to try designing
-                                and building my own.
-                            </p>
-                        </div>
-                    </div>
+            <div class="col-md-4">
+              <div class="skill-card">
+                <div class="head">
+                  <div class="skill-icon__image">
+                    <img
+                      src="https://miro.medium.com/v2/resize:fit:600/0*XElkBpSnsJwGiIdi.jpeg"
+                      alt="skill"
+                    />
+                  </div>
+                  <h3 class="subtitle text--black">Backend Developer</h3>
+                  <p class="description text--black">
+                    LLet's build a scalable, secure, and reliable system to
+                    power the application.
+                  </p>
                 </div>
-            </div>
-        </section>
-        <section class="startup-project-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 mb-5">
-                        <div class="startup-project__card">
-                            <div class="project__logo">
-                                <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                    alt="">
-                            </div>
-                            <p class="description text--black">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quibusdam dicta veniam.
-                            </p>
-                            <div class="d-flex justify-content-center pb-4">
-                                <a href="" class="button-outline button--indigo button--rounded">
-                                    <span class="me-2">Visite Website</span> 🚀
-                                </a>
-                            </div>
-
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-5">
-                        <div class="startup-project__card">
-                            <div class="project__logo">
-                                <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                    alt="">
-                            </div>
-                            <p class="description text--black">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quibusdam dicta veniam.
-                            </p>
-                            <div class="d-flex justify-content-center pb-4">
-                                <a href="" class="button-outline button--indigo button--rounded">
-                                    <span class="me-2">Visite Website</span> 🚀
-                                </a>
-                            </div>
-
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-5">
-                        <div class="startup-project__card">
-                            <div class="project__logo">
-                                <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                    alt="">
-                            </div>
-                            <p class="description text--black">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quibusdam dicta veniam.
-                            </p>
-                            <div class="d-flex justify-content-center pb-4">
-                                <a href="" class="button-outline button--indigo button--rounded">
-                                    <span class="me-2">Visite Website</span> 🚀
-                                </a>
-                            </div>
-
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-5">
-                        <div class="startup-project__card">
-                            <div class="project__logo">
-                                <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                    alt="">
-                            </div>
-                            <p class="description text--black">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quibusdam dicta veniam.
-                            </p>
-                            <div class="d-flex justify-content-center pb-4">
-                                <a href="" class="button-outline button--indigo button--rounded">
-                                    <span class="me-2">Visite Website</span> 🚀
-                                </a>
-                            </div>
-
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-5">
-                        <div class="startup-project__card">
-                            <div class="project__logo">
-                                <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                    alt="">
-                            </div>
-                            <p class="description text--black">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quibusdam dicta veniam.
-                            </p>
-                            <div class="d-flex justify-content-center pb-4">
-                                <a href="" class="button-outline button--indigo button--rounded">
-                                    <span class="me-2">Visite Website</span> 🚀
-                                </a>
-                            </div>
-
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-5">
-                        <div class="startup-project__card">
-                            <div class="project__logo">
-                                <img src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                                    alt="">
-                            </div>
-                            <p class="description text--black">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quibusdam dicta veniam.
-                            </p>
-                            <div class="d-flex justify-content-center pb-4">
-                                <a href="" class="button-outline button--indigo button--rounded">
-                                    <span class="me-2">Visite Website</span> 🚀
-                                </a>
-                            </div>
-
-                            </a>
-                        </div>
-                    </div>
-
+                <div class="body">
+                  <p class="description text--indigo">Backend Language Stack</p>
+                  <p class="description text--dark">
+                    Node, Express, Mongoose, Mongo, GraphQL
+                  </p>
                 </div>
+                <div class="foot">
+                  <p class="decription text--indigo">Design Tools:</p>
+                  <ul class="tools__list">
+                    <li>
+                      <p class="description text--black">VS Code</p>
+                    </li>
+
+                    <li>
+                      <p class="description text--black">Terminal</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Apollo Server</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Postman</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Atlas Database</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Compass</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="contact-section">
-            <div class="container">
+          </div>
+        </div>
+      </section>
+      <section class="recent-work-section">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="title text--dark">
+              Building a Better Future: A Look at My Recent Work
+            </h2>
+            <p class="description text--dark">
+              Check out some of my previous design projects - a testament to my
+              skills and creativity.
+            </p>
+          </div>
+
+          <ul class="recent-work__list">
+            <li>
+              <div class="recent-work__item">
                 <div class="row align-items-center">
-                    <!-- <div class="col-6">
-                        <div class="clock-container">
-                            <div class="clock">
-                                <div class="clock__big-tick clock__big-tick--1"></div>
-                                <div class="clock__big-tick clock__big-tick--2"></div>
-                                <div class="clock__big-tick clock__big-tick--3"></div>
-                                <div class="clock__big-tick clock__big-tick--4"></div>
-                                <div class="clock__big-tick clock__big-tick--5"></div>
-                                <div class="clock__big-tick clock__big-tick--6"></div>
-                                <div class="clock__big-tick clock__big-tick--7"></div>
-                                <div class="clock__big-tick clock__big-tick--8"></div>
-                                <div class="clock__big-tick clock__big-tick--9"></div>
-                                <div class="clock__big-tick clock__big-tick--10"></div>
-                                <div class="clock__big-tick clock__big-tick--11"></div>
-                                <div class="clock__big-tick clock__big-tick--12"></div>
-
-                                <div class="clock__small-tick clock__small-tick--1"></div>
-                                <div class="clock__small-tick clock__small-tick--2"></div>
-                                <div class="clock__small-tick clock__small-tick--3"></div>
-                                <div class="clock__small-tick clock__small-tick--4"></div>
-                                <div class="clock__small-tick clock__small-tick--5"></div>
-                                <div class="clock__small-tick clock__small-tick--6"></div>
-                                <div class="clock__small-tick clock__small-tick--7"></div>
-                                <div class="clock__small-tick clock__small-tick--8"></div>
-                                <div class="clock__small-tick clock__small-tick--9"></div>
-                                <div class="clock__small-tick clock__small-tick--10"></div>
-                                <div class="clock__small-tick clock__small-tick--11"></div>
-                                <div class="clock__small-tick clock__small-tick--12"></div>
-                                <div class="clock__small-tick clock__small-tick--13"></div>
-                                <div class="clock__small-tick clock__small-tick--14"></div>
-                                <div class="clock__small-tick clock__small-tick--15"></div>
-                                <div class="clock__small-tick clock__small-tick--16"></div>
-                                <div class="clock__small-tick clock__small-tick--17"></div>
-                                <div class="clock__small-tick clock__small-tick--18"></div>
-                                <div class="clock__small-tick clock__small-tick--19"></div>
-                                <div class="clock__small-tick clock__small-tick--20"></div>
-                                <div class="clock__small-tick clock__small-tick--21"></div>
-                                <div class="clock__small-tick clock__small-tick--22"></div>
-                                <div class="clock__small-tick clock__small-tick--23"></div>
-                                <div class="clock__small-tick clock__small-tick--24"></div>
-                                <div class="clock__small-tick clock__small-tick--25"></div>
-                                <div class="clock__small-tick clock__small-tick--26"></div>
-                                <div class="clock__small-tick clock__small-tick--27"></div>
-                                <div class="clock__small-tick clock__small-tick--28"></div>
-                                <div class="clock__small-tick clock__small-tick--29"></div>
-                                <div class="clock__small-tick clock__small-tick--30"></div>
-                                <div class="clock__small-tick clock__small-tick--31"></div>
-                                <div class="clock__small-tick clock__small-tick--32"></div>
-                                <div class="clock__small-tick clock__small-tick--33"></div>
-                                <div class="clock__small-tick clock__small-tick--34"></div>
-                                <div class="clock__small-tick clock__small-tick--35"></div>
-                                <div class="clock__small-tick clock__small-tick--36"></div>
-                                <div class="clock__small-tick clock__small-tick--37"></div>
-                                <div class="clock__small-tick clock__small-tick--38"></div>
-                                <div class="clock__small-tick clock__small-tick--39"></div>
-                                <div class="clock__small-tick clock__small-tick--40"></div>
-                                <div class="clock__small-tick clock__small-tick--41"></div>
-                                <div class="clock__small-tick clock__small-tick--42"></div>
-                                <div class="clock__small-tick clock__small-tick--43"></div>
-                                <div class="clock__small-tick clock__small-tick--44"></div>
-                                <div class="clock__small-tick clock__small-tick--45"></div>
-                                <div class="clock__small-tick clock__small-tick--46"></div>
-                                <div class="clock__small-tick clock__small-tick--47"></div>
-                                <div class="clock__small-tick clock__small-tick--48"></div>
-                            </div>
-                            <div class="center-bottom"></div>
-                            <div class="sec-hand"></div>
-                            <div class="small-hand"></div>
-                            <div class="big-hand"></div>
-                            <div class="center-up"></div>
-                        </div>
-                    </div> -->
-                    <div class="col-12">
-                        <div class="section-heading">
-                            <h3 class="title text--dark">
-                                Interested in collaborating with me
-                            </h3>
-                            <p class="description text--dark mb-5">
-                                im always open to discussing product design work on partnership opportunities.
-                            </p>
-                            <div class="clock-container">
-                                <div class="clock">
-                                    <div class="clock__big-tick clock__big-tick--1"></div>
-                                    <div class="clock__big-tick clock__big-tick--2"></div>
-                                    <div class="clock__big-tick clock__big-tick--3"></div>
-                                    <div class="clock__big-tick clock__big-tick--4"></div>
-                                    <div class="clock__big-tick clock__big-tick--5"></div>
-                                    <div class="clock__big-tick clock__big-tick--6"></div>
-                                    <div class="clock__big-tick clock__big-tick--7"></div>
-                                    <div class="clock__big-tick clock__big-tick--8"></div>
-                                    <div class="clock__big-tick clock__big-tick--9"></div>
-                                    <div class="clock__big-tick clock__big-tick--10"></div>
-                                    <div class="clock__big-tick clock__big-tick--11"></div>
-                                    <div class="clock__big-tick clock__big-tick--12"></div>
-
-                                    <div class="clock__small-tick clock__small-tick--1"></div>
-                                    <div class="clock__small-tick clock__small-tick--2"></div>
-                                    <div class="clock__small-tick clock__small-tick--3"></div>
-                                    <div class="clock__small-tick clock__small-tick--4"></div>
-                                    <div class="clock__small-tick clock__small-tick--5"></div>
-                                    <div class="clock__small-tick clock__small-tick--6"></div>
-                                    <div class="clock__small-tick clock__small-tick--7"></div>
-                                    <div class="clock__small-tick clock__small-tick--8"></div>
-                                    <div class="clock__small-tick clock__small-tick--9"></div>
-                                    <div class="clock__small-tick clock__small-tick--10"></div>
-                                    <div class="clock__small-tick clock__small-tick--11"></div>
-                                    <div class="clock__small-tick clock__small-tick--12"></div>
-                                    <div class="clock__small-tick clock__small-tick--13"></div>
-                                    <div class="clock__small-tick clock__small-tick--14"></div>
-                                    <div class="clock__small-tick clock__small-tick--15"></div>
-                                    <div class="clock__small-tick clock__small-tick--16"></div>
-                                    <div class="clock__small-tick clock__small-tick--17"></div>
-                                    <div class="clock__small-tick clock__small-tick--18"></div>
-                                    <div class="clock__small-tick clock__small-tick--19"></div>
-                                    <div class="clock__small-tick clock__small-tick--20"></div>
-                                    <div class="clock__small-tick clock__small-tick--21"></div>
-                                    <div class="clock__small-tick clock__small-tick--22"></div>
-                                    <div class="clock__small-tick clock__small-tick--23"></div>
-                                    <div class="clock__small-tick clock__small-tick--24"></div>
-                                    <div class="clock__small-tick clock__small-tick--25"></div>
-                                    <div class="clock__small-tick clock__small-tick--26"></div>
-                                    <div class="clock__small-tick clock__small-tick--27"></div>
-                                    <div class="clock__small-tick clock__small-tick--28"></div>
-                                    <div class="clock__small-tick clock__small-tick--29"></div>
-                                    <div class="clock__small-tick clock__small-tick--30"></div>
-                                    <div class="clock__small-tick clock__small-tick--31"></div>
-                                    <div class="clock__small-tick clock__small-tick--32"></div>
-                                    <div class="clock__small-tick clock__small-tick--33"></div>
-                                    <div class="clock__small-tick clock__small-tick--34"></div>
-                                    <div class="clock__small-tick clock__small-tick--35"></div>
-                                    <div class="clock__small-tick clock__small-tick--36"></div>
-                                    <div class="clock__small-tick clock__small-tick--37"></div>
-                                    <div class="clock__small-tick clock__small-tick--38"></div>
-                                    <div class="clock__small-tick clock__small-tick--39"></div>
-                                    <div class="clock__small-tick clock__small-tick--40"></div>
-                                    <div class="clock__small-tick clock__small-tick--41"></div>
-                                    <div class="clock__small-tick clock__small-tick--42"></div>
-                                    <div class="clock__small-tick clock__small-tick--43"></div>
-                                    <div class="clock__small-tick clock__small-tick--44"></div>
-                                    <div class="clock__small-tick clock__small-tick--45"></div>
-                                    <div class="clock__small-tick clock__small-tick--46"></div>
-                                    <div class="clock__small-tick clock__small-tick--47"></div>
-                                    <div class="clock__small-tick clock__small-tick--48"></div>
-                                </div>
-                                <div class="center-bottom"></div>
-                                <div class="sec-hand"></div>
-                                <div class="small-hand"></div>
-                                <div class="big-hand"></div>
-                                <div class="center-up"></div>
-                            </div>
-                        </div>
-
-                        <div class="d-flex justify-content-center">
-                            <button class="button-outline button--indigo button--rounded" data-bs-toggle="modal"
-                                data-bs-target="#contact__popup">
-                                😂 <span class="ms-2">Start a Conversation</span>
-                            </button>
-                        </div>
+                  <div class="col-7">
+                    <div class="project__thumbnail">
+                      <img
+                        src="https://images.pexels.com/photos/941555/pexels-photo-941555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt=""
+                      />
+                      <a
+                        href=""
+                        class="button-outline button--white button--rounded"
+                      >
+                        <span class="me-2">Visit Website</span>
+                        <i class="fa-solid fa-globe"></i>
+                      </a>
                     </div>
-
-
-
-                </div>
-            </div>
-        </section>
-        <section class="testimonial-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 mx-auto">
-                        <div class="section-heading">
-                            <h3 class="title text--black">
-                                Testimonial
-                            </h3>
-                            <p class="decription text--black">
-                                People i worked with have said some niche things...
-                            </p>
-                        </div>
-
-                        <ul class="testimony-user__image-list">
-                            <li>
-                                <div class="testimony-user__image">
-                                    <img src="https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-male-avatar-simple-cartoon-design-png-image_1934458.jpg"
-                                        alt="">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="testimony-user__image active">
-                                    <img src="https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-male-avatar-simple-cartoon-design-png-image_1934458.jpg"
-                                        alt="">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="testimony-user__image">
-                                    <img src="https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-male-avatar-simple-cartoon-design-png-image_1934458.jpg"
-                                        alt="">
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="testimony-content__list">
-                            <li>
-                                <div class="testimony-content__item">
-                                    <p class="description-lg text--black mb-5">
-                                        " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut minima,
-                                        molestias
-                                        sed, quaerat non exercitationem sequi laborum fuga culpa enim, eos tempore quas
-                                        eius? sed, quaerat non exercitationem sequi laborum fuga culpa enim, eos tempore
-                                        quas
-                                        eius? "
-                                    </p>
-                                    <p class="subtitle text--bold text--black mb-2">
-                                        Ratan Karki
-                                    </p>
-                                    <p class="description text--black">
-                                        CEO, Broadway Infosys
-                                    </p>
-                                </div>
-
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="quote-section">
-            <div class="container">
-                <div class="section-heading">
-                    <h3 class="title text--dark">
-                        Best Quote
-                    </h3>
-                    <p class="description text--dark">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, et? Cum, enim!s
-                    </p>
-                </div>
-                <div class="col-md-8 mx-auto">
-                    <div class="quote__item">
-                        <div class="quote__title">
-                            <p class="subtitle text--bold text--dark">
-                                Success isn't always about greatness. It's about consistency. Consistent hard work leads
-                                to success. Greatness will
-                                come.
-                            </p>
-
-                        </div>
-                        <p class="description text--indigo text--bold mt-3 pb-0 ms-5 ps-3">
-                            - Winnie the Pooh
+                  </div>
+                  <div class="col-5">
+                    <div class="text-end">
+                      <a href="" class="title text--black mb-0">
+                        <h3>Halcyon Theme</h3>
+                      </a>
+                      <div class="project-description">
+                        <p class="decription text--indigo mb-0">
+                          A minimal, dark blue theme for VS Code, Sublime Text,
+                          Atom, iTerm, and more. Available on Visual Studio
+                          Marketplace, Package Control, Atom Package Manager,
+                          and npm.
                         </p>
+                      </div>
+                      <ul class="tools__list">
+                        <li>
+                          <p class="description text--black">VS Code</p>
+                        </li>
+                        <li>
+                          <p class="description text--black">VS Code</p>
+                        </li>
+                        <li>
+                          <p class="description text--black">VS Code</p>
+                        </li>
+                        <li>
+                          <p class="description text--black">VS Code</p>
+                        </li>
+                      </ul>
                     </div>
+                  </div>
                 </div>
+              </div>
+            </li>
+            <li>
+              <div class="recent-work__item">
+                <div class="row align-items-center">
+                  <div class="col-5">
+                    <div class="text-y">
+                      <a href="" class="title text--black mb-0">
+                        <h3>Halcyon Theme</h3>
+                      </a>
+                      <div class="project-description">
+                        <p class="decription text--indigo mb-0">
+                          A minimal, dark blue theme for VS Code, Sublime Text,
+                          Atom, iTerm, and more. Available on Visual Studio
+                          Marketplace, Package Control, Atom Package Manager,
+                          and npm.
+                        </p>
+                      </div>
+                      <ul class="tools__list">
+                        <li>
+                          <p class="description text--black">VS Code</p>
+                        </li>
+                        <li>
+                          <p class="description text--black">VS Code</p>
+                        </li>
+                        <li>
+                          <p class="description text--black">VS Code</p>
+                        </li>
+                        <li>
+                          <p class="description text--black">VS Code</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-7">
+                    <div class="project__thumbnail">
+                      <img
+                        src="https://images.pexels.com/photos/941555/pexels-photo-941555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt=""
+                      />
+                      <a
+                        href=""
+                        class="button-outline button--white button--rounded"
+                      >
+                        <span class="me-2">Visit Website</span>
+                        <i class="fa-solid fa-globe"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-center pt-5">
+            <a href="" class="button-outline button--indigo button--rounded">
+              <span class="me-2">See more on gitlab</span>
+              <i class="fa-brands fa-gitlab"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="client-section">
+        <div class="container">
+          <div class="section-heading">
+            <h3 class="title text--black">
+              Powerful Partnerships: <br />
+              A Look at My Collaborations with Top Companies.
+            </h3>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-4">
+              <div class="client-logo__image">
+                <img
+                  src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                  alt=""
+                />
+              </div>
             </div>
-        </section>
+            <div class="col-md-3 mb-4">
+              <div class="client-logo__image">
+                <img
+                  src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="client-logo__image">
+                <img
+                  src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="client-logo__image">
+                <img
+                  src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-md-3 mb-0">
+              <div class="client-logo__image">
+                <img
+                  src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-md-3 mb-0">
+              <div class="client-logo__image">
+                <img
+                  src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-md-3 mb-0">
+              <div class="client-logo__image">
+                <img
+                  src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-md-3 mb-0">
+              <div class="client-logo__image">
+                <img
+                  src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="overlapping-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+              <div class="text-center">
+                <h2 class="title text--white">
+                  The Journey of My Startup Projects
+                </h2>
+                <p class="description text--white">
+                  As a software developer, I have embarked on a remarkable
+                  journey of designing and building digital products. With
+                  extensive experience in using numerous web and mobile
+                  applications across different industries and verticals, I have
+                  embraced the challenge of creating my own innovative
+                  solutions. My project life has been nothing short of
+                  thrilling, and my passion for developing cutting-edge software
+                  continues to drive my success.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="startup-project-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img
+                    src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                    alt=""
+                  />
+                </div>
+                <p class="description text--black">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+                  quibusdam dicta veniam.
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a
+                    href=""
+                    class="button-outline button--indigo button--rounded"
+                  >
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img
+                    src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                    alt=""
+                  />
+                </div>
+                <p class="description text--black">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+                  quibusdam dicta veniam.
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a
+                    href=""
+                    class="button-outline button--indigo button--rounded"
+                  >
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img
+                    src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                    alt=""
+                  />
+                </div>
+                <p class="description text--black">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+                  quibusdam dicta veniam.
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a
+                    href=""
+                    class="button-outline button--indigo button--rounded"
+                  >
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img
+                    src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                    alt=""
+                  />
+                </div>
+                <p class="description text--black">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+                  quibusdam dicta veniam.
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a
+                    href=""
+                    class="button-outline button--indigo button--rounded"
+                  >
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img
+                    src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                    alt=""
+                  />
+                </div>
+                <p class="description text--black">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+                  quibusdam dicta veniam.
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a
+                    href=""
+                    class="button-outline button--indigo button--rounded"
+                  >
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img
+                    src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
+                    alt=""
+                  />
+                </div>
+                <p class="description text--black">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+                  quibusdam dicta veniam.
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a
+                    href=""
+                    class="button-outline button--indigo button--rounded"
+                  >
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="section-heading">
+                <h3 class="title text--dark">
+                  Let's collaborate and create magic.
+                </h3>
+                <p class="description text--dark mb-5">
+                  Time is of the essence for me. <br />
+                  Let's connect to discuss product design and partnership
+                  opportunities.
+                </p>
+                <div class="clock-container">
+                  <div class="clock">
+                    <div class="clock__big-tick clock__big-tick--1"></div>
+                    <div class="clock__big-tick clock__big-tick--2"></div>
+                    <div class="clock__big-tick clock__big-tick--3"></div>
+                    <div class="clock__big-tick clock__big-tick--4"></div>
+                    <div class="clock__big-tick clock__big-tick--5"></div>
+                    <div class="clock__big-tick clock__big-tick--6"></div>
+                    <div class="clock__big-tick clock__big-tick--7"></div>
+                    <div class="clock__big-tick clock__big-tick--8"></div>
+                    <div class="clock__big-tick clock__big-tick--9"></div>
+                    <div class="clock__big-tick clock__big-tick--10"></div>
+                    <div class="clock__big-tick clock__big-tick--11"></div>
+                    <div class="clock__big-tick clock__big-tick--12"></div>
+
+                    <div class="clock__small-tick clock__small-tick--1"></div>
+                    <div class="clock__small-tick clock__small-tick--2"></div>
+                    <div class="clock__small-tick clock__small-tick--3"></div>
+                    <div class="clock__small-tick clock__small-tick--4"></div>
+                    <div class="clock__small-tick clock__small-tick--5"></div>
+                    <div class="clock__small-tick clock__small-tick--6"></div>
+                    <div class="clock__small-tick clock__small-tick--7"></div>
+                    <div class="clock__small-tick clock__small-tick--8"></div>
+                    <div class="clock__small-tick clock__small-tick--9"></div>
+                    <div class="clock__small-tick clock__small-tick--10"></div>
+                    <div class="clock__small-tick clock__small-tick--11"></div>
+                    <div class="clock__small-tick clock__small-tick--12"></div>
+                    <div class="clock__small-tick clock__small-tick--13"></div>
+                    <div class="clock__small-tick clock__small-tick--14"></div>
+                    <div class="clock__small-tick clock__small-tick--15"></div>
+                    <div class="clock__small-tick clock__small-tick--16"></div>
+                    <div class="clock__small-tick clock__small-tick--17"></div>
+                    <div class="clock__small-tick clock__small-tick--18"></div>
+                    <div class="clock__small-tick clock__small-tick--19"></div>
+                    <div class="clock__small-tick clock__small-tick--20"></div>
+                    <div class="clock__small-tick clock__small-tick--21"></div>
+                    <div class="clock__small-tick clock__small-tick--22"></div>
+                    <div class="clock__small-tick clock__small-tick--23"></div>
+                    <div class="clock__small-tick clock__small-tick--24"></div>
+                    <div class="clock__small-tick clock__small-tick--25"></div>
+                    <div class="clock__small-tick clock__small-tick--26"></div>
+                    <div class="clock__small-tick clock__small-tick--27"></div>
+                    <div class="clock__small-tick clock__small-tick--28"></div>
+                    <div class="clock__small-tick clock__small-tick--29"></div>
+                    <div class="clock__small-tick clock__small-tick--30"></div>
+                    <div class="clock__small-tick clock__small-tick--31"></div>
+                    <div class="clock__small-tick clock__small-tick--32"></div>
+                    <div class="clock__small-tick clock__small-tick--33"></div>
+                    <div class="clock__small-tick clock__small-tick--34"></div>
+                    <div class="clock__small-tick clock__small-tick--35"></div>
+                    <div class="clock__small-tick clock__small-tick--36"></div>
+                    <div class="clock__small-tick clock__small-tick--37"></div>
+                    <div class="clock__small-tick clock__small-tick--38"></div>
+                    <div class="clock__small-tick clock__small-tick--39"></div>
+                    <div class="clock__small-tick clock__small-tick--40"></div>
+                    <div class="clock__small-tick clock__small-tick--41"></div>
+                    <div class="clock__small-tick clock__small-tick--42"></div>
+                    <div class="clock__small-tick clock__small-tick--43"></div>
+                    <div class="clock__small-tick clock__small-tick--44"></div>
+                    <div class="clock__small-tick clock__small-tick--45"></div>
+                    <div class="clock__small-tick clock__small-tick--46"></div>
+                    <div class="clock__small-tick clock__small-tick--47"></div>
+                    <div class="clock__small-tick clock__small-tick--48"></div>
+                  </div>
+                  <div class="center-bottom"></div>
+                  <div class="sec-hand"></div>
+                  <div class="small-hand"></div>
+                  <div class="big-hand"></div>
+                  <div class="center-up"></div>
+                </div>
+              </div>
+              <div class="text-center">
+                <img
+                  class="coversation-icon animate__animated animate__swing animate__infinite"
+                  src="./image/contact/or-conversation.png"
+                  alt=""
+                />
+              </div>
+              <div class="d-flex justify-content-center">
+                <button
+                  class="button-outline button--indigo button--rounded"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#contact__popup"
+                >
+                  <span class="ms-2">Start a Conversation</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial-section">
+        <div class="container box-shadow padding-lg">
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+              <div class="section-heading">
+                <h3 class="title text--black">
+                  Raving Reviews: What People are Saying About 😎
+                </h3>
+                <p class="decription text--black">
+                  The people I've worked with <br />
+                  have said some great things about me and my work.
+                </p>
+              </div>
+
+              <ul class="testimony-user__image-list">
+                <li>
+                  <div
+                    class="testimony-user__image"
+                    data-target="first__person"
+                  >
+                    <img
+                      src="https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-male-avatar-simple-cartoon-design-png-image_1934458.jpg"
+                      alt=""
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="testimony-user__image active"
+                    data-target="second__person"
+                  >
+                    <img
+                      src="https://i.pinimg.com/236x/71/64/48/716448ee4cc925756e4a349588f91dcb.jpg"
+                      alt=""
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div
+                    class="testimony-user__image"
+                    data-target="third__person"
+                  >
+                    <img
+                      src="https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-male-avatar-simple-cartoon-design-png-image_1934458.jpg"
+                      alt=""
+                    />
+                  </div>
+                </li>
+              </ul>
+              <ul class="testimony-content__list">
+                <li class="testimony-content__item" id="first__person">
+                  <div>
+                    <p class="description-lg text--black mb-5">
+                      "1. Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit. Aut minima, molestias sed, quaerat non
+                      exercitationem sequi laborum fuga culpa enim, eos tempore
+                      quas eius? sed, quaerat non exercitationem sequi laborum
+                      fuga culpa enim, eos tempore quas eius? "
+                    </p>
+                    <p class="subtitle text--bold text--black mb-2">User 1</p>
+                    <p class="description text--black">CEO, Broadway Infosys</p>
+                  </div>
+                </li>
+                <li class="testimony-content__item show" id="second__person">
+                  <div>
+                    <p class="description-lg text--black mb-5">
+                      "<strong>Lal Bahadur</strong> is a skilled and dedicated
+                      software developer who consistently went above and beyond
+                      to ensure project success. Their technical skills and
+                      commitment to the team were impressive. Highly
+                      recommended!"
+                    </p>
+                    <p class="subtitle text--bold text--black mb-2">
+                      jiwan Gautam
+                    </p>
+                    <p class="description text--black">
+                      Software Developer, Broadway Infosys
+                    </p>
+                  </div>
+                </li>
+                <li class="testimony-content__item" id="third__person">
+                  <div>
+                    <p class="description-lg text--black mb-5">
+                      "3. Lorem ipsum, dolor sit amet consectetur adipisicing
+                      elit. Aut minima, molestias sed, quaerat non
+                      exercitationem sequi laborum fuga culpa enim, eos tempore
+                      quas eius? sed, quaerat non exercitationem sequi laborum
+                      fuga culpa enim, eos tempore quas eius? "
+                    </p>
+                    <p class="subtitle text--bold text--black mb-2">User 3</p>
+                    <p class="description text--black">CEO, Broadway Infosys</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quote-section">
+        <div class="container">
+          <div class="section-heading">
+            <h3 class="title text--dark">
+              Inspiring Words for Your Journey to Greatness
+            </h3>
+            <p class="description text--dark">
+              Good design is obvious. Great design is transparent.
+            </p>
+          </div>
+          <div class="col-md-8 mx-auto">
+            <div class="quote__item">
+              <div class="quote__title">
+                <p class="subtitle text--bold text--dark mb-0">
+                  Debugging is like being a detective in a crime movie where you
+                  are also the murderer.
+                </p>
+              </div>
+              <p
+                class="description text--indigo text--bold mt-3 pb-0 ms-5 ps-3"
+              >
+                - Filipe Fortes
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <svg class="wave-top" width="100" viewBox="0 0 1200 250">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V-8.5451e-06H1150C1100 -8.5451e-06 1000 -8.5451e-06 900 -8.5451e-06C800 -8.5451e-06 700 -8.5451e-06 600 -8.5451e-06C500 -8.5451e-06 400 -8.5451e-06 300 -8.5451e-06C200 -8.5451e-06 100 -8.5451e-06 50 -8.5451e-06H0V108.306Z"
-                fill="#fff" />
-        </svg>
-        <div class="container h-100 d-flex flex-column justify-content-end">
-            <div class="position-relative mt-auto">
-                <div class="brand-logo brand--white">
-                    <img class="brand-logo__image"
-                        src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1s"
-                        alt="brand-logo" />
-                </div>
-                <p class="subtitle text-uppercase text--white">
-                    Living, Learning, & Leveling up
-                    <br>
-                    one day at a time.
-                </p>
-                <ul class="social-media__list">
-                    <li>
-                        <a href="" class="social-media__item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="social-media__item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="social-media__item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="social-media__item">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-facebook" viewBox="0 0 16 16">
-                                <path
-                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                            </svg>
-                        </a>
-                    </li>
-
-                </ul>
-                <p class="copyright-text">
-                    © All copyright reserve to me
-                </p>
-                <!-- <div class="footer-back">
-                    <div class="brand-logo brand--white">
-                        <img class="brand-logo__image"
-                            src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1s"
-                            alt="brand-logo" />
-                    </div>
-                    <p class="subtitle text-uppercase text--dark">
-                        Living, Learning, & Leveling up
-                        <br>
-                        one day at a time.
-                    </p>
-                    <ul class="social-media__list">
-                        <li>
-                            <a href="" class="social-media__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-facebook" viewBox="0 0 16 16">
-                                    <path
-                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-media__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-facebook" viewBox="0 0 16 16">
-                                    <path
-                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-media__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-facebook" viewBox="0 0 16 16">
-                                    <path
-                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="social-media__item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-facebook" viewBox="0 0 16 16">
-                                    <path
-                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                </svg>
-                            </a>
-                        </li>
-
-                    </ul>
-                    <p class="copyright-text">
-                        © All copyright reserve to me
-                    </p>
-                </div> -->
-            </div>
-
-
+      <svg class="wave-top" width="100" viewBox="0 0 1200 250">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V-8.5451e-06H1150C1100 -8.5451e-06 1000 -8.5451e-06 900 -8.5451e-06C800 -8.5451e-06 700 -8.5451e-06 600 -8.5451e-06C500 -8.5451e-06 400 -8.5451e-06 300 -8.5451e-06C200 -8.5451e-06 100 -8.5451e-06 50 -8.5451e-06H0V108.306Z"
+          fill="#fff"
+        />
+      </svg>
+      <div class="container h-100 d-flex flex-column justify-content-end">
+        <div class="position-relative mt-auto">
+          <div class="brand-logo brand--white">
+            <img
+              class="brand-logo__image"
+              src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1s"
+              alt="brand-logo"
+            />
+          </div>
+          <p class="subtitle text-uppercase text--white">
+            Code, Learn, and Rise Daily.
+          </p>
+          <ul class="social-media__list">
+            <li>
+              <a href="" class="social-media__item">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social-media__item">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="" class="social-media__item">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright-text">© All copyright reserve to me</p>
         </div>
-
+      </div>
     </footer>
 
-
-
     <!-- bootstrap cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- anime cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
-        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- gasp cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
-        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-        //mojs
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mo-js/1.5.1/mo.umd.js"
-        integrity="sha512-xnckEH6BsYzW8fGrwjUqa4IO22FKLXzj/Eet4q24REX1MN14wdqVpiwABQ94hXT/CzZEXKZl4hT8/zHnt6LjNQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- mojs -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mo-js/1.5.1/mo.umd.js"
+      integrity="sha512-xnckEH6BsYzW8fGrwjUqa4IO22FKLXzj/Eet4q24REX1MN14wdqVpiwABQ94hXT/CzZEXKZl4hT8/zHnt6LjNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- custom js file -->
     <script src="./script/script.js"></script>
 
     <script>
-        // animated clock
-
+      // animated clock
     </script>
-</body>
-
+  </body>
 </html>
