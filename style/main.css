@@ -594,6 +594,11 @@ header .nav-link__item {
   padding: 64px;
 }
 
+.quote-section .best__journey {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
 .quote-section .quote__item {
   position: relative;
   z-index: 1;

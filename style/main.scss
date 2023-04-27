@@ -512,6 +512,7 @@ header {
 }
 .testimonial-section {
   padding: 64px 0;
+
   .padding-lg {
     padding: 64px;
     border-radius: 40px;
@@ -577,6 +578,10 @@ header {
 
 .quote-section {
   padding: 64px;
+  .best__journey {
+    height: 100px;
+    margin-bottom: 20px;
+  }
   .quote__item {
     position: relative;
     z-index: 1;
