@@ -249,16 +249,20 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 const faqsQuestion = $(".faqs__list .faq__item .faq__question");
 const faqsAnswers = $(".faqs__list .faq__item  .faq__content");
 faqsQuestion.each(function () {
+  let upArrow = false;
   $(this).click(function (e) {
     e.preventDefault();
     const targetId = $(this).data("target");
-    $(`#${targetId}`).slideToggle();
-    if ($(`#${targetId}`).css("display") === "block") {
+    if (!upArrow) {
+      upArrow = true;
+      $(`#${targetId}`).slideToggle();
       $(`#${targetId}`)
         .closest(".faq__item")
         .find(".icon-wrapper")
         .html('<i class="bi bi-chevron-up"></i>');
     } else {
+      upArrow = false;
+      $(`#${targetId}`).slideToggle();
       $(`#${targetId}`)
         .closest(".faq__item")
         .find(".icon-wrapper")

@@ -64,34 +64,54 @@
                   <div class="row">
                     <div class="col-6">
                       <div class="mb-4">
-                        <label for="first__name">First Name</label>
+                        <label for="first__name"
+                          >First Name <span class="required">*</span></label
+                        >
                         <input
                           id="first__name"
                           type="text"
                           class="form-control"
+                          disabled
                         />
                       </div>
                     </div>
                     <div class="col-6">
                       <div class="mb-4">
-                        <label for="first__name">Last Name</label>
+                        <label for="first__name"
+                          >Last Name <span class="required">*</span></label
+                        >
                         <input
                           id="last__name"
                           type="text"
                           class="form-control"
+                          disabled
                         />
                       </div>
                     </div>
                     <div class="col-12">
                       <div class="mb-4">
-                        <label for="email">Email Address</label>
-                        <input id="email" type="email" class="form-control" />
+                        <label for="email"
+                          >Email Address <span class="required">*</span></label
+                        >
+                        <input
+                          id="email"
+                          type="email"
+                          class="form-control"
+                          disabled
+                        />
                       </div>
                     </div>
                     <div class="col-12">
                       <div class="mb-4">
-                        <label for="subject">Subject</label>
-                        <input id="subject" type="text" class="form-control" />
+                        <label for="subject"
+                          >Subject <span class="required">*</span></label
+                        >
+                        <input
+                          id="subject"
+                          type="text"
+                          class="form-control"
+                          disabled
+                        />
                       </div>
                     </div>
                     <div class="col-12">
@@ -104,12 +124,14 @@
                           name=""
                           id="additional__info"
                           rows="3"
+                          disabled
                         ></textarea>
                       </div>
                     </div>
                     <div class="col-12">
-                      <button class="submit__button">
-                        <span class="me-2">Send Message</span> 🚀
+                      <button class="submit__button" disabled>
+                        <span class="me-3">Send Message</span>
+                        <i class="fa-solid fa-paper-plane"></i>
                       </button>
                     </div>
                   </div>
@@ -136,7 +158,9 @@
                       </div>
                     </div>
                     <div class="faq__content" id="my_mobile_number">
-                      <p class="description text--black">9800123456</p>
+                      <p class="description text--black text--bold">
+                        9800123456
+                      </p>
                     </div>
                   </div>
                 </li>
@@ -151,7 +175,7 @@
                       </div>
                     </div>
                     <div class="faq__content" id="my_mobile_email">
-                      <p class="description text--black">
+                      <p class="description text--black text--bold">
                         lalbahadurbc2054@gmail.com
                       </p>
                     </div>
@@ -166,7 +190,7 @@
                       </div>
                     </div>
                     <div class="faq__content" id="my_mobile_address">
-                      <p class="description text--black">
+                      <p class="description text--black text--bold">
                         Kathmandu, Nepal (originally form Dhangadhi)
                       </p>
                     </div>
@@ -253,7 +277,7 @@
     </div>
 
     <!-- fixed navlinks -->
-    <ul class="success-step__list fixed-left-bottom">
+    <!-- <ul class="success-step__list fixed-left-bottom">
       <li>
         <img
           class="animate__animated animate__bounce animate__infinite animate__slower-6s animate__delay-1s"
@@ -318,14 +342,14 @@
       </li>
 
       <li class="vertical__line"></li>
-    </ul>
+    </ul> -->
     <header>
       <div class="container">
         <nav class="d-flex align-items-center justify-content-between">
           <a href="" class="brand-logo">
             <img
               class="brand-logo__image"
-              src="./image/logo.svg"
+              src="./image/or-horizontal-logo.svg"
               alt="brand-logo"
             />
           </a>
@@ -366,7 +390,69 @@
             Creating beautiful and simple designs through coding is my passion.
           </p>
 
-          <div class="banner__animation"></div>
+          <ul class="banner__animation">
+            <li>
+              <img
+                class="animate__slower-6s animate__delay-1s"
+                src="./image/success-life/or-plan.png"
+                title="Planning"
+                alt="plan"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+              />
+            </li>
+            <li>
+              <img
+                class="animate__slower animate__delay-2s"
+                src="./image/success-life/or-goal.png"
+                title="Set Goal"
+                alt="plan"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+              />
+            </li>
+            <li>
+              <img
+                class="animate__slower animate__delay-3s"
+                src="./image/success-life/or-action.png"
+                title="Do Action"
+                alt="Plan"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+              />
+            </li>
+            <li>
+              <img
+                class="animate__slower animate__delay-5s"
+                src="./image/success-life/or-scale-1.png"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Scaling"
+                alt="plan"
+              />
+            </li>
+            <li>
+              <img
+                class="animate__slower animate__delay-4s"
+                src="./image/success-life/or-scale-2.png"
+                alt="plan"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                title="Step Complete"
+              />
+            </li>
+
+            <li>
+              <img
+                class="animate__slower animate__delay-6s"
+                src="./image/success-life/or-success-2.png"
+                title="Get Success"
+                alt="plan"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+              />
+            </li>
+          </ul>
         </div>
       </section>
       <section class="overlapping-section">
@@ -553,12 +639,9 @@
                 <div class="row align-items-center">
                   <div class="col-7">
                     <div class="project__thumbnail">
-                      <img
-                        src="https://images.pexels.com/photos/941555/pexels-photo-941555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt=""
-                      />
+                      <img src="./image/projects/recent-1.png" alt="" />
                       <a
-                        href=""
+                        type="button"
                         class="button-outline button--white button--rounded"
                       >
                         <span class="me-2">Visit Website</span>
@@ -568,15 +651,14 @@
                   </div>
                   <div class="col-5">
                     <div class="text-end">
-                      <a href="" class="title text--black mb-0">
-                        <h3>Halcyon Theme</h3>
+                      <a type="button" class="title text--black mb-0">
+                        <h3>Sociospotech Mobile Theme</h3>
                       </a>
                       <div class="project-description">
                         <p class="decription text--indigo mb-0">
-                          A minimal, dark blue theme for VS Code, Sublime Text,
-                          Atom, iTerm, and more. Available on Visual Studio
-                          Marketplace, Package Control, Atom Package Manager,
-                          and npm.
+                          Sociospotech offers digital marketing content,
+                          resources, and tools for individuals and businesses to
+                          improve their online presence.
                         </p>
                       </div>
                       <ul class="tools__list">
@@ -584,13 +666,19 @@
                           <p class="description text--black">VS Code</p>
                         </li>
                         <li>
-                          <p class="description text--black">VS Code</p>
+                          <p class="description text--black">Figma</p>
                         </li>
                         <li>
-                          <p class="description text--black">VS Code</p>
+                          <p class="description text--black">HTML</p>
                         </li>
                         <li>
-                          <p class="description text--black">VS Code</p>
+                          <p class="description text--black">CSS</p>
+                        </li>
+                        <li>
+                          <p class="description text--black">JQuery</p>
+                        </li>
+                        <li>
+                          <p class="description text--black">Slick</p>
                         </li>
                       </ul>
                     </div>
@@ -598,20 +686,19 @@
                 </div>
               </div>
             </li>
-            <li>
+            <li class="mb-5">
               <div class="recent-work__item">
                 <div class="row align-items-center">
                   <div class="col-5">
                     <div class="text-y">
-                      <a href="" class="title text--black mb-0">
-                        <h3>Halcyon Theme</h3>
+                      <a type="button" class="title text--black mb-0">
+                        <h3>Bedding Theme</h3>
                       </a>
                       <div class="project-description">
                         <p class="decription text--indigo mb-0">
-                          A minimal, dark blue theme for VS Code, Sublime Text,
-                          Atom, iTerm, and more. Available on Visual Studio
-                          Marketplace, Package Control, Atom Package Manager,
-                          and npm.
+                          This theme about Bedding sells high-quality bedding
+                          products, including duvet covers, pillowcases, fitted
+                          sheets, and flat sheets.
                         </p>
                       </div>
                       <ul class="tools__list">
@@ -619,26 +706,30 @@
                           <p class="description text--black">VS Code</p>
                         </li>
                         <li>
-                          <p class="description text--black">VS Code</p>
+                          <p class="description text--black">Figma</p>
                         </li>
                         <li>
-                          <p class="description text--black">VS Code</p>
+                          <p class="description text--black">HTML</p>
                         </li>
                         <li>
-                          <p class="description text--black">VS Code</p>
+                          <p class="description text--black">CSS</p>
+                        </li>
+                        <li>
+                          <p class="description text--black">JQuery</p>
+                        </li>
+                        <li>
+                          <p class="description text--black">Slick</p>
                         </li>
                       </ul>
                     </div>
                   </div>
                   <div class="col-7">
                     <div class="project__thumbnail">
-                      <img
-                        src="https://images.pexels.com/photos/941555/pexels-photo-941555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt=""
-                      />
+                      <img src="./image/projects/recent-2.png" alt="" />
                       <a
-                        href=""
+                        type="button"
                         class="button-outline button--white button--rounded"
+                        target="_blank"
                       >
                         <span class="me-2">Visit Website</span>
                         <i class="fa-solid fa-globe"></i>
@@ -650,89 +741,52 @@
             </li>
           </ul>
           <div class="d-flex justify-content-center pt-5">
-            <a href="" class="button-outline button--indigo button--rounded">
+            <a
+              href="https://github.com/stu9437l"
+              class="button-outline button--indigo button--rounded"
+              target="_blank"
+            >
               <span class="me-2">See more on gitlab</span>
               <i class="fa-brands fa-gitlab"></i>
             </a>
           </div>
         </div>
       </section>
-      <section class="client-section">
+      <!-- <section class="company-section">
         <div class="container">
           <div class="section-heading">
             <h3 class="title text--black">
-              Powerful Partnerships: <br />
-              A Look at My Collaborations with Top Companies.
+              Planting the Seeds: <br />
+              The Beginning of My Software Development Career
             </h3>
           </div>
-          <div class="row">
-            <div class="col-md-3 mb-4">
-              <div class="client-logo__image">
-                <img
-                  src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                  alt=""
-                />
-              </div>
+          <div class="col-md-8 mx-auto">
+            <div class="company-logo__image">
+              <img
+                src="https://neputer.com/image/site_configuration/16463084766763_neputer-logo_trans.png"
+                alt=""
+              />
             </div>
-            <div class="col-md-3 mb-4">
-              <div class="client-logo__image">
-                <img
-                  src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="col-md-3 mb-4">
-              <div class="client-logo__image">
-                <img
-                  src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="col-md-3 mb-4">
-              <div class="client-logo__image">
-                <img
-                  src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="col-md-3 mb-0">
-              <div class="client-logo__image">
-                <img
-                  src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="col-md-3 mb-0">
-              <div class="client-logo__image">
-                <img
-                  src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="col-md-3 mb-0">
-              <div class="client-logo__image">
-                <img
-                  src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="col-md-3 mb-0">
-              <div class="client-logo__image">
-                <img
-                  src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                  alt=""
-                />
-              </div>
+            <p class="description text--black text-center">
+              Neputer Tech Pvt Ltd is a Nepal-based full-service IT company,
+              offers comprehensive solutions to small, medium, and large
+              businesses as well as government agencies. With a wealth of
+              experience, It committed to delivering unparalleled quality and
+              value to our clients.
+            </p>
+            <div class="d-flex justify-content-center pt-5">
+              <a
+                href="https://sociospotech.com/"
+                class="button-outline button--indigo button--rounded"
+                target="_blank"
+              >
+                <span class="me-2">Visit Website</span>
+                <i class="fa-solid fa-globe"></i>
+              </a>
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="overlapping-section">
         <div class="container">
           <div class="row">
@@ -762,19 +816,17 @@
             <div class="col-md-4 mb-5">
               <div class="startup-project__card">
                 <div class="project__logo">
-                  <img
-                    src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                    alt=""
-                  />
+                  <img src="./image/projects/failure.png" alt="Failure.gg" />
                 </div>
                 <p class="description text--black">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-                  quibusdam dicta veniam.
+                  Failure.gg accepts multiple payment methods, delivers in-game
+                  currency to user's account shortly after payment.
                 </p>
                 <div class="d-flex justify-content-center pb-4">
                   <a
-                    href=""
+                    href="https://failure.gg/"
                     class="button-outline button--indigo button--rounded"
+                    target="_blank"
                   >
                     <span class="me-2">Visit Website</span>
                     <i class="fa-solid fa-globe"></i>
@@ -786,18 +838,41 @@
               <div class="startup-project__card">
                 <div class="project__logo">
                   <img
-                    src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                    alt=""
+                    src="./image/projects/sociospotech.png"
+                    alt="Sociospotech"
                   />
                 </div>
                 <p class="description text--black">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-                  quibusdam dicta veniam.
+                  Sociospotech offers digital marketing content, resources, and
+                  tools for individuals and businesses to improve their online
+                  presence.
                 </p>
                 <div class="d-flex justify-content-center pb-4">
                   <a
-                    href=""
+                    href="https://sociospotech.com/"
                     class="button-outline button--indigo button--rounded"
+                    target="_blank"
+                  >
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img src="./image/projects/Ayeshalogo.png" alt="Yew" />
+                </div>
+                <p class="description text--black">
+                  Bewithyew offers medical products and services online via
+                  website and mobile app.
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a
+                    href="https://bewithyew.com/"
+                    class="button-outline button--indigo button--rounded"
+                    target="_blank"
                   >
                     <span class="me-2">Visit Website</span>
                     <i class="fa-solid fa-globe"></i>
@@ -809,18 +884,19 @@
               <div class="startup-project__card">
                 <div class="project__logo">
                   <img
-                    src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                    alt=""
+                    src="./image/projects/broadway.svg"
+                    alt="Broadway Infosys"
                   />
                 </div>
                 <p class="description text--black">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-                  quibusdam dicta veniam.
+                  Broadway Infosys provides professional IT training in
+                  Kathmandu, Nepal since 2008 with expert instructors.
                 </p>
                 <div class="d-flex justify-content-center pb-4">
                   <a
-                    href=""
+                    href="https://broadwayinfosys.com/"
                     class="button-outline button--indigo button--rounded"
+                    target="_blank"
                   >
                     <span class="me-2">Visit Website</span>
                     <i class="fa-solid fa-globe"></i>
@@ -832,18 +908,20 @@
               <div class="startup-project__card">
                 <div class="project__logo">
                   <img
-                    src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                    alt=""
+                    src="./image/projects/creahome.png"
+                    alt="CreaHome Bedding"
                   />
                 </div>
                 <p class="description text--black">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-                  quibusdam dicta veniam.
+                  Creamhome Bedding sells high-quality bedding products,
+                  including duvet covers, pillowcases, fitted sheets, and flat
+                  sheets for 25+ years.
                 </p>
                 <div class="d-flex justify-content-center pb-4">
                   <a
-                    href=""
+                    href="https://creahomebedding.myshopify.com/"
                     class="button-outline button--indigo button--rounded"
+                    target="_blank"
                   >
                     <span class="me-2">Visit Website</span>
                     <i class="fa-solid fa-globe"></i>
@@ -855,18 +933,41 @@
               <div class="startup-project__card">
                 <div class="project__logo">
                   <img
-                    src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                    alt=""
+                    src="./image/projects/dharmastore.png"
+                    alt="DharmaStore"
                   />
                 </div>
                 <p class="description text--black">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-                  quibusdam dicta veniam.
+                  dharmastore sells Hindu and Buddhist religious products like
+                  books, statues, prayer beads, incense, and meditation
+                  cushions.
                 </p>
                 <div class="d-flex justify-content-center pb-4">
                   <a
-                    href=""
+                    href="https://dharmaastore.com/"
                     class="button-outline button--indigo button--rounded"
+                    target="_blank"
+                  >
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img src="./image/projects/good.avif" alt="In Good Company" />
+                </div>
+                <p class="description text--black">
+                  Ingoodcompanynails sells nail polish, nail art tools, and
+                  other nail care products for home manicures.
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a
+                    href="https://ingoodcompanynails.myshopify.com/"
+                    class="button-outline button--indigo button--rounded"
+                    target="_blank"
                   >
                     <span class="me-2">Visit Website</span>
                     <i class="fa-solid fa-globe"></i>
@@ -878,18 +979,43 @@
               <div class="startup-project__card">
                 <div class="project__logo">
                   <img
-                    src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1"
-                    alt=""
+                    src="./image/projects/sleep and me.svg"
+                    alt="Sleep & Me"
                   />
                 </div>
                 <p class="description text--black">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-                  quibusdam dicta veniam.
+                  Sleep&Me offers a variety of products for your bedroom - find
+                  your perfect fit today!
                 </p>
                 <div class="d-flex justify-content-center pb-4">
                   <a
-                    href=""
+                    href="https://sleepandme.co.uk/"
                     class="button-outline button--indigo button--rounded"
+                    target="_blank"
+                  >
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img
+                    src="./image/projects/frankynelly.png"
+                    alt="frankynelly"
+                  />
+                </div>
+                <p class="description text--black">
+                  frankynelly is a music production website that offers free
+                  sound packs, courses, and plugins.
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a
+                    href="https://frankynelly.com"
+                    class="button-outline button--indigo button--rounded"
+                    target="_blank"
                   >
                     <span class="me-2">Visit Website</span>
                     <i class="fa-solid fa-globe"></i>
@@ -997,7 +1123,7 @@
                   data-bs-toggle="offcanvas"
                   data-bs-target="#contact__popup"
                 >
-                  <span class="ms-2">Start a Conversation</span>
+                  <span class="ms-2">Let's talk</span>
                 </button>
               </div>
             </div>
@@ -1102,7 +1228,7 @@
           </div>
         </div>
       </section>
-      <section class="quote-section">
+      <section class="quote-section pb-0">
         <div class="container">
           <div class="text-center">
             <img class="best__journey" src="./image/testimonial.png" alt="" />
@@ -1147,7 +1273,7 @@
           <div class="brand-logo brand--white">
             <img
               class="brand-logo__image"
-              src="https://www.designmantic.com/logo-images/10517.png?company=Company+Name&slogan=&verify=1s"
+              src="./image/or-transparent-horizontal.svg"
               alt="brand-logo"
             />
           </div>
