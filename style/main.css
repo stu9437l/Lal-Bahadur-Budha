@@ -1249,7 +1249,7 @@ footer .footer-back {
     display: flex;
     align-items: center;
   }
-  .mobile-visible header nav .top-action-buttons button {
+  .mobile-visible header nav .top-action-buttons .button {
     width: 50px;
     padding: 0;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
@@ -1257,13 +1257,13 @@ footer .footer-back {
     margin-left: 10px;
     border: none !important;
   }
-  .mobile-visible header nav .top-action-buttons button i {
+  .mobile-visible header nav .top-action-buttons .button i {
     font-size: 18px;
   }
-  .mobile-visible header nav .top-action-buttons button.button-outline {
+  .mobile-visible header nav .top-action-buttons .button.button-outline {
     position: relative;
   }
-  .mobile-visible header nav .top-action-buttons button.button-outline::after {
+  .mobile-visible header nav .top-action-buttons .button.button-outline::after {
     content: "";
     position: absolute;
     height: 50%;
