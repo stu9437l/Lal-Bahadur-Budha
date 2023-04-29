@@ -444,6 +444,33 @@ label {
   }
 }
 
+// custom slick slider dots
+
+.cus-slider-dots {
+  .slick-dots {
+    li {
+      height: auto;
+      width: auto;
+      margin: 0 5px;
+      button {
+        height: 10px;
+        width: 10px;
+        background-color: #ddd;
+        border-radius: 10px;
+        &::before {
+          display: none;
+        }
+      }
+      &.slick-active {
+        button {
+          background-color: $indigo-color;
+          width: 26px;
+        }
+      }
+    }
+  }
+}
+
 // header css
 @keyframes rotating-360 {
   0% {

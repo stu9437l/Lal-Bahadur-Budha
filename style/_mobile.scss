@@ -17,7 +17,10 @@
   .web-visible {
     display: none;
   }
-
+  .section-heading {
+    margin-bottom: 50px;
+    text-align: center;
+  }
   .mobile-visible {
     display: block;
     .cursor,
@@ -64,7 +67,7 @@
                 position: absolute;
                 height: 50%;
                 width: 1px;
-                background-color: rgba($color: #000000, $alpha: 0.1);
+                background-color: rgba($color: $indigo-color, $alpha: 0.6);
                 right: -7px;
                 top: 50%;
                 transform: translateY(-50%);
@@ -136,7 +139,6 @@
     .mob-skill {
       padding: 40px 0;
       .tab__list {
-        margin-top: 20px;
         margin-bottom: 30px;
         display: flex;
         align-items: center;
@@ -333,6 +335,119 @@
       padding: 40px 0;
       .clock-container {
         height: 200px;
+      }
+      .coversation-icon {
+        margin-top: 30px;
+        height: 80px;
+      }
+    }
+    .mob-testimonial {
+      .box-shadow {
+        border-radius: 20px;
+      }
+      .testimonial__card {
+        .testimony-content {
+          .testimony-text {
+            font-size: 20px;
+            color: $black-color;
+            font-weight: 500;
+            font-style: italic;
+            line-height: 1.9;
+          }
+          img {
+            height: 36px;
+          }
+        }
+        .testimony-profile {
+          margin-top: 30px;
+          text-align: right;
+          .profile__image {
+            height: 60px;
+            margin-left: auto;
+            width: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 5px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+    .favorite-quotes {
+      padding: 40px 0;
+      .best__journey {
+        height: 100px;
+        margin-bottom: 20px;
+      }
+      .qoute__text {
+        background-image: url();
+        background-position: center;
+        background-size: cover;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 1.6;
+      }
+      .quote__owner {
+        text-align: right;
+        margin-top: 30px;
+        font-size: 16px;
+        color: $indigo-color;
+      }
+    }
+    footer {
+      text-align: center;
+      padding: 40px;
+      background-color: $indigo-color;
+      position: relative;
+      height: 370px;
+      .wave-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      .brand-logo {
+        margin-bottom: 20px;
+        img {
+          height: 120px;
+        }
+      }
+      .subtitle {
+        color: white;
+        margin-bottom: 20px;
+      }
+      .social-media__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .social-media__item {
+          height: 48px;
+          width: 48px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid #eaeaea;
+          margin: 0 10px;
+          opacity: 0.8;
+          margin-bottom: 20px;
+          &:hover {
+            opacity: 1;
+            background-color: $white-color;
+            i {
+              color: $indigo-color;
+            }
+          }
+          i {
+            font-size: 24px;
+            color: #eaeaea;
+          }
+        }
       }
     }
   }
