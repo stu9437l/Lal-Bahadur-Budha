@@ -1205,12 +1205,13 @@ footer .footer-back {
     margin: 0 3px;
     font-size: 16px;
     font-weight: 500;
-    color: #2f4fff;
-    border: 2px solid transparent;
+    color: #141c3a;
+    background-color: #f1f1f1;
+    border-radius: 40px;
   }
   .mobile-visible .mob-skill .tab__list .tab__item.active {
-    border: 2px solid #2f4fff;
-    border-radius: 40px;
+    background-color: #2f4fff;
+    color: white;
   }
   .mobile-visible .mob-skill .skill__content {
     display: flex;
