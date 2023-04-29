@@ -575,6 +575,30 @@ label .required {
   width: 26px;
 }
 
+.cus-slider-arrows .slick-arrow {
+  height: 45px;
+  width: 45px;
+  border: 2px solid rgba(47, 79, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 100%;
+  background-color: white;
+}
+.cus-slider-arrows .slick-arrow.slick-next {
+  right: calc(100% - 115px);
+}
+.cus-slider-arrows .slick-arrow.slick-next::before {
+  content: "👉";
+}
+.cus-slider-arrows .slick-arrow.slick-prev {
+  left: calc(0% + 15px);
+}
+.cus-slider-arrows .slick-arrow.slick-prev::before {
+  content: "👈";
+}
+
 @keyframes rotating-360 {
   0% {
     transform: translateY(-50%) rotate(0deg);
@@ -760,10 +784,8 @@ header .nav-link__item {
 .recent-work-section .recent-work__list > li .recent-work__item .project__thumbnail img {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 .recent-work-section .recent-work__list > li .recent-work__item .tools__list {
   display: flex;
@@ -893,10 +915,8 @@ header .nav-link__item {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 .testimonial-section .testimony-content__list .testimony-content__item {
   text-align: center;
@@ -1112,6 +1132,7 @@ footer .footer-back {
   .mob-contact__popup .mob-contact-body .form-control {
     border-radius: 25px;
     padding: 0 25px;
+    font-size: 16px;
   }
   .mob-contact__popup .mob-contact-body .social-media__list {
     display: flex;
@@ -1155,8 +1176,7 @@ footer .footer-back {
   .mob-profile__popup .profile__image img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .mob-profile__popup .mob-contact-body {
     padding: 40px 20px;
@@ -1218,7 +1238,7 @@ footer .footer-back {
     justify-content: space-between;
   }
   .mobile-visible header nav .mob-brand-logo img {
-    width: 120px;
+    width: 170px;
   }
   .mobile-visible header nav .top-action-buttons {
     display: flex;
@@ -1231,6 +1251,9 @@ footer .footer-back {
     border-radius: 50%;
     margin-left: 10px;
     border: none !important;
+  }
+  .mobile-visible header nav .top-action-buttons button i {
+    font-size: 18px;
   }
   .mobile-visible header nav .top-action-buttons button.button-outline {
     position: relative;
@@ -1259,8 +1282,7 @@ footer .footer-back {
     border-radius: 20px;
     height: 90px;
     width: 90px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .mobile-visible .mob-profile-banner .profile-box .profile__image .profile__view {
     position: absolute;
@@ -1285,12 +1307,12 @@ footer .footer-back {
   .mobile-visible .mob-profile-banner .profile-box .profile-detail .profile__name {
     font-size: 24px;
     color: #141c3a;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
   .mobile-visible .mob-profile-banner .profile-box .profile-detail .profile__profession {
     font-size: 18px;
     font-weight: 300;
-    margin-bottom: 0;
+    margin-bottom: 2px;
     color: #141c3a;
   }
   .mobile-visible .mob-profile-banner .profile-box .profile-detail .profile__date {
@@ -1434,7 +1456,6 @@ footer .footer-back {
     padding: 40px 0;
   }
   .mobile-visible .mob-startup-projects .startup-project__list .startup-project {
-    width: 220px;
     display: block;
   }
   .mobile-visible .mob-startup-projects .startup-project__list .startup-project .project__image {
@@ -1445,8 +1466,10 @@ footer .footer-back {
     height: 220px;
     width: 220px;
     border-radius: 30px 20px 20px 0;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
+  }
+  .mobile-visible .mob-startup-projects .startup-project__list .startup-project .project-detail {
+    width: 220px;
   }
   .mobile-visible .mob-startup-projects .startup-project__list .startup-project .project-detail .subtitle {
     margin-bottom: 10px;
@@ -1499,7 +1522,8 @@ footer .footer-back {
     font-style: italic;
     line-height: 1.9;
   }
-  .mobile-visible .mob-testimonial .testimonial__card .testimony-content img {
+  .mobile-visible .mob-testimonial .testimonial__card .testimony-content .testimony-text img {
+    display: inline;
     height: 36px;
   }
   .mobile-visible .mob-testimonial .testimonial__card .testimony-profile {
@@ -1517,8 +1541,7 @@ footer .footer-back {
   .mobile-visible .mob-testimonial .testimonial__card .testimony-profile .profile__image img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .mobile-visible .favorite-quotes {
     padding: 40px 0;

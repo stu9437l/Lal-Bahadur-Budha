@@ -307,3 +307,11 @@ $(".startup-project__list").slick({
   arrows: false,
   dots: true,
 });
+// mobile testimonial slider
+$(".review__cards").slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: false,
+});

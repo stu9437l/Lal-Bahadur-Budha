@@ -472,6 +472,31 @@ label {
     }
   }
 }
+.cus-slider-arrows {
+  .slick-arrow {
+    height: 45px;
+    width: 45px;
+    border: 2px solid rgba($indigo-color, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 100%;
+    background-color: white;
+    &.slick-next {
+      right: calc(100% - 115px);
+      &::before {
+        content: "👉";
+      }
+    }
+    &.slick-prev {
+      left: calc(0% + 15px);
+      &::before {
+        content: "👈";
+      }
+    }
+  }
+}
 
 // header css
 @keyframes rotating-360 {
