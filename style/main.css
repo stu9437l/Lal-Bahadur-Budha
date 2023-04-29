@@ -610,6 +610,17 @@ label .required {
     transform: translateY(-50%) rotate(0deg);
   }
 }
+@keyframes zoom-in {
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 header {
   padding: 10px 0;
 }
@@ -1290,7 +1301,23 @@ footer .footer-back {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .mobile-visible .mob-profile-banner .profile-box .profile__image .profile__view {
+  .mobile-visible .mob-profile-banner .profile-box .profile__image .zoom-in-animation {
+    position: relative;
+  }
+  .mobile-visible .mob-profile-banner .profile-box .profile__image .zoom-in-animation::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(47, 79, 255, 0.1);
+    transform: scale(1.2);
+    animation: zoom-in 2s ease-in-out infinite;
+    z-index: 1;
+  }
+  .mobile-visible .mob-profile-banner .profile-box .profile__image .zoom-in-animation .profile__view {
     position: absolute;
     height: 40px;
     width: 40px;
@@ -1302,8 +1329,9 @@ footer .footer-back {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
   }
-  .mobile-visible .mob-profile-banner .profile-box .profile__image .profile__view i {
+  .mobile-visible .mob-profile-banner .profile-box .profile__image .zoom-in-animation .profile__view i {
     color: #141c3a;
     font-size: 16px;
   }

@@ -510,6 +510,18 @@ label {
     transform: translateY(-50%) rotate(0deg);
   }
 }
+// zoom in animation
+@keyframes zoom-in {
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 header {
   padding: 10px 0;
   .brand-logo {

@@ -207,21 +207,40 @@
             width: 90px;
             object-fit: cover;
           }
-          .profile__view {
-            position: absolute;
-            height: 40px;
-            width: 40px;
-            background-color: white;
-            box-shadow: $box-shadow;
-            border-radius: 50%;
-            bottom: -20px;
-            left: -20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            i {
-              color: $black-color;
-              font-size: 16px;
+          .zoom-in-animation {
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -20px;
+              left: -20px;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-color: rgba($color: $indigo-color, $alpha: 0.1);
+              transform: scale(1.2);
+              animation: zoom-in 2s ease-in-out infinite;
+              z-index: 1;
+            }
+
+            .profile__view {
+              position: absolute;
+              height: 40px;
+              width: 40px;
+              background-color: white;
+              box-shadow: $box-shadow;
+              border-radius: 50%;
+              bottom: -20px;
+              left: -20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              z-index: 2;
+
+              i {
+                color: $black-color;
+                font-size: 16px;
+              }
             }
           }
         }
