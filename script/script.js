@@ -199,7 +199,7 @@ document.addEventListener("click", (e) => {
   shape.tune({ x: e.pageX, y: e.pageY }).generate().replay();
 });
 
-// cutom cursor
+// custom cursor
 var cursor = document.querySelector(".cursor");
 var cursorinner = document.querySelector(".cursor2");
 var a = document.querySelectorAll("a");
@@ -282,6 +282,19 @@ testimonyPerson.each(function () {
     testimonyPerson.removeClass("active");
     testimonyContent.removeClass("show");
     $(this).addClass("active");
+    $(`#${targetId}`).addClass("show");
+  });
+});
+
+// mobile skills tabs
+const mobileSkillTab = $(".mob-skill .tab__list .tab__item");
+const mobileSkillTabContent = $(".mob-skill .skill__content .skill-card");
+mobileSkillTab.each(function () {
+  $(this).click(function () {
+    const targetId = $(this).data("target");
+    mobileSkillTab.removeClass("active");
+    $(this).addClass("active");
+    mobileSkillTabContent.removeClass("show");
     $(`#${targetId}`).addClass("show");
   });
 });

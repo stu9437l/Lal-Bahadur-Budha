@@ -97,30 +97,65 @@ h4 {
     align-items: center;
     justify-content: center;
     background-color: transparent;
-  }
-
-  &--indigo {
-    color: $indigo-color;
-    border: 2px solid $indigo-color;
-    &:hover {
-      color: white;
-      background-color: $indigo-color;
-    }
-  }
-  &--white {
-    color: $white-color;
-    border: 2px solid $white-color;
-    &:hover {
+    &.button--indigo {
       color: $indigo-color;
-      background-color: $white-color;
-      border-color: $indigo-color;
+      border: 2px solid $indigo-color;
+      &:hover {
+        color: white;
+        background-color: $indigo-color;
+      }
+    }
+    &.button--white {
+      color: $white-color;
+      border: 2px solid $white-color;
+      &:hover {
+        color: $indigo-color;
+        background-color: $white-color;
+        border-color: $indigo-color;
+      }
+    }
+    &.button--rounded {
+      border-radius: 30px;
+    }
+    &.button--lg {
+      height: 50px !important;
     }
   }
-  &--rounded {
-    border-radius: 30px;
-  }
-  &--lg {
-    height: 50px !important;
+  &-solid {
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    &.button--indigo {
+      background-color: $indigo-color;
+      border: 2px solid $indigo-color;
+      i {
+        color: white;
+      }
+      &:hover {
+        background-color: white;
+        i {
+          color: $indigo-color;
+        }
+      }
+    }
+    &.button--white {
+      color: $white-color;
+      border: 2px solid $white-color;
+      &:hover {
+        color: $indigo-color;
+        background-color: $white-color;
+        border-color: $indigo-color;
+      }
+    }
+    &.button--rounded {
+      border-radius: 30px;
+    }
+    &.button--lg {
+      height: 50px !important;
+    }
   }
 }
 
@@ -249,6 +284,142 @@ label {
   }
 }
 
+// clock container
+.clock-container {
+  position: relative;
+  height: 400px;
+}
+
+.clock {
+  position: relative;
+  height: 100%;
+  &__big-tick {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    border-radius: 4px;
+    height: 50%;
+    width: 10px;
+    transform-origin: bottom center;
+
+    @for $i from 0 to 12 {
+      &--#{$i + 1} {
+        transform: translateX(-50%) rotate($i * 30deg);
+        background-image: linear-gradient(
+          hsl($i * 30, 90%, 50%) 1%,
+          transparent 14%
+        );
+      }
+    }
+  }
+
+  &__small-tick {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(black, 0.42) 1%, transparent 9%);
+    height: 48.7%;
+    width: 1px;
+    transform-origin: bottom center;
+
+    $currDeg: 6;
+    @for $i from 0 to 48 {
+      &--#{$i + 1} {
+        transform: translateX(-50%) rotate($currDeg * 1deg);
+      }
+
+      @if $i % 4 == 3 {
+        $currDeg: $currDeg + 12;
+      } @else {
+        $currDeg: $currDeg + 6;
+      }
+    }
+  }
+}
+
+/////SVG TICK
+
+// .tick {
+//   display: block;
+//   background: red;
+//   transform-origin: 0 200%;
+//   @for $i from 0 to 12 {
+//     &--#{$i} {
+//       color: black;
+//       transform: rotate($i * 30deg);
+//     }
+//   }
+// }
+
+.sec-hand,
+.small-hand,
+.big-hand,
+.center-up,
+.center-bottom {
+  position: absolute;
+  // left: 50%;
+  // top: 50%;
+  // transform: translate(-50%, -50%);
+}
+
+.sec-hand {
+  left: 50%;
+  bottom: 50%;
+  width: 1.5px;
+  // transform: translateX(-50%);
+  transform-origin: bottom;
+  height: 41%;
+  background-color: rgba(red, 0.4);
+}
+
+.small-hand {
+  left: 50%;
+  bottom: 50%;
+  width: 4px;
+  height: 20%;
+  // transform: translateX(-50%);
+  transform-origin: bottom;
+  background-color: black;
+}
+
+.big-hand {
+  left: 50%;
+  bottom: 50%;
+  width: 3px;
+  height: 39%;
+  // transform: translateX(-50%);
+  transform-origin: bottom;
+  background-color: rgba(black, 0.65);
+}
+
+.center-bottom,
+.center-up {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-bottom {
+  width: 7.5rem;
+  height: 7.5rem;
+  box-shadow: -2px -1px 3px -2px rgba(black, 0.8765425),
+    -1px -1px 3px -2px rgba(black, 0.4), inset 0 0 0 2.95rem rgba(black, 0.02),
+    inset 0 0 0 2.75rem rgba(black, 0.086),
+    inset 0 0 0 2.55rem rgba(black, 0.04);
+  border-radius: 100px;
+  background-color: none;
+}
+
+.center-up {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: black;
+  box-shadow: 0 0 0 4px hsl(360, 50%, 50%), 0 0 0 6px darken(silver, 20%),
+    0 0 0 7px rgba(black, 0.55);
+  border-radius: 100px;
+}
+
 //fixed-right-centered nav links
 .success-step__list {
   display: flex;
@@ -297,7 +468,7 @@ header {
       border-radius: 50%;
       border-style: solid;
       border-width: 3px;
-      border-color:  $indigo-color white $indigo-color  $indigo-color;
+      border-color: $indigo-color white $indigo-color $indigo-color;
       left: 0;
       top: 50%;
       transform: translateY(-50%);
@@ -372,24 +543,35 @@ header {
 .skill-section {
   padding-bottom: 64px;
   margin-top: -120px;
-  .skill-card {
-    height: 100%;
-    padding: 40px;
-    border: 1px solid rgba($color: #000000, $alpha: 0.1);
-    background-color: $white-color;
-    border-radius: $rounded-md;
-    text-align: center;
-    .head {
-      margin-bottom: 40px;
-      .skill-icon__image {
-        margin-bottom: 30px;
-        img {
-          height: 100px;
-        }
+}
+.skill-card {
+  height: 100%;
+  padding: 40px;
+  border: 1px solid rgba($color: #000000, $alpha: 0.1);
+  background-color: $white-color;
+  border-radius: $rounded-md;
+  text-align: center;
+  .head {
+    margin-bottom: 40px;
+    .skill-icon__image {
+      margin-bottom: 30px;
+      img {
+        height: 100px;
       }
     }
-    .body {
-      margin-bottom: 40px;
+  }
+  .body {
+    margin-bottom: 40px;
+  }
+  .foot {
+    .tools__list {
+      > li {
+        &:last-child {
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
     }
   }
 }
@@ -515,49 +697,49 @@ header {
 .startup-project-section {
   padding-bottom: 64px;
   margin-top: -120px;
-  .startup-project__card {
-    position: relative;
-    height: 100%;
-    transform-style: preserve-3d;
-    text-align: center;
-    background-color: white;
-    padding: 48px 40px;
-    // border-radius: $rounded;
-    box-shadow: $box-shadow;
-    &:hover {
-      &::before {
-        left: 0;
-        top: 0;
-      }
-    }
+}
+.startup-project__card {
+  position: relative;
+  height: 100%;
+  transform-style: preserve-3d;
+  text-align: center;
+  background-color: white;
+  padding: 48px 40px;
+  // border-radius: $rounded;
+  box-shadow: $box-shadow;
+  &:hover {
     &::before {
-      content: "";
-      height: 100%;
-      width: 100%;
-      top: -10px;
-      left: -10px;
-      border: 2px solid #eaeaea;
-      background-color: transparent;
-      position: absolute;
-      transform: translateZ(-1px);
-      transition: $transition;
-      //   border-radius: $rounded;
+      left: 0;
+      top: 0;
     }
-    .project__logo {
-      margin-bottom: 40px;
-      img {
-        height: 60px;
-      }
+  }
+  &::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: -10px;
+    left: -10px;
+    border: 2px solid #eaeaea;
+    background-color: transparent;
+    position: absolute;
+    transform: translateZ(-1px);
+    transition: $transition;
+    //   border-radius: $rounded;
+  }
+  .project__logo {
+    margin-bottom: 40px;
+    img {
+      height: 60px;
     }
-    .description {
-      height: 136px;
-      margin-bottom: 40px;
-      display: -webkit-box;
-      -webkit-line-clamp: 4;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
+  }
+  .description {
+    height: 136px;
+    margin-bottom: 40px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 .testimonial-section {
@@ -837,3 +1019,5 @@ footer {
 .tooltip.bs-tooltip-end .tooltip-arrow::before {
   border-right-color: $indigo-color;
 }
+
+@import "./mobile";
