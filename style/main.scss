@@ -131,11 +131,13 @@ h4 {
     &.button--indigo {
       background-color: $indigo-color;
       border: 2px solid $indigo-color;
+      color: white;
       i {
         color: white;
       }
       &:hover {
         background-color: white;
+        color: $indigo-color;
         i {
           color: $indigo-color;
         }
@@ -258,32 +260,32 @@ label {
       }
     }
   }
-  .modal-close__button {
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid $indigo-color;
-    background-color: transparent;
-    position: fixed;
-    right: 30px;
-    top: 10px;
-    &:hover {
-      svg {
-        transform: rotate(90deg);
-      }
-    }
+}
+// popup close button
+.modal-close__button {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $indigo-color;
+  background-color: transparent;
+  position: fixed;
+  right: 30px;
+  top: 10px;
+  &:hover {
     svg {
-      height: 30px;
-      width: 30px;
-      color: $indigo-color;
-      transition: $transition;
+      transform: rotate(90deg);
     }
   }
+  svg {
+    height: 30px;
+    width: 30px;
+    color: $indigo-color;
+    transition: $transition;
+  }
 }
-
 // clock container
 .clock-container {
   position: relative;

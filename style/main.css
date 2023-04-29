@@ -111,12 +111,14 @@ h4 {
 .button-solid.button--indigo {
   background-color: #2f4fff;
   border: 2px solid #2f4fff;
+  color: white;
 }
 .button-solid.button--indigo i {
   color: white;
 }
 .button-solid.button--indigo:hover {
   background-color: white;
+  color: #2f4fff;
 }
 .button-solid.button--indigo:hover i {
   color: #2f4fff;
@@ -229,7 +231,8 @@ label .required {
 .contact-form__popup .contact-form__body .trusted-client__list .client-logo__image img {
   width: 100px;
 }
-.contact-form__popup .modal-close__button {
+
+.modal-close__button {
   height: 64px;
   width: 64px;
   border-radius: 50%;
@@ -242,10 +245,10 @@ label .required {
   right: 30px;
   top: 10px;
 }
-.contact-form__popup .modal-close__button:hover svg {
+.modal-close__button:hover svg {
   transform: rotate(90deg);
 }
-.contact-form__popup .modal-close__button svg {
+.modal-close__button svg {
   height: 30px;
   width: 30px;
   color: #2f4fff;
@@ -757,8 +760,10 @@ header .nav-link__item {
 .recent-work-section .recent-work__list > li .recent-work__item .project__thumbnail img {
   width: 100%;
   height: auto;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .recent-work-section .recent-work__list > li .recent-work__item .tools__list {
   display: flex;
@@ -888,8 +893,10 @@ header .nav-link__item {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .testimonial-section .testimony-content__list .testimony-content__item {
   text-align: center;
@@ -1069,6 +1076,9 @@ footer .footer-back {
 }
 
 @media (max-width: 568px) {
+  .web-visible {
+    display: none;
+  }
   body {
     font-family: "Noto Sans", sans-serif;
     font-size: 16px;
@@ -1080,8 +1090,104 @@ footer .footer-back {
     box-sizing: border-box;
     position: relative;
   }
-  .web-visible {
-    display: none;
+  .modal-close__button {
+    height: 50px;
+    width: 50px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    right: 10px;
+    border: 0;
+  }
+  .modal-close__button svg {
+    height: 20px;
+    width: 20px;
+  }
+  .mob-contact__popup {
+    overflow-y: auto;
+    background-color: white;
+  }
+  .mob-contact__popup .mob-contact-body {
+    padding: 40px;
+    background-color: white;
+  }
+  .mob-contact__popup .mob-contact-body .form-control {
+    border-radius: 25px;
+    padding: 0 25px;
+  }
+  .mob-contact__popup .mob-contact-body .social-media__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mob-contact__popup .mob-contact-body .social-media__list .social-media__item {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 3px;
+  }
+  .mob-contact__popup .mob-contact-body .social-media__list .social-media__item i {
+    color: white;
+    font-size: 20px;
+  }
+  .mob-contact__popup .mob-contact-body .social-media__list .social-media__item.facebook-color {
+    background-color: #1877f2;
+  }
+  .mob-contact__popup .mob-contact-body .social-media__list .social-media__item.twitter-color {
+    background-color: #1da1f2;
+  }
+  .mob-contact__popup .mob-contact-body .social-media__list .social-media__item.linkedin-color {
+    background-color: #0a66c2;
+  }
+  .mob-profile__popup {
+    height: 100vh;
+    overflow-y: auto;
+    background-color: white;
+  }
+  .mob-profile__popup .profile__image {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .mob-profile__popup .profile__image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .mob-profile__popup .mob-contact-body {
+    padding: 40px 20px;
+  }
+  .mob-profile__popup .mob-contact-body .social-media__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  .mob-profile__popup .mob-contact-body .social-media__list .social-media__item {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 4px;
+  }
+  .mob-profile__popup .mob-contact-body .social-media__list .social-media__item i {
+    color: white;
+    font-size: 20px;
+  }
+  .mob-profile__popup .mob-contact-body .social-media__list .social-media__item.facebook-color {
+    background-color: #1877f2;
+  }
+  .mob-profile__popup .mob-contact-body .social-media__list .social-media__item.twitter-color {
+    background-color: #1da1f2;
+  }
+  .mob-profile__popup .mob-contact-body .social-media__list .social-media__item.linkedin-color {
+    background-color: #0a66c2;
   }
   .section-heading {
     margin-bottom: 50px;
@@ -1124,6 +1230,7 @@ footer .footer-back {
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     margin-left: 10px;
+    border: none !important;
   }
   .mobile-visible header nav .top-action-buttons button.button-outline {
     position: relative;
@@ -1148,6 +1255,13 @@ footer .footer-back {
   .mobile-visible .mob-profile-banner .profile-box .profile__image {
     position: relative;
   }
+  .mobile-visible .mob-profile-banner .profile-box .profile__image img {
+    border-radius: 20px;
+    height: 90px;
+    width: 90px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .mobile-visible .mob-profile-banner .profile-box .profile__image .profile__view {
     position: absolute;
     height: 40px;
@@ -1164,11 +1278,6 @@ footer .footer-back {
   .mobile-visible .mob-profile-banner .profile-box .profile__image .profile__view i {
     color: #141c3a;
     font-size: 16px;
-  }
-  .mobile-visible .mob-profile-banner .profile-box .profile__image img {
-    height: 90px;
-    width: 90px;
-    object-fit: cover;
   }
   .mobile-visible .mob-profile-banner .profile-box .profile-detail {
     margin-left: 20px;
@@ -1336,7 +1445,8 @@ footer .footer-back {
     height: 220px;
     width: 220px;
     border-radius: 30px 20px 20px 0;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .mobile-visible .mob-startup-projects .startup-project__list .startup-project .project-detail .subtitle {
     margin-bottom: 10px;
@@ -1406,7 +1516,8 @@ footer .footer-back {
   .mobile-visible .mob-testimonial .testimonial__card .testimony-profile .profile__image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .mobile-visible .favorite-quotes {
     padding: 40px 0;

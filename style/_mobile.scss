@@ -3,6 +3,9 @@
 }
 
 @media (max-width: 568px) {
+  .web-visible {
+    display: none;
+  }
   body {
     font-family: "Noto Sans", sans-serif;
     font-size: 16px;
@@ -14,9 +17,110 @@
     box-sizing: border-box;
     position: relative;
   }
-  .web-visible {
-    display: none;
+
+  // popup close button
+  .modal-close__button {
+    height: 50px;
+    width: 50px;
+    box-shadow: $box-shadow;
+    right: 10px;
+    border: 0;
+    svg {
+      height: 20px;
+      width: 20px;
+    }
   }
+  // mobile popups
+  .mob-contact__popup {
+    overflow-y: auto;
+    background-color: white;
+    .mob-contact-body {
+      padding: 40px;
+      background-color: white;
+
+      .form-control {
+        border-radius: 25px;
+        padding: 0 25px;
+      }
+      .social-media__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .social-media__item {
+          height: 45px;
+          width: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          margin: 0 3px;
+          i {
+            color: white;
+            font-size: 20px;
+          }
+          &.facebook-color {
+            background-color: #1877f2;
+          }
+          &.twitter-color {
+            background-color: #1da1f2;
+          }
+          &.linkedin-color {
+            background-color: #0a66c2;
+          }
+        }
+      }
+    }
+  }
+
+  .mob-profile__popup {
+    height: 100vh;
+    overflow-y: auto;
+    background-color: white;
+    .profile__image {
+      height: 200px;
+      width: 200px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .mob-contact-body {
+      padding: 40px 20px;
+      .social-media__list {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        .social-media__item {
+          height: 45px;
+          width: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          margin: 0 4px;
+          i {
+            color: white;
+            font-size: 20px;
+          }
+          &.facebook-color {
+            background-color: #1877f2;
+          }
+          &.twitter-color {
+            background-color: #1da1f2;
+          }
+          &.linkedin-color {
+            background-color: #0a66c2;
+          }
+        }
+      }
+    }
+  }
+
   .section-heading {
     margin-bottom: 50px;
     text-align: center;
@@ -60,6 +164,7 @@
             box-shadow: $box-shadow;
             border-radius: 50%;
             margin-left: 10px;
+            border: none !important;
             &.button-outline {
               position: relative;
               &::after {
@@ -90,7 +195,14 @@
           // width: 90px;
           // border-radius: 10px;
           // background-color: white;
+
           position: relative;
+          img {
+            border-radius: 20px;
+            height: 90px;
+            width: 90px;
+            object-fit: cover;
+          }
           .profile__view {
             position: absolute;
             height: 40px;
@@ -107,11 +219,6 @@
               color: $black-color;
               font-size: 16px;
             }
-          }
-          img {
-            height: 90px;
-            width: 90px;
-            object-fit: cover;
           }
         }
         .profile-detail {
