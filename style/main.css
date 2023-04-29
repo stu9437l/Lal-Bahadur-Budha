@@ -1452,10 +1452,11 @@ footer .footer-back {
     margin-bottom: 10px;
   }
   .mobile-visible .mob-working-company {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 40px 0;
   }
   .mobile-visible .mob-working-company .working-company__card {
-    margin-bottom: 40px;
     padding: 40px 15px 15px 15px;
     border-radius: 10px;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
@@ -1469,7 +1470,7 @@ footer .footer-back {
     background-color: white;
     padding: 10px;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
-    padding: 10px 5px;
+    padding: 10px;
     border-radius: 10px;
   }
   .mobile-visible .mob-working-company .working-company__card .company__logo img {
