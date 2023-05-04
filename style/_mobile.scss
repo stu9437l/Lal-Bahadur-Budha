@@ -236,6 +236,7 @@
               align-items: center;
               justify-content: center;
               z-index: 2;
+              border: none;
 
               i {
                 color: $black-color;
@@ -282,6 +283,7 @@
           color: $black-color;
           background-color: #f1f1f1;
           border-radius: 40px;
+          border: none;
           &.active {
             background-color: $indigo-color;
             color: white;

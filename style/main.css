@@ -653,6 +653,8 @@ header .nav-link__item {
   margin-right: 20px;
   color: #2f4fff;
   font-size: 18px;
+  border: none;
+  background-color: transparent;
 }
 
 .banner-section {
@@ -1330,6 +1332,7 @@ footer .footer-back {
     align-items: center;
     justify-content: center;
     z-index: 2;
+    border: none;
   }
   .mobile-visible .mob-profile-banner .profile-box .profile__image .zoom-in-animation .profile__view i {
     color: #141c3a;
@@ -1373,6 +1376,7 @@ footer .footer-back {
     color: #141c3a;
     background-color: #f1f1f1;
     border-radius: 40px;
+    border: none;
   }
   .mobile-visible .mob-skill .tab__list .tab__item.active {
     background-color: #2f4fff;
