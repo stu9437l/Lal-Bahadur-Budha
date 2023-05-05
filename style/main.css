@@ -797,8 +797,10 @@ header .nav-link__item {
 .recent-work-section .recent-work__list > li .recent-work__item .project__thumbnail img {
   width: 100%;
   height: auto;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .recent-work-section .recent-work__list > li .recent-work__item .tools__list {
   display: flex;
@@ -928,8 +930,10 @@ header .nav-link__item {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .testimonial-section .testimony-content__list .testimony-content__item {
   text-align: center;
@@ -1162,7 +1166,7 @@ footer .footer-back {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin: 0 3px;
+    margin: 0 7px;
   }
   .mob-contact__popup .mob-contact-body .social-media__list .social-media__item i {
     color: white;
@@ -1192,7 +1196,8 @@ footer .footer-back {
   .mob-profile__popup .profile__image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .mob-profile__popup .mob-contact-body {
     padding: 40px 20px;
@@ -1210,7 +1215,7 @@ footer .footer-back {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin: 0 4px;
+    margin-right: 15px;
   }
   .mob-profile__popup .mob-contact-body .social-media__list .social-media__item i {
     color: white;
@@ -1298,7 +1303,8 @@ footer .footer-back {
     border-radius: 20px;
     height: 90px;
     width: 90px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .mobile-visible .mob-profile-banner .profile-box .profile__image .zoom-in-animation {
     position: relative;
@@ -1501,7 +1507,8 @@ footer .footer-back {
     height: 220px;
     width: 220px;
     border-radius: 30px 20px 20px 0;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .mobile-visible .mob-startup-projects .startup-project__list .startup-project .project-detail {
     width: 220px;
@@ -1576,7 +1583,8 @@ footer .footer-back {
   .mobile-visible .mob-testimonial .testimonial__card .testimony-profile .profile__image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .mobile-visible .favorite-quotes {
     padding: 40px 0;
