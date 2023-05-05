@@ -6,6 +6,9 @@
   .web-visible {
     display: none;
   }
+  picture{
+    display: block;
+  }
   body {
     font-family: "Noto Sans", sans-serif;
     font-size: 16px;
@@ -378,7 +381,7 @@
         .project-detail {
           height: 194px;
           &.bg--green {
-            background-color: #14949f;
+            background-color: #0a58ca;
           }
           &.bg--orange {
             background-color: #ec6705;

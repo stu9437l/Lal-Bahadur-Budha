@@ -797,10 +797,8 @@ header .nav-link__item {
 .recent-work-section .recent-work__list > li .recent-work__item .project__thumbnail img {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 .recent-work-section .recent-work__list > li .recent-work__item .tools__list {
   display: flex;
@@ -930,10 +928,8 @@ header .nav-link__item {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 .testimonial-section .testimony-content__list .testimony-content__item {
   text-align: center;
@@ -1045,7 +1041,7 @@ footer .copyright-text {
   font-size: 16px;
   font-style: italic;
   margin-bottom: 0;
-  color: #7389ff;
+  color: white;
 }
 footer .footer-back {
   position: absolute;
@@ -1115,6 +1111,9 @@ footer .footer-back {
 @media (max-width: 568px) {
   .web-visible {
     display: none;
+  }
+  picture {
+    display: block;
   }
   body {
     font-family: "Noto Sans", sans-serif;
@@ -1193,8 +1192,7 @@ footer .footer-back {
   .mob-profile__popup .profile__image img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .mob-profile__popup .mob-contact-body {
     padding: 40px 20px;
@@ -1300,8 +1298,7 @@ footer .footer-back {
     border-radius: 20px;
     height: 90px;
     width: 90px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .mobile-visible .mob-profile-banner .profile-box .profile__image .zoom-in-animation {
     position: relative;
@@ -1469,7 +1466,7 @@ footer .footer-back {
     padding: 20px;
   }
   .mobile-visible .mob-recent-work .project__list .project-detail.bg--green {
-    background-color: #14949f;
+    background-color: #0a58ca;
   }
   .mobile-visible .mob-recent-work .project__list .project-detail.bg--orange {
     background-color: #ec6705;
@@ -1504,8 +1501,7 @@ footer .footer-back {
     height: 220px;
     width: 220px;
     border-radius: 30px 20px 20px 0;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .mobile-visible .mob-startup-projects .startup-project__list .startup-project .project-detail {
     width: 220px;
@@ -1580,8 +1576,7 @@ footer .footer-back {
   .mobile-visible .mob-testimonial .testimonial__card .testimony-profile .profile__image img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   .mobile-visible .favorite-quotes {
     padding: 40px 0;
