@@ -1112,6 +1112,9 @@ footer .footer-back {
   .web-visible {
     display: none;
   }
+  .text-sm {
+    font-size: 14px !important;
+  }
   picture {
     display: block;
   }
@@ -1177,6 +1180,9 @@ footer .footer-back {
   .mob-contact__popup .mob-contact-body .social-media__list .social-media__item.linkedin-color {
     background-color: #0a66c2;
   }
+  .mob-contact__popup .mob-contact-body .social-media__list .social-media__item.github-color {
+    background-color: #333;
+  }
   .mob-profile__popup {
     height: 100vh;
     overflow-y: auto;
@@ -1224,6 +1230,9 @@ footer .footer-back {
   }
   .mob-profile__popup .mob-contact-body .social-media__list .social-media__item.linkedin-color {
     background-color: #0a66c2;
+  }
+  .mob-profile__popup .mob-contact-body .social-media__list .social-media__item.github-color {
+    background-color: #333;
   }
   .section-heading {
     margin-bottom: 50px;

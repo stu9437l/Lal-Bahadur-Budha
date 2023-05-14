@@ -6,7 +6,10 @@
   .web-visible {
     display: none;
   }
-  picture{
+  .text-sm {
+    font-size: 14px !important;
+  }
+  picture {
     display: block;
   }
   body {
@@ -71,6 +74,9 @@
           &.linkedin-color {
             background-color: #0a66c2;
           }
+          &.github-color {
+            background-color: #333;
+          }
         }
       }
     }
@@ -119,6 +125,9 @@
           }
           &.linkedin-color {
             background-color: #0a66c2;
+          }
+          &.github-color {
+            background-color: #333;
           }
         }
       }
