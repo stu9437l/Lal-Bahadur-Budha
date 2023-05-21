@@ -762,28 +762,12 @@ header .nav-link__item {
 .recent-work-section .recent-work__list > li .recent-work__item .project__thumbnail {
   width: 100%;
   position: relative;
-  height: 400px;
+  height: auto;
   text-align: center;
   overflow: hidden;
-  border-radius: 20px;
-}
-.recent-work-section .recent-work__list > li .recent-work__item .project__thumbnail:hover::after {
-  transform: scale(1);
 }
 .recent-work-section .recent-work__list > li .recent-work__item .project__thumbnail:hover:hover .button-outline {
   opacity: 1;
-}
-.recent-work-section .recent-work__list > li .recent-work__item .project__thumbnail::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(47, 79, 255, 0.2);
-  left: 0;
-  right: 0;
-  z-index: 1;
-  transform: scale(1);
-  transition: all 0.3s ease-in-out;
 }
 .recent-work-section .recent-work__list > li .recent-work__item .project__thumbnail .button-outline {
   position: absolute;
@@ -808,7 +792,6 @@ header .nav-link__item {
   margin: 32px 0;
   padding: 20px;
   background-color: white;
-  border: 2px solid rgba(47, 79, 255, 0.2);
   z-index: 99;
   position: relative;
   border-radius: 10px;

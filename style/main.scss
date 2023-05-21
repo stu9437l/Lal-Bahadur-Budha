@@ -680,30 +680,30 @@ header {
         .project__thumbnail {
           width: 100%;
           position: relative;
-          height: 400px;
+          height: auto;
           text-align: center;
           overflow: hidden;
-          border-radius: $rounded-md;
+          // border-radius: $rounded-md;
           &:hover {
-            &::after {
-              transform: scale(1);
-            }
+            // &::after {
+            //   transform: scale(1);
+            // }
             &:hover .button-outline {
               opacity: 1;
             }
           }
-          &::after {
-            content: "";
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            background-color: rgba($color: $indigo-color, $alpha: 0.2);
-            left: 0;
-            right: 0;
-            z-index: 1;
-            transform: scale(1);
-            transition: $transition;
-          }
+          // &::after {
+          //   content: "";
+          //   position: absolute;
+          //   height: 100%;
+          //   width: 100%;
+          //   background-color: rgba($color: $indigo-color, $alpha: 0.2);
+          //   left: 0;
+          //   right: 0;
+          //   z-index: 1;
+          //   transform: scale(1);
+          //   transition: $transition;
+          // }
           .button-outline {
             position: absolute;
             left: 50%;
@@ -729,7 +729,7 @@ header {
         margin: 32px 0;
         padding: 20px;
         background-color: white;
-        border: 2px solid rgba($color: $indigo-color, $alpha: 0.2);
+        // border: 2px solid rgba($color: $indigo-color, $alpha: 0.2);
         z-index: 99;
         position: relative;
         border-radius: $rounded;
