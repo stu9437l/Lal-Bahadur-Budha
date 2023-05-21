@@ -71,7 +71,7 @@ h4 {
 
 .button-outline {
   height: 50px;
-  padding: 0 20px;
+  padding: 0 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -621,8 +621,31 @@ label .required {
     transform: scale(1.2);
   }
 }
+@keyframes lineH {
+  0% {
+    width: 10%;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
 header {
   padding: 10px 0;
+  border-bottom: 1px solid rgba(47, 79, 255, 0.0705882353);
+}
+header #lineh1 {
+  position: relative;
+}
+header #lineh1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 1px;
+  background: rgba(47, 79, 255, 0.0705882353);
+  animation: lineH 4s 5s infinite linear;
 }
 header .brand-logo {
   position: relative;
@@ -668,7 +691,7 @@ header .nav-link__item {
 }
 .banner-section .banner-profile__image img {
   height: auto;
-  width: 300px;
+  width: 600px;
 }
 .banner-section .banner__title {
   font-size: 40px;
@@ -688,7 +711,7 @@ header .nav-link__item {
   justify-content: center;
 }
 .banner-section .banner__animation img {
-  height: 80px;
+  height: 56px;
   margin: 0 20px;
 }
 
@@ -706,7 +729,7 @@ header .nav-link__item {
 .skill-card {
   height: 100%;
   padding: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(47, 79, 255, 0.14);
   background-color: #fff;
   border-radius: 20px;
   text-align: center;
@@ -842,7 +865,7 @@ header .nav-link__item {
   width: 100%;
   top: -10px;
   left: -10px;
-  border: 2px solid #eaeaea;
+  border: 2px solid #d7ddfe;
   background-color: transparent;
   position: absolute;
   transform: translateZ(-1px);
@@ -1239,6 +1262,9 @@ footer .footer-back {
   }
   .mobile-visible .description {
     font-size: 16px;
+  }
+  .mobile-visible header {
+    border-bottom: 0;
   }
   .mobile-visible header nav {
     display: flex;

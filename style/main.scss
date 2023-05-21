@@ -92,7 +92,7 @@ h4 {
 .button {
   &-outline {
     height: 50px;
-    padding: 0 20px;
+    padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -522,8 +522,33 @@ label {
     transform: scale(1.2);
   }
 }
+// line moving animation
+@keyframes lineH {
+  0% {
+    width: 10%;
+    opacity: 0;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
 header {
   padding: 10px 0;
+  border-bottom: 1px solid #2f4fff12;
+  #lineh1 {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      height: 1px;
+      background: #2f4fff12;
+      animation: lineH 4s 5s infinite linear;
+    }
+  }
   .brand-logo {
     position: relative;
     &::after {
@@ -572,7 +597,7 @@ header {
     margin-bottom: 40px;
     img {
       height: auto;
-      width: 300px;
+      width: 600px;
     }
   }
   .banner__title {
@@ -592,7 +617,7 @@ header {
     align-items: center;
     justify-content: center;
     img {
-      height: 80px;
+      height: 56px;
       margin: 0 20px;
     }
   }
@@ -615,7 +640,7 @@ header {
 .skill-card {
   height: 100%;
   padding: 40px;
-  border: 1px solid rgba($color: #000000, $alpha: 0.1);
+  border: 1px solid rgb(47 79 255 / 14%);
   background-color: $white-color;
   border-radius: $rounded-md;
   text-align: center;
@@ -787,7 +812,7 @@ header {
     width: 100%;
     top: -10px;
     left: -10px;
-    border: 2px solid #eaeaea;
+    border: 2px solid #d7ddfe;
     background-color: transparent;
     position: absolute;
     transform: translateZ(-1px);
