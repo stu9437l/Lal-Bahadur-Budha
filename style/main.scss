@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 //varibles
 
 $black-color: #141c3a;
@@ -14,9 +14,7 @@ $white-color: #fff;
 $rounded-md: 20px;
 $rounded: 10px;
 $transition: all 0.3s ease-in-out;
-$box-shadow: 0 0 30px 0
-  rgba(
-    $color: #000000,
+$box-shadow: 0 0 30px 0 rgba($color: #000000,
     $alpha: 0.1,
   );
 
@@ -32,10 +30,12 @@ body {
   box-sizing: border-box;
   position: relative;
 }
+
 a {
   text-decoration: none;
   display: inline-block;
 }
+
 ul {
   list-style: none;
   padding: 0;
@@ -48,8 +48,10 @@ h3,
 h4 {
   // font-weight: 700;
   // font-family: "Work Sans", sans-serif;
-  font-family: "Berkshire Swash", cursive;
+  // font-family: "Berkshire Swash", cursive;
+  font-family: 'Rubik', sans-serif;
 }
+
 .box-shadow {
   box-shadow: $box-shadow;
 }
@@ -58,26 +60,36 @@ h4 {
 
 .title {
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 20px;
 }
+
 .subtitle {
   font-size: 24px;
   margin-bottom: 20px;
 }
+
 .description {
   font-size: 18px;
 }
+
 .text {
   &--black {
     color: $black-color;
   }
+
   &--indigo {
     color: $indigo-color;
   }
+
   &--white {
     color: white;
   }
+
+  &--red {
+    color: #e81224;
+  }
+
   &--bold {
     font-weight: 600;
   }
@@ -99,64 +111,81 @@ h4 {
     align-items: center;
     justify-content: center;
     background-color: transparent;
+    font-weight: 600;
+
     &.button--indigo {
       color: $indigo-color;
       border: 2px solid $indigo-color;
+
       &:hover {
         color: white;
         background-color: $indigo-color;
       }
     }
+
     &.button--white {
       color: $white-color;
       border: 2px solid $white-color;
+
       &:hover {
         color: $indigo-color;
         background-color: $white-color;
         border-color: $indigo-color;
       }
     }
+
     &.button--rounded {
       border-radius: 30px;
     }
+
     &.button--lg {
       height: 50px !important;
     }
   }
+
   &-solid {
     height: 50px;
-    padding: 0 20px;
+    padding: 0 25px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: transparent;
+
+
     &.button--indigo {
       background-color: $indigo-color;
       border: 2px solid $indigo-color;
       color: white;
+
       i {
         color: white;
       }
+
       &:hover {
         background-color: white;
         color: $indigo-color;
+
         i {
           color: $indigo-color;
         }
       }
     }
+
     &.button--white {
       color: $white-color;
       border: 2px solid $white-color;
+
       &:hover {
         color: $indigo-color;
         background-color: $white-color;
         border-color: $indigo-color;
       }
     }
+
     &.button--rounded {
       border-radius: 30px;
     }
+
     &.button--lg {
       height: 50px !important;
     }
@@ -169,6 +198,7 @@ label {
   color: $black-color;
   margin-bottom: 10px;
   font-weight: 500;
+
   .required {
     color: red;
   }
@@ -183,6 +213,7 @@ label {
   outline: none;
   font-size: 18px;
   color: $black-color;
+
   &:focus {
     border-color: $indigo-color;
   }
@@ -193,21 +224,25 @@ label {
   &::-webkit-scrollbar {
     width: 0px;
   }
+
   &::-webkit-slider-thumb {
     width: 0px;
   }
+
   .contact-form__body {
     position: relative;
     background-color: white;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    padding: 64px 0;
+    padding: 80px 0px;
+
     .contact-form {
       background-color: white;
       padding: 50px;
       box-shadow: $box-shadow;
       border-radius: $rounded-md;
+
       .submit__button {
         height: 60px;
         width: 100%;
@@ -221,41 +256,50 @@ label {
         background-color: $indigo-color;
         border: 2px solid $indigo-color;
       }
+
       .contact__detail {
         margin-top: 20px;
         padding-top: 20px;
         border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
       }
     }
+
     .faqs__list {
       margin-bottom: 40px;
+
       li {
         &:nth-child(n) {
           border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
         }
+
         .faq__question {
           display: flex;
           align-items: center;
           justify-content: space-between;
           padding: 16px 0;
           cursor: pointer;
+
           .icon-wrapper {
             margin-left: 20px;
             font-size: 24px;
             color: $black-color;
           }
+
           .subtitle {
             margin: 0;
           }
         }
+
         .faq__content {
           display: none;
         }
       }
     }
+
     .trusted-client__list {
       .client-logo__image {
         text-align: center;
+
         img {
           width: 100px;
         }
@@ -263,6 +307,7 @@ label {
     }
   }
 }
+
 // popup close button
 .modal-close__button {
   height: 64px;
@@ -271,23 +316,26 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid $indigo-color;
-  background-color: transparent;
+  border: 2px solid #dc3545;
+  background-color: white;
   position: fixed;
   right: 30px;
   top: 10px;
+
   &:hover {
     svg {
       transform: rotate(90deg);
     }
   }
+
   svg {
     height: 30px;
     width: 30px;
-    color: $indigo-color;
+    color: #dc3545;
     transition: $transition;
   }
 }
+
 // clock container
 .clock-container {
   position: relative;
@@ -297,6 +345,7 @@ label {
 .clock {
   position: relative;
   height: 100%;
+
   &__big-tick {
     position: absolute;
     left: 50%;
@@ -309,10 +358,8 @@ label {
     @for $i from 0 to 12 {
       &--#{$i + 1} {
         transform: translateX(-50%) rotate($i * 30deg);
-        background-image: linear-gradient(
-          hsl($i * 30, 90%, 50%) 1%,
-          transparent 14%
-        );
+        background-image: linear-gradient(hsl($i * 30, 90%, 50%) 1%,
+            transparent 14%);
       }
     }
   }
@@ -328,15 +375,18 @@ label {
     transform-origin: bottom center;
 
     $currDeg: 6;
+
     @for $i from 0 to 48 {
       &--#{$i + 1} {
         transform: translateX(-50%) rotate($currDeg * 1deg);
       }
 
-      @if $i % 4 == 3 {
-        $currDeg: $currDeg + 12;
-      } @else {
-        $currDeg: $currDeg + 6;
+      @if $i % 4==3 {
+        $currDeg: $currDeg +12;
+      }
+
+      @else {
+        $currDeg: $currDeg +6;
       }
     }
   }
@@ -429,12 +479,14 @@ label {
   display: flex;
   align-items: center;
   flex-direction: column;
+
   .vertical__line {
     height: 70px;
     width: 2px;
     background-color: #fd5f76;
     margin-top: 20px;
   }
+
   img {
     height: 40px;
     margin-bottom: 6px;
@@ -456,15 +508,18 @@ label {
       height: auto;
       width: auto;
       margin: 0 5px;
+
       button {
         height: 10px;
         width: 10px;
         background-color: #ddd;
         border-radius: 10px;
+
         &::before {
           display: none;
         }
       }
+
       &.slick-active {
         button {
           background-color: $indigo-color;
@@ -474,6 +529,7 @@ label {
     }
   }
 }
+
 .cus-slider-arrows {
   .slick-arrow {
     height: 45px;
@@ -485,15 +541,19 @@ label {
     justify-content: center;
     top: 100%;
     background-color: white;
+
     &.slick-next {
       right: calc(100% - 115px);
+
       &::before {
         content: "👉";
         margin-bottom: 7px;
       }
     }
+
     &.slick-prev {
       left: calc(0% + 15px);
+
       &::before {
         content: "👈";
         margin-bottom: 7px;
@@ -507,25 +567,31 @@ label {
   0% {
     transform: translateY(-50%) rotate(0deg);
   }
+
   50% {
     transform: translateY(-50%) rotate(360deg);
   }
+
   100% {
     transform: translateY(-50%) rotate(0deg);
   }
 }
+
 // zoom in animation
 @keyframes zoom-in {
   0% {
     transform: scale(1.2);
   }
+
   50% {
     transform: scale(1.4);
   }
+
   100% {
     transform: scale(1.2);
   }
 }
+
 // line moving animation
 @keyframes lineH {
   0% {
@@ -538,11 +604,14 @@ label {
     opacity: 1;
   }
 }
+
 header {
   padding: 10px 0;
   border-bottom: 1px solid #2f4fff12;
+
   #lineh1 {
     position: relative;
+
     &::after {
       content: "";
       position: absolute;
@@ -553,8 +622,10 @@ header {
       animation: lineH 4s 5s infinite linear;
     }
   }
+
   .brand-logo {
     position: relative;
+
     &::after {
       content: "";
       position: absolute;
@@ -574,12 +645,14 @@ header {
       height: 70px;
     }
   }
+
   .nav-link {
     &__list {
       display: flex;
       align-items: center;
       justify-content: end;
     }
+
     &__item {
       margin-right: 20px;
       color: $indigo-color;
@@ -589,6 +662,7 @@ header {
     }
   }
 }
+
 // banner section
 
 .banner-section {
@@ -599,27 +673,33 @@ header {
   .banner-profile__image {
     text-align: center;
     margin-bottom: 40px;
+
     img {
       height: auto;
       width: 600px;
     }
   }
+
   .banner__title {
     font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
-    color: $indigo-color;
+    color: $black-color;
+    font-weight: 800;
   }
+
   .banner__description {
     text-align: center;
     font-size: 20px;
     margin-bottom: 20px;
   }
+
   .banner__animation {
     margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+
     img {
       height: 56px;
       margin: 0 20px;
@@ -630,7 +710,7 @@ header {
 //about me section
 
 .overlapping-section {
-  background-color: $indigo-color;
+  background-color: #e9ecef;
   padding-top: 100px;
   padding-bottom: 200px;
 }
@@ -641,6 +721,7 @@ header {
   padding-bottom: 64px;
   margin-top: -120px;
 }
+
 .skill-card {
   height: 100%;
   padding: 40px;
@@ -648,21 +729,26 @@ header {
   background-color: $white-color;
   border-radius: $rounded-md;
   text-align: center;
+
   .head {
     margin-bottom: 40px;
+
     .skill-icon__image {
       margin-bottom: 30px;
+
       img {
         height: 100px;
       }
     }
   }
+
   .body {
     margin-bottom: 40px;
   }
+
   .foot {
     .tools__list {
-      > li {
+      >li {
         &:last-child {
           p {
             margin-bottom: 0;
@@ -676,44 +762,56 @@ header {
 //recent-work section
 .recent-work-section {
   padding: 64px;
+
   .recent-work__list {
     margin-top: 40px;
     position: relative;
-    > li {
+
+    >li {
       margin-bottom: 100px;
+
       &:nth-child(2n + 1) {
         .tools__list {
           justify-content: flex-end;
+
           li {
             margin-left: 20px;
           }
         }
+
         .project-description {
           margin-left: -120px;
         }
       }
+
       &:nth-child(2n) {
         .tools__list {
           justify-content: flex-start;
+
           li {
             margin-right: 20px;
           }
         }
+
         .project-description {
           margin-right: -120px;
         }
       }
+
       .recent-work__item {
         width: 80%;
         margin: 0 auto;
+
         .project__thumbnail {
           width: 100%;
           position: relative;
           height: auto;
           text-align: center;
           overflow: hidden;
+
           // border-radius: $rounded-md;
           &:hover {
+
             // &::after {
             //   transform: scale(1);
             // }
@@ -721,6 +819,7 @@ header {
               opacity: 1;
             }
           }
+
           // &::after {
           //   content: "";
           //   position: absolute;
@@ -742,6 +841,7 @@ header {
             opacity: 0;
             transition: $transition;
           }
+
           img {
             width: 100%;
             height: auto;
@@ -749,11 +849,13 @@ header {
             object-position: center;
           }
         }
+
         .tools__list {
           display: flex;
           align-items: center;
         }
       }
+
       .project-description {
         margin: 32px 0;
         padding: 20px;
@@ -773,28 +875,35 @@ header {
 .company-section {
   border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
   padding: 64px;
+
   .company-logo__image {
     text-align: center;
+
     img {
       width: 200px;
       margin-bottom: 30px;
     }
   }
 }
+
 .contact-section {
   padding: 64px 0;
   position: relative;
+
   .coversation-icon {
     height: 80px;
   }
+
   // height: 100vh;
   // display: flex;
   // align-items: center;
 }
+
 .startup-project-section {
   padding-bottom: 64px;
   margin-top: -120px;
 }
+
 .startup-project__card {
   position: relative;
   height: 100%;
@@ -804,12 +913,14 @@ header {
   padding: 48px 40px;
   // border-radius: $rounded;
   box-shadow: $box-shadow;
+
   &:hover {
     &::before {
       left: 0;
       top: 0;
     }
   }
+
   &::before {
     content: "";
     height: 100%;
@@ -823,12 +934,15 @@ header {
     transition: $transition;
     //   border-radius: $rounded;
   }
+
   .project__logo {
     margin-bottom: 40px;
+
     img {
       height: 60px;
     }
   }
+
   .description {
     height: 136px;
     margin-bottom: 40px;
@@ -839,6 +953,7 @@ header {
     text-overflow: ellipsis;
   }
 }
+
 .testimonial-section {
   padding: 64px 0;
 
@@ -846,11 +961,13 @@ header {
     padding: 64px;
     border-radius: 40px;
   }
+
   .testimony-user__image-list {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 80px;
+
     .testimony-user__image {
       width: 80px;
       height: 80px;
@@ -858,10 +975,12 @@ header {
       margin: 0 20px;
       cursor: pointer;
       transform: scale(1);
+
       &.active {
         transform: scale(1.5);
         padding: 1px;
         border: 2px dashed $indigo-color;
+
         &::after {
           content: "\f10e";
           position: absolute;
@@ -880,6 +999,7 @@ header {
           border: 2px solid white;
         }
       }
+
       img {
         width: 100%;
         height: 100%;
@@ -889,13 +1009,16 @@ header {
       }
     }
   }
+
   .testimony-content__list {
     .testimony-content__item {
       text-align: center;
       display: none;
+
       &.show {
         display: block !important;
       }
+
       .description-lg {
         font-size: 20px;
         font-style: italic;
@@ -907,13 +1030,16 @@ header {
 
 .quote-section {
   padding: 64px;
+
   .best__journey {
     height: 100px;
     margin-bottom: 20px;
   }
+
   .quote__item {
     position: relative;
     z-index: 1;
+
     &::before {
       content: "❤️";
       font-size: 32px;
@@ -939,6 +1065,7 @@ header {
       background-color: #eaeaea;
       z-index: -1;
     }
+
     .quote__title {
       background-color: white;
       padding: 40px 40px 40px 80px;
@@ -1003,26 +1130,32 @@ footer {
   background-color: $indigo-color;
   position: relative;
   height: 800px;
+
   .wave-top {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
   }
+
   .brand-logo {
     margin-bottom: 40px;
+
     img {
       height: 90px;
     }
   }
+
   .subtitle {
     color: white;
     margin-bottom: 40px;
   }
+
   .social-media__list {
     display: flex;
     align-items: center;
     justify-content: center;
+
     .social-media__item {
       height: 48px;
       width: 48px;
@@ -1034,19 +1167,23 @@ footer {
       margin: 0 10px;
       opacity: 0.8;
       margin-bottom: 40px;
+
       &:hover {
         opacity: 1;
         background-color: $white-color;
+
         i {
           color: $indigo-color;
         }
       }
+
       i {
         font-size: 24px;
         color: #eaeaea;
       }
     }
   }
+
   .copyright-text {
     text-align: center;
     font-size: 16px;
@@ -1054,6 +1191,7 @@ footer {
     margin-bottom: 0;
     color: white;
   }
+
   .footer-back {
     position: absolute;
     z-index: 1;
@@ -1091,6 +1229,7 @@ footer {
   transition: width 0.3s, height 0.3s, opacity 0.3s;
   z-index: 9999;
 }
+
 .hover {
   background-color: $indigo-color;
   opacity: 0.3;
@@ -1101,6 +1240,7 @@ footer {
   background-color: $indigo-color;
   box-shadow: $box-shadow;
 }
+
 .tooltip.bs-tooltip-top .tooltip-arrow::before {
   border-top-color: $indigo-color;
 }

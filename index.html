@@ -1,1180 +1,836 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Browse my software development portfolio showcasing expert skills in building robust, scalable, and innovative applications. Let's build something amazing together."
-    />
-    <meta name="keywords" content="HTML, CSS, JQuery, Portfoli" />
-    <meta name="author" content="Lal Bahadur Budhachhetri" />
-    <meta http-equiv="Cache-Control" content="no-store" />
 
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="./image/favicon/favicon.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./image/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./image/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./image/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./image/favicon/site.webmanifest" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Browse my software development portfolio showcasing expert skills in building robust, scalable, and innovative applications. Let's build something amazing together." />
+  <meta name="keywords" content="HTML, CSS, JQuery, Portfoli" />
+  <meta name="author" content="Lal Bahadur Budhachhetri" />
+  <meta http-equiv="Cache-Control" content="no-store" />
 
-    <title>My Portfolio</title>
-    <!-- bootstrap 5 cdn -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+  <link rel="shortcut icon" type="image/png" href="./image/favicon/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./image/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./image/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./image/favicon/site.webmanifest" />
 
-    <!-- fontawesome cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- animate css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- slick slide css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- custom css -->
-    <link rel="stylesheet" href="./style/main.css" />
-  </head>
+  <title>My Portfolio</title>
+  <!-- bootstrap 5 cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-  <body>
-    <div class="mobile-visible">
-      <!-- mobile contact -->
-      <div
-        class="offcanvas offcanvas-end w-100 h-100 mob-contact__popup border-0"
-        id="mob-contact__popup"
-      >
-        <div class="mob-contact-body">
-          <button
-            class="modal-close__button"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close Modal"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-x-lg"
-              viewBox="0 0 16 16"
-            >
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- slick slide css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="./style/main.css" />
+</head>
+
+<body>
+  <div class="mobile-visible">
+    <!-- mobile contact -->
+    <div class="offcanvas offcanvas-end w-100 h-100 mob-contact__popup border-0" id="mob-contact__popup">
+      <div class="mob-contact-body">
+        <button class="modal-close__button" data-bs-dismiss="offcanvas" aria-label="Close Modal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+            viewBox="0 0 16 16">
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+          </svg>
+        </button>
+        <div class="container">
+          <div class="mx-auto">
+            <div class="text-center mb-5">
+              <h2 class="title text--black mb-2">Let's Keep in Touch!</h2>
+              <p class="description text--black">
+                Hello there! I hope you are having a wonderful day.
+              </p>
+            </div>
+            <form action="">
+              <div class="mb-3">
+                <input type="text" class="form-control" name="fullname" placeholder="Your Fullname" />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" name="subject" placeholder="Your Subject" />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control pt-3" name="comment" rows="4" placeholder="Write Comment"></textarea>
+              </div>
+              <div class="my-3 pt-3 d-flex justify-content-center">
+                <button class="button-solid button--indigo button--rounded" aria-label="Send Message">
+                  Send Message
+                </button>
+              </div>
+              <p class="description text--dark text-center">Social Media</p>
+              <ul class="social-media__list">
+                <li>
+                  <a href="https://www.facebook.com/lalbahadurbudhachhetree" class="social-media__item facebook-color"
+                    target="_blank" title="Facebook" data-bs-toggle="tooltip" data-bs-placement="bottom">
+                    <i class="fa-brands fa-square-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/stu9437l" class="social-media__item github-color" target="_blank"
+                    title="Github" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="github">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/LalBudhachhetri" class="social-media__item twitter-color" target="_blank"
+                    title="Twitter" data-bs-toggle="tooltip" data-bs-placement="bottom">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/lal-bahadur-budhachhetri-13668b218/"
+                    class="social-media__item linkedin-color" target="_blank" title="linkedin" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile profile detail -->
+    <div class="offcanvas offcanvas-end w-100 h-100 mob-profile__popup border-0" id="mob-profile__popup">
+      <div class="mob-contact-body">
+        <button class="modal-close__button" data-bs-dismiss="offcanvas" aria-label="Close Modal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+            viewBox="0 0 16 16">
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+          </svg>
+        </button>
+        <div class="container">
+          <picture class="profile__image">
+            <source media="(min-width:650px)" srcset="./image/me_11zon.webp" />
+            <source media="(min-width:465px)" srcset="./image/me_11zon.webp" />
+            <img src="./image/profile.png" alt="Me" />
+          </picture>
+          <h3 class="title text--black mb-2">Lal Bahadur BudhaChhetri</h3>
+          <p class="description text--indigo text--bold">
+            Software Developer
+          </p>
+
+          <h6 class="description text--bold mb-3 text-secondary">ABOUT ME</h6>
+          <p class="description text--bold mb-2">
+            "Expert in developing user-facing web applications"
+          </p>
+          <p class="description text--black mb-5">
+            As a web designer with 3 years of experience & Committed to
+            delivering high-quality code and exceptional user experiences.
+          </p>
+          <h6 class="description text--bold mb-3 text-secondary">
+            ADDITIONAL INFORMATION
+          </h6>
+          <p class="description text--black mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-briefcase-fill" viewBox="0 0 16 16">
               <path
-                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-              />
+                d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z" />
+              <path
+                d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z" />
             </svg>
-          </button>
-          <div class="container">
-            <div class="mx-auto">
-              <div class="text-center mb-5">
-                <h2 class="title text--black mb-2">Let's Keep in Touch!</h2>
+            <span class="ms-1">Work in</span>
+            <span class="text--bold"> NeputerTech Pvt. Ltd. </span>
+          </p>
+          <p class="description text--black mb-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-house-heart-fill" viewBox="0 0 16 16">
+              <path
+                d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z" />
+              <path
+                d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z" />
+            </svg>
+            <span class="ms-1">Lives in</span>
+            <span class="text--bold"> Kathmandu-29, Maitidevi </span>
+          </p>
+          <p class="description text--black mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+            </svg>
+            <span class="ms-1">From</span>
+            <span class="text--bold"> Dhagadhi, Kailali </span>
+          </p>
+          <ul class="social-media__list mt-4">
+            <li>
+              <a href="https://www.facebook.com/lalbahadurbudhachhetree" class="social-media__item facebook-color"
+                target="_blank" title="Facebook" data-bs-toggle="tooltip" data-bs-placement="bottom">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/stu9437l" class="social-media__item github-color" target="_blank"
+                title="Github" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="github">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/LalBudhachhetri" class="social-media__item twitter-color" target="_blank"
+                title="Twitter" data-bs-toggle="tooltip" data-bs-placement="bottom">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/lal-bahadur-budhachhetri-13668b218/"
+                class="social-media__item linkedin-color" target="_blank" title="Linkedin" data-bs-toggle="tooltip"
+                data-bs-placement="bottom">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="./index.html" class="mob-brand-logo" title="Portfolio-Logo">
+            <img src="./image/or-horizontal-logo.svg" alt="brand-logo" />
+          </a>
+          <div class="top-action-buttons">
+            <a href="./image/lalbahadurbudha-merstack.pdf" class="button button-outline button--indigo" target="_blank"
+              title="Download Resume">
+              <i class="fa-solid fa-download"></i>
+            </a>
+            <button class="button button-solid button--indigo" data-bs-toggle="offcanvas"
+              data-bs-target="#mob-contact__popup" aria-label="Open Modal">
+              <i class="fa-solid fa-address-book"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- <section class="mob-profile-banner">
+        <div class="container">
+          <div class="profile-box" data-bs-toggle="offcanvas" data-bs-target="#mob-profile__popup">
+            <div class="profile__image">
+              <picture class="">
+
+                <img src="./image/banner/bg-remove-profile.png" alt="Profile picture" />
+              </picture>
+              <div class="zoom-in-animation">
+                <button type="button" class="profile__view" data-bs-toggle="offcanvas"
+                  data-bs-target="#mob-profile__popup" aria-label="Open Modal">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+            <div class="profile-detail">
+              <h3 class="profile__name">Lal Bahadur Budha</h3>
+              <p class="profile__profession">Software Developer</p>
+              <p class="profile__date">Since 2020</p>
+            </div>
+          </div>
+        
+        </div>
+      </section> -->
+      <section class="mob-overlapping-section">
+        <div class="position-relative">
+          <img class="img-fluid"
+            src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?w=1380&t=st=1689021130~exp=1689021730~hmac=2b509c12aa290fff68e13de1e104795bc33aad06d3ba66f0e56e631475cb6696"
+            alt="">
+          <div class="zoom-in-animation">
+            <button type="button" class="profile__view" data-bs-toggle="offcanvas" data-bs-target="#mob-profile__popup"
+              aria-label="Open Modal">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="mob-skill">
+        <div class="container">
+          <div class="text-center mb-4">
+            <h2 class="title text--black">
+              Designer, Frontend & MERN Stack Developer
+            </h2>
+            <p class="description text--black mb-0">
+              Creating beautiful and simple designs through coding is my
+              passion.
+            </p>
+          </div>
+          <ul class="tab__list">
+            <li>
+              <button class="tab__item" type="button" data-target="mob-graphics-skills" aria-label="Graphics">
+                Graphics
+              </button>
+            </li>
+            <li>
+              <button class="tab__item active" type="button" data-target="mob-frontend-skills" aria-label="Frontend">
+                Frontend
+              </button>
+            </li>
+            <li>
+              <button class="tab__item" type="button" data-target="mob-backend-skills" aria-label="Backend">
+                Backend
+              </button>
+            </li>
+          </ul>
+          <div class="skill__content">
+            <div class="skill-card" id="mob-graphics-skills">
+              <div class="head">
+                <div class="skill-icon__image">
+                  <picture class="">
+                    <source media="(min-width:650px)" srcset="./image/skills/graphics_11zon.webp" />
+                    <source media="(min-width:465px)" srcset="./image/skills/graphics_11zon.webp" />
+                    <img src="./image/skills/graphics_11zon.webp" alt="skill" />
+                  </picture>
+                </div>
+                <h3 class="subtitle text--black">Graphics Designer</h3>
                 <p class="description text--black">
-                  Hello there! I hope you are having a wonderful day.
+                  Design to inspire, create to captivate, and communicate to
+                  connect with the audience
                 </p>
               </div>
-              <form action="">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="fullname"
-                    placeholder="Your Fullname"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    name="email"
-                    placeholder="Your Email"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="subject"
-                    placeholder="Your Subject"
-                  />
-                </div>
-                <div class="mb-3">
-                  <textarea
-                    class="form-control pt-3"
-                    name="comment"
-                    rows="4"
-                    placeholder="Write Comment"
-                  ></textarea>
-                </div>
-                <div class="my-3 pt-3 d-flex justify-content-center">
-                  <button
-                    class="button-solid button--indigo button--rounded"
-                    aria-label="Send Message"
-                  >
-                    Send Message
-                  </button>
-                </div>
-                <p class="description text--dark text-center">Social Media</p>
-                <ul class="social-media__list">
+              <div class="body">
+                <p class="description text--indigo">
+                  Graphics Design Fluencies
+                </p>
+                <p class="description text--dark">UX, UI, Web, Apps, Logos</p>
+              </div>
+              <div class="foot">
+                <p class="decription text--indigo">Design Tools:</p>
+                <ul class="tools__list">
                   <li>
-                    <a
-                      href="https://www.facebook.com/lalbahadurbudhachhetree"
-                      class="social-media__item facebook-color"
-                      target="_blank"
-                      title="Facebook"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="bottom"
-                    >
-                      <i class="fa-brands fa-square-facebook"></i>
-                    </a>
+                    <p class="description text--black">Figma</p>
                   </li>
                   <li>
-                    <a
-                      href="https://github.com/stu9437l"
-                      class="social-media__item github-color"
-                      target="_blank"
-                      title="Github"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="bottom"
-                      aria-label="github"
-                    >
-                      <i class="fa-brands fa-github"></i>
-                    </a>
+                    <p class="description text--black">Adobe Photoshop</p>
                   </li>
                   <li>
-                    <a
-                      href="https://twitter.com/LalBudhachhetri"
-                      class="social-media__item twitter-color"
-                      target="_blank"
-                      title="Twitter"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="bottom"
-                    >
-                      <i class="fa-brands fa-twitter"></i>
-                    </a>
+                    <p class="description text--black">Font Awesome</p>
                   </li>
                   <li>
-                    <a
-                      href="https://www.linkedin.com/in/lal-bahadur-budhachhetri-13668b218/"
-                      class="social-media__item linkedin-color"
-                      target="_blank"
-                      title="linkedin"
-                      data-bs-toggle="tooltip"
-                      data-bs-placement="bottom"
-                    >
-                      <i class="fa-brands fa-linkedin"></i>
-                    </a>
+                    <p class="description text--black">Pen & Paper</p>
+                  </li>
+                  <li>
+                    <p class="description text--black">Sketch</p>
+                  </li>
+                  <li>
+                    <p class="description text--black">Vector</p>
                   </li>
                 </ul>
-              </form>
+              </div>
+            </div>
+            <div class="skill-card show" id="mob-frontend-skills">
+              <div class="head">
+                <div class="skill-icon__image">
+                  <picture class="">
+                    <source media="(min-width:650px)" srcset="./image/skills/frontend_11zon.webp" />
+                    <source media="(min-width:465px)" srcset="./image/skills/frontend_11zon.webp" />
+                    <img src="./image/skills/frontend_11zon.webp" alt="skill" />
+                  </picture>
+                </div>
+                <h3 class="subtitle text--black">Frontend Developer</h3>
+                <p class="description text--black">
+                  User experience is key. Let's make it accessible, intuitive,
+                  and delightful.
+                </p>
+              </div>
+              <div class="body">
+                <p class="description text--indigo">
+                  Frontend Language Stack
+                </p>
+                <p class="description text--dark">
+                  HTML, Javascript, JQuery, CSS, Sass, React JS, Next JS
+                </p>
+              </div>
+              <div class="foot">
+                <p class="decription text--indigo">Design Tools:</p>
+                <ul class="tools__list">
+                  <li>
+                    <p class="description text--black">Chrome Devtools</p>
+                  </li>
+                  <li>
+                    <p class="description text--black">Typescript</p>
+                  </li>
+                  <li>
+                    <p class="description text--black">Bootstrap</p>
+                  </li>
+                  <li>
+                    <p class="description text--black">VS Code</p>
+                  </li>
+                  <li>
+                    <p class="description text--black">Vercel</p>
+                  </li>
+                  <li>
+                    <p class="description text--black">NPM</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="skill-card" id="mob-backend-skills">
+              <div class="head">
+                <div class="skill-icon__image">
+                  <picture class="">
+                    <source media="(min-width:650px)" srcset="./image/skills/backend_11zon.webp" />
+                    <source media="(min-width:465px)" srcset="./image/skills/backend_11zon.webp" />
+                    <img src="./image/skills/backend_11zon.webp" alt="skill" />
+                  </picture>
+                </div>
+                <h3 class="subtitle text--black">Backend Developer</h3>
+                <p class="description text--black">
+                  Let's build a scalable, secure, and reliable system to power
+                  the application.
+                </p>
+              </div>
+              <div class="body">
+                <p class="description text--indigo">Backend Language Stack</p>
+                <p class="description text--dark">
+                  Node, Express, Mongoose, Mongo, GraphQL
+                </p>
+              </div>
+              <div class="foot">
+                <p class="decription text--indigo">Design Tools:</p>
+                <ul class="tools__list">
+                  <li>
+                    <p class="description text--black">VS Code</p>
+                  </li>
+
+                  <li>
+                    <p class="description text--black">Terminal</p>
+                  </li>
+                  <li>
+                    <p class="description text--black">Apollo Server</p>
+                  </li>
+                  <li>
+                    <p class="description text--black">Postman</p>
+                  </li>
+                  <li>
+                    <p class="description text--black">Atlas Database</p>
+                  </li>
+                  <li>
+                    <p class="description text--black">Compass</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- mobile profile detail -->
-      <div
-        class="offcanvas offcanvas-end w-100 h-100 mob-profile__popup border-0"
-        id="mob-profile__popup"
-      >
-        <div class="mob-contact-body">
-          <button
-            class="modal-close__button"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close Modal"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-x-lg"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-              />
-            </svg>
-          </button>
-          <div class="container">
-            <picture class="profile__image">
-              <source
-                media="(min-width:650px)"
-                srcset="./image/me_11zon.webp"
-              />
-              <source
-                media="(min-width:465px)"
-                srcset="./image/me_11zon.webp"
-              />
-              <img src="./image/profile.png" alt="Me" />
-            </picture>
-            <h3 class="title text--black mb-2">Lal Bahadur BudhaChhetri</h3>
-            <p class="description text--indigo text--bold">
-              Software Developer
-            </p>
-
-            <h6 class="description text--bold mb-3 text-secondary">ABOUT ME</h6>
-            <p class="description text--bold mb-2">
-              "Expert in developing user-facing web applications"
-            </p>
-            <p class="description text--black mb-5">
-              As a web designer with 3 years of experience & Committed to
-              delivering high-quality code and exceptional user experiences.
-            </p>
-            <h6 class="description text--bold mb-3 text-secondary">
-              ADDITIONAL INFORMATION
-            </h6>
-            <p class="description text--black mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-briefcase-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"
-                />
-                <path
-                  d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"
-                />
-              </svg>
-              <span class="ms-1">Work in</span>
-              <span class="text--bold"> NeputerTech Pvt. Ltd. </span>
-            </p>
-            <p class="description text--black mb-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-house-heart-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z"
-                />
-                <path
-                  d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z"
-                />
-              </svg>
-              <span class="ms-1">Lives in</span>
-              <span class="text--bold"> Kathmandu-29, Maitidevi </span>
-            </p>
-            <p class="description text--black mb-0">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-geo-alt-fill"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-                />
-              </svg>
-              <span class="ms-1">From</span>
-              <span class="text--bold"> Dhagadhi, Kailali </span>
-            </p>
-            <ul class="social-media__list mt-4">
-              <li>
-                <a
-                  href="https://www.facebook.com/lalbahadurbudhachhetree"
-                  class="social-media__item facebook-color"
-                  target="_blank"
-                  title="Facebook"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                >
-                  <i class="fa-brands fa-square-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/stu9437l"
-                  class="social-media__item github-color"
-                  target="_blank"
-                  title="Github"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                  aria-label="github"
-                >
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/LalBudhachhetri"
-                  class="social-media__item twitter-color"
-                  target="_blank"
-                  title="Twitter"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                >
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/lal-bahadur-budhachhetri-13668b218/"
-                  class="social-media__item linkedin-color"
-                  target="_blank"
-                  title="Linkedin"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                >
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <header>
+      </section>
+      <section class="mob-recent-work">
         <div class="container">
-          <nav>
-            <a
-              href="./index.html"
-              class="mob-brand-logo"
-              title="Portfolio-Logo"
-            >
-              <img src="./image/or-horizontal-logo.svg" alt="brand-logo" />
-            </a>
-            <div class="top-action-buttons">
-              <a
-                href="./image/lalbahadurbudha-merstack.pdf"
-                class="button button-outline button--indigo"
-                target="_blank"
-                title="Download Resume"
-              >
-                <i class="fa-solid fa-download"></i>
-              </a>
-              <button
-                class="button button-solid button--indigo"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#mob-contact__popup"
-                aria-label="Open Modal"
-              >
-                <i class="fa-solid fa-address-book"></i>
-              </button>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <main>
-        <section class="mob-profile-banner">
-          <div class="container">
-            <div
-              class="profile-box"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#mob-profile__popup"
-            >
-              <div class="profile__image">
-                <picture class="">
-                 
-                  <img
-                    src="./image/banner/bg-remove-profile.png"
-                    alt="Profile picture"
-                  />
-                </picture>
-                <div class="zoom-in-animation">
-                  <button
-                    type="button"
-                    class="profile__view"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#mob-profile__popup"
-                    aria-label="Open Modal"
-                  >
-                    <i class="fa-solid fa-plus"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="profile-detail">
-                <h3 class="profile__name">Lal Bahadur Budha</h3>
-                <p class="profile__profession">Software Developer</p>
-                <p class="profile__date">Since 2020</p>
-              </div>
-            </div>
+          <div class="text-center section-heading">
+            <h2 class="title text--black">
+              Building a Better Future: A Look at My Recent Work
+            </h2>
+            <p class="description text--black">
+              Check out some of my previous design projects - a testament to
+              my skills and creativity.
+            </p>
           </div>
-        </section>
-        <section class="mob-skill">
-          <div class="container">
-            <div class="text-center mb-4">
-              <h2 class="title text--black">
-                Designer, Frontend Developer & MERN Developer
-              </h2>
-              <p class="description text--black mb-0">
-                Creating beautiful and simple designs through coding is my
-                passion.
-              </p>
-            </div>
-            <ul class="tab__list">
-              <li>
-                <button
-                  class="tab__item"
-                  type="button"
-                  data-target="mob-graphics-skills"
-                  aria-label="Graphics"
-                >
-                  Graphics
-                </button>
-              </li>
-              <li>
-                <button
-                  class="tab__item active"
-                  type="button"
-                  data-target="mob-frontend-skills"
-                  aria-label="Frontend"
-                >
-                  Frontend
-                </button>
-              </li>
-              <li>
-                <button
-                  class="tab__item"
-                  type="button"
-                  data-target="mob-backend-skills"
-                  aria-label="Backend"
-                >
-                  Backend
-                </button>
-              </li>
-            </ul>
-            <div class="skill__content">
-              <div class="skill-card" id="mob-graphics-skills">
-                <div class="head">
-                  <div class="skill-icon__image">
-                    <picture class="">
-                      <source
-                        media="(min-width:650px)"
-                        srcset="./image/skills/graphics_11zon.webp"
-                      />
-                      <source
-                        media="(min-width:465px)"
-                        srcset="./image/skills/graphics_11zon.webp"
-                      />
-                      <img
-                        src="./image/skills/graphics_11zon.webp"
-                        alt="skill"
-                      />
-                    </picture>
-                  </div>
-                  <h3 class="subtitle text--black">Graphics Designer</h3>
-                  <p class="description text--black">
-                    Design to inspire, create to captivate, and communicate to
-                    connect with the audience
-                  </p>
-                </div>
-                <div class="body">
-                  <p class="description text--indigo">
-                    Graphics Design Fluencies
-                  </p>
-                  <p class="description text--dark">UX, UI, Web, Apps, Logos</p>
-                </div>
-                <div class="foot">
-                  <p class="decription text--indigo">Design Tools:</p>
-                  <ul class="tools__list">
-                    <li>
-                      <p class="description text--black">Figma</p>
-                    </li>
-                    <li>
-                      <p class="description text--black">Adobe Photoshop</p>
-                    </li>
-                    <li>
-                      <p class="description text--black">Font Awesome</p>
-                    </li>
-                    <li>
-                      <p class="description text--black">Pen & Paper</p>
-                    </li>
-                    <li>
-                      <p class="description text--black">Sketch</p>
-                    </li>
-                    <li>
-                      <p class="description text--black">Vector</p>
-                    </li>
-                  </ul>
+          <div class="project__list">
+            <div class="row g-0 align-items-center">
+              <div class="col-6 h-100">
+                <div class="project__image">
+                  <picture class="">
+                    <img src="./image/projects/mobile-broadbiography.svg" alt="Current Project" />
+                  </picture>
                 </div>
               </div>
-              <div class="skill-card show" id="mob-frontend-skills">
-                <div class="head">
-                  <div class="skill-icon__image">
-                    <picture class="">
-                      <source
-                        media="(min-width:650px)"
-                        srcset="./image/skills/frontend_11zon.webp"
-                      />
-                      <source
-                        media="(min-width:465px)"
-                        srcset="./image/skills/frontend_11zon.webp"
-                      />
-                      <img
-                        src="./image/skills/frontend_11zon.webp"
-                        alt="skill"
-                      />
-                    </picture>
-                  </div>
-                  <h3 class="subtitle text--black">Frontend Developer</h3>
-                  <p class="description text--black">
-                    User experience is key. Let's make it accessible, intuitive,
-                    and delightful.
+              <div class="col-6 h-100">
+                <div class="project-detail bg--green">
+                  <h3 class="subtitle text--white">Broad Biography</h3>
+                  <p class="description text--white project__description">
+                    This is a website featuring concise and
+                    informative articles about notable individuals from
+                    various fields, offering insights into their lives,
+                    careers, and achievements.
                   </p>
-                </div>
-                <div class="body">
-                  <p class="description text--indigo">
-                    Frontend Language Stack
+                  <p class="description text--white text-sm">
+                    #VSCode, #Figma, #HTML, #CSS, #JQuery, #Slick
                   </p>
-                  <p class="description text--dark">
-                    HTML, Javascript, JQuery, CSS, Sass, React JS, Next JS
-                  </p>
-                </div>
-                <div class="foot">
-                  <p class="decription text--indigo">Design Tools:</p>
-                  <ul class="tools__list">
-                    <li>
-                      <p class="description text--black">Chrome Devtools</p>
-                    </li>
-                    <li>
-                      <p class="description text--black">Typescript</p>
-                    </li>
-                    <li>
-                      <p class="description text--black">Bootstrap</p>
-                    </li>
-                    <li>
-                      <p class="description text--black">VS Code</p>
-                    </li>
-                    <li>
-                      <p class="description text--black">Vercel</p>
-                    </li>
-                    <li>
-                      <p class="description text--black">NPM</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="skill-card" id="mob-backend-skills">
-                <div class="head">
-                  <div class="skill-icon__image">
-                    <picture class="">
-                      <source
-                        media="(min-width:650px)"
-                        srcset="./image/skills/backend_11zon.webp"
-                      />
-                      <source
-                        media="(min-width:465px)"
-                        srcset="./image/skills/backend_11zon.webp"
-                      />
-                      <img
-                        src="./image/skills/backend_11zon.webp"
-                        alt="skill"
-                      />
-                    </picture>
-                  </div>
-                  <h3 class="subtitle text--black">Backend Developer</h3>
-                  <p class="description text--black">
-                    Let's build a scalable, secure, and reliable system to power
-                    the application.
-                  </p>
-                </div>
-                <div class="body">
-                  <p class="description text--indigo">Backend Language Stack</p>
-                  <p class="description text--dark">
-                    Node, Express, Mongoose, Mongo, GraphQL
-                  </p>
-                </div>
-                <div class="foot">
-                  <p class="decription text--indigo">Design Tools:</p>
-                  <ul class="tools__list">
-                    <li>
-                      <p class="description text--black">VS Code</p>
-                    </li>
-
-                    <li>
-                      <p class="description text--black">Terminal</p>
-                    </li>
-                    <li>
-                      <p class="description text--black">Apollo Server</p>
-                    </li>
-                    <li>
-                      <p class="description text--black">Postman</p>
-                    </li>
-                    <li>
-                      <p class="description text--black">Atlas Database</p>
-                    </li>
-                    <li>
-                      <p class="description text--black">Compass</p>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section class="mob-recent-work">
-          <div class="container">
-            <div class="text-center section-heading">
-              <h2 class="title text--black">
-                Building a Better Future: A Look at My Recent Work
-              </h2>
-              <p class="description text--black">
-                Check out some of my previous design projects - a testament to
-                my skills and creativity.
-              </p>
-            </div>
-            <div class="project__list">
-              <div class="row g-0 align-items-center">
-                <div class="col-6 h-100">
-                  <div class="project__image">
-                    <picture class="">
-                      <img
-                        src="./image/projects/mobile-broadbiography.svg"
-                        alt="Current Project"
-                      />
-                    </picture>
-                  </div>
-                </div>
-                <div class="col-6 h-100">
-                  <div class="project-detail bg--green">
-                    <h3 class="subtitle text--white">Broad Biography</h3>
-                    <p class="description text--white project__description">
-                      This is a website featuring concise and
-                      informative articles about notable individuals from
-                      various fields, offering insights into their lives,
-                      careers, and achievements.
-                    </p>
-                    <p class="description text--white text-sm">
-                      #VSCode, #Figma, #HTML, #CSS, #JQuery, #Slick
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="row g-0 align-items-center">
-                <div class="col-6 h-100">
-                  <div class="project-detail bg--red">
-                    <h3 class="subtitle text--white">Bedding Theme</h3>
-                    <p class="description text--white project__description">
+            <div class="row g-0 align-items-center">
+              <div class="col-6 h-100">
+                <div class="project-detail bg--red">
+                  <h3 class="subtitle text--white">Bedding Theme</h3>
+                  <p class="description text--white project__description">
                     This theme about Bedding sells high-quality bedding
                     products, including duvet covers, pillowcases, fitted
                     sheets, and flat sheets.
                   </p>
-                    <p class="description text--white text-sm">
-                      #VSCode, #Figma, #HTML, #CSS, #JQuery, #Slick
+                  <p class="description text--white text-sm">
+                    #VSCode, #Figma, #HTML, #CSS, #JQuery, #Slick
+                  </p>
+                </div>
+              </div>
+              <div class="col-6 h-100">
+                <div class="project__image">
+                  <picture class="">
+                    <img src="./image/projects/mobile-rinoland.svg" alt="Current Project" />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mob-startup-projects">
+        <div class="container">
+          <div class="text-center section-heading">
+            <h2 class="title text--black">
+              The Journey of My Startup Projects
+            </h2>
+            <p class="description text--black">
+              Passionate developer creates innovative digital products with
+              extensive experience.
+            </p>
+          </div>
+          <div class="startup-project__list cus-slider-dots">
+            <a href="https://failure.gg/" class="startup-project" target="_blank" title="failure.gg"
+              aria-hidden="false">
+              <div class="project__image">
+                <img src="./image/projects/landing-failure_4_11zon.webp" alt="failure.gg" />
+              </div>
+              <div class="project-detail">
+                <h3 class="subtitle text--black">Failure.gg</h3>
+                <p class="description text--black">
+                  Accepts multiple payment methods, delivers in-game currency
+                  to user's account shortly after payment.
+                </p>
+              </div>
+            </a>
+            <a href="https://broadwayinfosys.com/" class="startup-project" target="_blank" title="Broadway Infosys"
+              aria-hidden="true">
+              <div class="project__image">
+                <img src="./image/projects/landing-broadway_1_11zon.webp" alt="Broadway Infosys" />
+              </div>
+              <div class="project-detail">
+                <h3 class="subtitle text--black">Broadway Infosys</h3>
+                <p class="description text--black">
+                  Broadway Infosys provides professional IT training in
+                  Kathmandu, Nepal since 2008 with expert instructors.
+                </p>
+              </div>
+            </a>
+            <a href="https://sociospotech.com/" class="startup-project" target="_blank" title="Sociospotech"
+              aria-hidden="true">
+              <div class="project__image">
+                <img src="./image/projects/landing-sociospotech_8_11zon.webp" alt="sociospotech" />
+              </div>
+              <div class="project-detail">
+                <h3 class="subtitle text--black">Sociospotech</h3>
+                <p class="description text--black">
+                  It offers digital marketing content for individuals and
+                  businesses to improve their online presence.
+                </p>
+              </div>
+            </a>
+            <a href="https://bewithyew.com/" class="startup-project" target="_blank" title="Yew" aria-hidden="true">
+              <div class="project__image">
+                <img src="./image/projects/landing-yew_9_11zon.webp" alt="Yew" />
+              </div>
+              <div class="project-detail">
+                <h3 class="subtitle text--black">Yew</h3>
+                <p class="description text--black">
+                  It offers medical products and services online via website
+                  and mobile app.
+                </p>
+              </div>
+            </a>
+
+            <a href="https://creahomebedding.myshopify.com/" class="startup-project" target="_blank"
+              title="CreaHome Bedding" aria-hidden="true">
+              <div class="project__image">
+                <img src="./image/projects/landing-creahome_2_11zon.webp" alt="Creamhome" />
+              </div>
+              <div class="project-detail">
+                <h3 class="subtitle text--black">Creamhome</h3>
+                <p class="description text--black">
+                  It sells high-quality bedding products, including duvet
+                  covers, pillowcases, fitted sheets, and flat sheets for 25+
+                  years.
+                </p>
+              </div>
+            </a>
+            <a href="https://dharmaastore.com/" class="startup-project" target="_blank" title="DharmaStore"
+              aria-hidden="true">
+              <div class="project__image">
+                <img src="./image/projects/landing-dharmastore_3_11zon.webp" alt="Dharmastore" />
+              </div>
+              <div class="project-detail">
+                <h3 class="subtitle text--black">Dharmastore</h3>
+                <p class="description text--black">
+                  It sells Hindu and Buddhist religious products like books,
+                  statues, prayer beads, incense, and meditation cushions.
+                </p>
+              </div>
+            </a>
+            <a href="https://ingoodcompanynails.myshopify.com/" class="startup-project" target="_blank"
+              title="IN Good Company" aria-hidden="true">
+              <div class="project__image">
+                <img src="./image/projects/landing-ingood_6_11zon.webp" alt="Ingoodcompanynails" />
+              </div>
+              <div class="project-detail">
+                <h3 class="subtitle text--black">Ingoodcompanynails</h3>
+                <p class="description text--black">
+                  Ingoodcompanynails sells nail polish, nail art tools, and
+                  other nail care products for home manicures.
+                </p>
+              </div>
+            </a>
+            <a href="https://sleepandme.co.uk/" class="startup-project" target="_blank" title="Sleep&Me"
+              aria-hidden="true">
+              <div class="project__image">
+                <img src="./image/projects/landing-sleepandme_7_11zon.webp" alt="Sleep&Me" />
+              </div>
+              <div class="project-detail">
+                <h3 class="subtitle text--black">Sleep&Me</h3>
+                <p class="description text--black">
+                  Sleep&Me offers a variety of products for your bedroom -
+                  find your perfect fit today!
+                </p>
+              </div>
+            </a>
+            <a href="https://frankynelly.com" class="startup-project" target="_blank" title="Frankynelly"
+              aria-hidden="true">
+              <div class="project__image">
+                <img src="./image/projects/landing-frankywelly_5_11zon.webp" alt="Frankynelly" />
+              </div>
+              <div class="project-detail">
+                <h3 class="subtitle text--black">Frankynelly</h3>
+                <p class="description text--black">
+                  Frankynelly is a music production website that offers free
+                  sound packs, courses, and plugins.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="mob-working-company">
+        <div class="container">
+          <div class="text-center section-heading">
+            <h2 class="title text--black">
+              The Company That Has Helped Me Grow
+            </h2>
+            <p class="description text--black">
+              Passionate developer creates innovative digital products with
+              extensive experience.
+            </p>
+          </div>
+          <div class="row gx-3">
+            <div class="col-6">
+              <a href="https://neputer.com/" class="working-company__card" target="_blank" title="NeputerTech">
+                <div class="company__logo">
+                  <img src="./image/projects/neputer_18_11zon.webp" alt="Broadway Infosys" />
+                </div>
+                <h3 class="subtitle text--black">NeputerTech Pvt. Ltd.</h3>
+                <p class="decription text--indigo mb-0">#IT-Company</p>
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="https://broadwayinfosys.com/" class="working-company__card" target="_blank"
+                title="Broadway Infosys">
+                <div class="company__logo">
+                  <img src="./image/projects/broadway_2_11zon.webp" alt="Broadway Infosys" />
+                </div>
+                <h3 class="subtitle text--black">Broadway Infosys</h3>
+                <p class="decription text--indigo mb-0">#IT-Institute</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mob-colaborating">
+        <div class="container">
+          <div class="text-center section-heading">
+            <h2 class="title text--black">
+              Let's collaborate and create magic.
+            </h2>
+            <p class="description text--black">
+              Time is of the essence for me. Let's connect to discuss product
+              design and partnership opportunities.
+            </p>
+          </div>
+          <div class="clock-container">
+            <div class="clock">
+              <div class="clock__big-tick clock__big-tick--1"></div>
+              <div class="clock__big-tick clock__big-tick--2"></div>
+              <div class="clock__big-tick clock__big-tick--3"></div>
+              <div class="clock__big-tick clock__big-tick--4"></div>
+              <div class="clock__big-tick clock__big-tick--5"></div>
+              <div class="clock__big-tick clock__big-tick--6"></div>
+              <div class="clock__big-tick clock__big-tick--7"></div>
+              <div class="clock__big-tick clock__big-tick--8"></div>
+              <div class="clock__big-tick clock__big-tick--9"></div>
+              <div class="clock__big-tick clock__big-tick--10"></div>
+              <div class="clock__big-tick clock__big-tick--11"></div>
+              <div class="clock__big-tick clock__big-tick--12"></div>
+
+              <div class="clock__small-tick clock__small-tick--1"></div>
+              <div class="clock__small-tick clock__small-tick--2"></div>
+              <div class="clock__small-tick clock__small-tick--3"></div>
+              <div class="clock__small-tick clock__small-tick--4"></div>
+              <div class="clock__small-tick clock__small-tick--5"></div>
+              <div class="clock__small-tick clock__small-tick--6"></div>
+              <div class="clock__small-tick clock__small-tick--7"></div>
+              <div class="clock__small-tick clock__small-tick--8"></div>
+              <div class="clock__small-tick clock__small-tick--9"></div>
+              <div class="clock__small-tick clock__small-tick--10"></div>
+              <div class="clock__small-tick clock__small-tick--11"></div>
+              <div class="clock__small-tick clock__small-tick--12"></div>
+              <div class="clock__small-tick clock__small-tick--13"></div>
+              <div class="clock__small-tick clock__small-tick--14"></div>
+              <div class="clock__small-tick clock__small-tick--15"></div>
+              <div class="clock__small-tick clock__small-tick--16"></div>
+              <div class="clock__small-tick clock__small-tick--17"></div>
+              <div class="clock__small-tick clock__small-tick--18"></div>
+              <div class="clock__small-tick clock__small-tick--19"></div>
+              <div class="clock__small-tick clock__small-tick--20"></div>
+              <div class="clock__small-tick clock__small-tick--21"></div>
+              <div class="clock__small-tick clock__small-tick--22"></div>
+              <div class="clock__small-tick clock__small-tick--23"></div>
+              <div class="clock__small-tick clock__small-tick--24"></div>
+              <div class="clock__small-tick clock__small-tick--25"></div>
+              <div class="clock__small-tick clock__small-tick--26"></div>
+              <div class="clock__small-tick clock__small-tick--27"></div>
+              <div class="clock__small-tick clock__small-tick--28"></div>
+              <div class="clock__small-tick clock__small-tick--29"></div>
+              <div class="clock__small-tick clock__small-tick--30"></div>
+              <div class="clock__small-tick clock__small-tick--31"></div>
+              <div class="clock__small-tick clock__small-tick--32"></div>
+              <div class="clock__small-tick clock__small-tick--33"></div>
+              <div class="clock__small-tick clock__small-tick--34"></div>
+              <div class="clock__small-tick clock__small-tick--35"></div>
+              <div class="clock__small-tick clock__small-tick--36"></div>
+              <div class="clock__small-tick clock__small-tick--37"></div>
+              <div class="clock__small-tick clock__small-tick--38"></div>
+              <div class="clock__small-tick clock__small-tick--39"></div>
+              <div class="clock__small-tick clock__small-tick--40"></div>
+              <div class="clock__small-tick clock__small-tick--41"></div>
+              <div class="clock__small-tick clock__small-tick--42"></div>
+              <div class="clock__small-tick clock__small-tick--43"></div>
+              <div class="clock__small-tick clock__small-tick--44"></div>
+              <div class="clock__small-tick clock__small-tick--45"></div>
+              <div class="clock__small-tick clock__small-tick--46"></div>
+              <div class="clock__small-tick clock__small-tick--47"></div>
+              <div class="clock__small-tick clock__small-tick--48"></div>
+            </div>
+            <div class="center-bottom"></div>
+            <div class="sec-hand"></div>
+            <div class="small-hand"></div>
+            <div class="big-hand"></div>
+            <div class="center-up"></div>
+          </div>
+          <div class="text-center">
+            <img class="coversation-icon animate__animated animate__swing animate__infinite"
+              src="./image/contact/or-conversation-transformed.png" alt="Talk me" />
+          </div>
+          <div class="d-flex justify-content-center">
+            <button class="button-outline button--indigo button--rounded" data-bs-toggle="offcanvas"
+              data-bs-target="#mob-contact__popup" aria-label="Lets Talk">
+              <span class="ms-2">Let's talk</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="mob-testimonial">
+        <div class="box-shadow py-5">
+          <div class="container">
+            <div class="section-heading">
+              <h3 class="title text--black">
+                Raving Reviews: What People are Saying About 😎
+              </h3>
+            </div>
+            <div class="review__cards cus-slider-arrows">
+              <div class="testimonial__card">
+                <div class="testimony-content">
+                  <div class="col-11 mx-auto">
+                    <p class="testimony-text">
+                      <img src="./image/left-quotes-sign_11zon.webp" alt="quote_left" />
+                      He exceeded our expectations with their stunning design
+                      work. Highly recommend for their professionalism and
+                      creativity.
                     </p>
                   </div>
                 </div>
-                <div class="col-6 h-100">
-                  <div class="project__image">
-                    <picture class="">
-                      <img
-                        src="./image/projects/mobile-rinoland.svg"
-                        alt="Current Project"
-                      />
-                    </picture>
+                <div class="testimony-profile">
+                  <div class="profile__image">
+                    <img src="./image/reviews/review_char-2_2_11zon.webp" alt="review_char" />
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="mob-startup-projects">
-          <div class="container">
-            <div class="text-center section-heading">
-              <h2 class="title text--black">
-                The Journey of My Startup Projects
-              </h2>
-              <p class="description text--black">
-                Passionate developer creates innovative digital products with
-                extensive experience.
-              </p>
-            </div>
-            <div class="startup-project__list cus-slider-dots">
-              <a
-                href="https://failure.gg/"
-                class="startup-project"
-                target="_blank"
-                title="failure.gg"
-                aria-hidden="false"
-              >
-                <div class="project__image">
-                  <img
-                    src="./image/projects/landing-failure_4_11zon.webp"
-                    alt="failure.gg"
-                  />
-                </div>
-                <div class="project-detail">
-                  <h3 class="subtitle text--black">Failure.gg</h3>
-                  <p class="description text--black">
-                    Accepts multiple payment methods, delivers in-game currency
-                    to user's account shortly after payment.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="https://broadwayinfosys.com/"
-                class="startup-project"
-                target="_blank"
-                title="Broadway Infosys"
-                aria-hidden="true"
-              >
-                <div class="project__image">
-                  <img
-                    src="./image/projects/landing-broadway_1_11zon.webp"
-                    alt="Broadway Infosys"
-                  />
-                </div>
-                <div class="project-detail">
-                  <h3 class="subtitle text--black">Broadway Infosys</h3>
-                  <p class="description text--black">
-                    Broadway Infosys provides professional IT training in
-                    Kathmandu, Nepal since 2008 with expert instructors.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="https://sociospotech.com/"
-                class="startup-project"
-                target="_blank"
-                title="Sociospotech"
-                aria-hidden="true"
-              >
-                <div class="project__image">
-                  <img
-                    src="./image/projects/landing-sociospotech_8_11zon.webp"
-                    alt="sociospotech"
-                  />
-                </div>
-                <div class="project-detail">
-                  <h3 class="subtitle text--black">Sociospotech</h3>
-                  <p class="description text--black">
-                    It offers digital marketing content for individuals and
-                    businesses to improve their online presence.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="https://bewithyew.com/"
-                class="startup-project"
-                target="_blank"
-                title="Yew"
-                aria-hidden="true"
-              >
-                <div class="project__image">
-                  <img
-                    src="./image/projects/landing-yew_9_11zon.webp"
-                    alt="Yew"
-                  />
-                </div>
-                <div class="project-detail">
-                  <h3 class="subtitle text--black">Yew</h3>
-                  <p class="description text--black">
-                    It offers medical products and services online via website
-                    and mobile app.
-                  </p>
-                </div>
-              </a>
 
-              <a
-                href="https://creahomebedding.myshopify.com/"
-                class="startup-project"
-                target="_blank"
-                title="CreaHome Bedding"
-                aria-hidden="true"
-              >
-                <div class="project__image">
-                  <img
-                    src="./image/projects/landing-creahome_2_11zon.webp"
-                    alt="Creamhome"
-                  />
+                  <p class="description text--black mb-1">Jivan Gautam</p>
+                  <p class="description text--indigo">Software Developer</p>
                 </div>
-                <div class="project-detail">
-                  <h3 class="subtitle text--black">Creamhome</h3>
-                  <p class="description text--black">
-                    It sells high-quality bedding products, including duvet
-                    covers, pillowcases, fitted sheets, and flat sheets for 25+
-                    years.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="https://dharmaastore.com/"
-                class="startup-project"
-                target="_blank"
-                title="DharmaStore"
-                aria-hidden="true"
-              >
-                <div class="project__image">
-                  <img
-                    src="./image/projects/landing-dharmastore_3_11zon.webp"
-                    alt="Dharmastore"
-                  />
-                </div>
-                <div class="project-detail">
-                  <h3 class="subtitle text--black">Dharmastore</h3>
-                  <p class="description text--black">
-                    It sells Hindu and Buddhist religious products like books,
-                    statues, prayer beads, incense, and meditation cushions.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="https://ingoodcompanynails.myshopify.com/"
-                class="startup-project"
-                target="_blank"
-                title="IN Good Company"
-                aria-hidden="true"
-              >
-                <div class="project__image">
-                  <img
-                    src="./image/projects/landing-ingood_6_11zon.webp"
-                    alt="Ingoodcompanynails"
-                  />
-                </div>
-                <div class="project-detail">
-                  <h3 class="subtitle text--black">Ingoodcompanynails</h3>
-                  <p class="description text--black">
-                    Ingoodcompanynails sells nail polish, nail art tools, and
-                    other nail care products for home manicures.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="https://sleepandme.co.uk/"
-                class="startup-project"
-                target="_blank"
-                title="Sleep&Me"
-                aria-hidden="true"
-              >
-                <div class="project__image">
-                  <img
-                    src="./image/projects/landing-sleepandme_7_11zon.webp"
-                    alt="Sleep&Me"
-                  />
-                </div>
-                <div class="project-detail">
-                  <h3 class="subtitle text--black">Sleep&Me</h3>
-                  <p class="description text--black">
-                    Sleep&Me offers a variety of products for your bedroom -
-                    find your perfect fit today!
-                  </p>
-                </div>
-              </a>
-              <a
-                href="https://frankynelly.com"
-                class="startup-project"
-                target="_blank"
-                title="Frankynelly"
-                aria-hidden="true"
-              >
-                <div class="project__image">
-                  <img
-                    src="./image/projects/landing-frankywelly_5_11zon.webp"
-                    alt="Frankynelly"
-                  />
-                </div>
-                <div class="project-detail">
-                  <h3 class="subtitle text--black">Frankynelly</h3>
-                  <p class="description text--black">
-                    Frankynelly is a music production website that offers free
-                    sound packs, courses, and plugins.
-                  </p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="mob-working-company">
-          <div class="container">
-            <div class="text-center section-heading">
-              <h2 class="title text--black">
-                The Company That Has Helped Me Grow
-              </h2>
-              <p class="description text--black">
-                Passionate developer creates innovative digital products with
-                extensive experience.
-              </p>
-            </div>
-            <div class="row gx-3">
-              <div class="col-6">
-                <a
-                  href="https://neputer.com/"
-                  class="working-company__card"
-                  target="_blank"
-                  title="NeputerTech"
-                >
-                  <div class="company__logo">
-                    <img
-                      src="./image/projects/neputer_18_11zon.webp"
-                      alt="Broadway Infosys"
-                    />
-                  </div>
-                  <h3 class="subtitle text--black">NeputerTech Pvt. Ltd.</h3>
-                  <p class="decription text--indigo mb-0">#IT-Company</p>
-                </a>
               </div>
-              <div class="col-6">
-                <a
-                  href="https://broadwayinfosys.com/"
-                  class="working-company__card"
-                  target="_blank"
-                  title="Broadway Infosys"
-                >
-                  <div class="company__logo">
-                    <img
-                      src="./image/projects/broadway_2_11zon.webp"
-                      alt="Broadway Infosys"
-                    />
-                  </div>
-                  <h3 class="subtitle text--black">Broadway Infosys</h3>
-                  <p class="decription text--indigo mb-0">#IT-Institute</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="mob-colaborating">
-          <div class="container">
-            <div class="text-center section-heading">
-              <h2 class="title text--black">
-                Let's collaborate and create magic.
-              </h2>
-              <p class="description text--black">
-                Time is of the essence for me. Let's connect to discuss product
-                design and partnership opportunities.
-              </p>
-            </div>
-            <div class="clock-container">
-              <div class="clock">
-                <div class="clock__big-tick clock__big-tick--1"></div>
-                <div class="clock__big-tick clock__big-tick--2"></div>
-                <div class="clock__big-tick clock__big-tick--3"></div>
-                <div class="clock__big-tick clock__big-tick--4"></div>
-                <div class="clock__big-tick clock__big-tick--5"></div>
-                <div class="clock__big-tick clock__big-tick--6"></div>
-                <div class="clock__big-tick clock__big-tick--7"></div>
-                <div class="clock__big-tick clock__big-tick--8"></div>
-                <div class="clock__big-tick clock__big-tick--9"></div>
-                <div class="clock__big-tick clock__big-tick--10"></div>
-                <div class="clock__big-tick clock__big-tick--11"></div>
-                <div class="clock__big-tick clock__big-tick--12"></div>
-
-                <div class="clock__small-tick clock__small-tick--1"></div>
-                <div class="clock__small-tick clock__small-tick--2"></div>
-                <div class="clock__small-tick clock__small-tick--3"></div>
-                <div class="clock__small-tick clock__small-tick--4"></div>
-                <div class="clock__small-tick clock__small-tick--5"></div>
-                <div class="clock__small-tick clock__small-tick--6"></div>
-                <div class="clock__small-tick clock__small-tick--7"></div>
-                <div class="clock__small-tick clock__small-tick--8"></div>
-                <div class="clock__small-tick clock__small-tick--9"></div>
-                <div class="clock__small-tick clock__small-tick--10"></div>
-                <div class="clock__small-tick clock__small-tick--11"></div>
-                <div class="clock__small-tick clock__small-tick--12"></div>
-                <div class="clock__small-tick clock__small-tick--13"></div>
-                <div class="clock__small-tick clock__small-tick--14"></div>
-                <div class="clock__small-tick clock__small-tick--15"></div>
-                <div class="clock__small-tick clock__small-tick--16"></div>
-                <div class="clock__small-tick clock__small-tick--17"></div>
-                <div class="clock__small-tick clock__small-tick--18"></div>
-                <div class="clock__small-tick clock__small-tick--19"></div>
-                <div class="clock__small-tick clock__small-tick--20"></div>
-                <div class="clock__small-tick clock__small-tick--21"></div>
-                <div class="clock__small-tick clock__small-tick--22"></div>
-                <div class="clock__small-tick clock__small-tick--23"></div>
-                <div class="clock__small-tick clock__small-tick--24"></div>
-                <div class="clock__small-tick clock__small-tick--25"></div>
-                <div class="clock__small-tick clock__small-tick--26"></div>
-                <div class="clock__small-tick clock__small-tick--27"></div>
-                <div class="clock__small-tick clock__small-tick--28"></div>
-                <div class="clock__small-tick clock__small-tick--29"></div>
-                <div class="clock__small-tick clock__small-tick--30"></div>
-                <div class="clock__small-tick clock__small-tick--31"></div>
-                <div class="clock__small-tick clock__small-tick--32"></div>
-                <div class="clock__small-tick clock__small-tick--33"></div>
-                <div class="clock__small-tick clock__small-tick--34"></div>
-                <div class="clock__small-tick clock__small-tick--35"></div>
-                <div class="clock__small-tick clock__small-tick--36"></div>
-                <div class="clock__small-tick clock__small-tick--37"></div>
-                <div class="clock__small-tick clock__small-tick--38"></div>
-                <div class="clock__small-tick clock__small-tick--39"></div>
-                <div class="clock__small-tick clock__small-tick--40"></div>
-                <div class="clock__small-tick clock__small-tick--41"></div>
-                <div class="clock__small-tick clock__small-tick--42"></div>
-                <div class="clock__small-tick clock__small-tick--43"></div>
-                <div class="clock__small-tick clock__small-tick--44"></div>
-                <div class="clock__small-tick clock__small-tick--45"></div>
-                <div class="clock__small-tick clock__small-tick--46"></div>
-                <div class="clock__small-tick clock__small-tick--47"></div>
-                <div class="clock__small-tick clock__small-tick--48"></div>
-              </div>
-              <div class="center-bottom"></div>
-              <div class="sec-hand"></div>
-              <div class="small-hand"></div>
-              <div class="big-hand"></div>
-              <div class="center-up"></div>
-            </div>
-            <div class="text-center">
-              <img
-                class="coversation-icon animate__animated animate__swing animate__infinite"
-                src="./image/contact/or-conversation-transformed.png"
-                alt="Talk me"
-              />
-            </div>
-            <div class="d-flex justify-content-center">
-              <button
-                class="button-outline button--indigo button--rounded"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#mob-contact__popup"
-                aria-label="Lets Talk"
-              >
-                <span class="ms-2">Let's talk</span>
-              </button>
-            </div>
-          </div>
-        </section>
-        <section class="mob-testimonial">
-          <div class="box-shadow py-5">
-            <div class="container">
-              <div class="section-heading">
-                <h3 class="title text--black">
-                  Raving Reviews: What People are Saying About 😎
-                </h3>
-              </div>
-              <div class="review__cards cus-slider-arrows">
-                <div class="testimonial__card">
-                  <div class="testimony-content">
-                    <div class="col-11 mx-auto">
-                      <p class="testimony-text">
-                        <img
-                          src="./image/left-quotes-sign_11zon.webp"
-                          alt="quote_left"
-                        />
-                        He exceeded our expectations with their stunning design
-                        work. Highly recommend for their professionalism and
-                        creativity.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="testimony-profile">
-                    <div class="profile__image">
-                      <img
-                        src="./image/reviews/review_char-2_2_11zon.webp"
-                        alt="review_char"
-                      />
-                    </div>
-
-                    <p class="description text--black mb-1">Jivan Gautam</p>
-                    <p class="description text--indigo">Software Developer</p>
+              <div class="testimonial__card">
+                <div class="testimony-content">
+                  <div class="col-11 mx-auto">
+                    <p class="testimony-text">
+                      <img src="./image/left-quotes-sign_11zon.webp" alt="quote_left" />
+                      Talented designer with a keen eye for detail.He
+                      delivered a beautiful and functional design that
+                      perfectly captured our vision.
+                    </p>
                   </div>
                 </div>
-                <div class="testimonial__card">
-                  <div class="testimony-content">
-                    <div class="col-11 mx-auto">
-                      <p class="testimony-text">
-                        <img
-                          src="./image/left-quotes-sign_11zon.webp"
-                          alt="quote_left"
-                        />
-                        Talented designer with a keen eye for detail.He
-                        delivered a beautiful and functional design that
-                        perfectly captured our vision.
-                      </p>
-                    </div>
+                <div class="testimony-profile">
+                  <div class="profile__image">
+                    <img src="./image/reviews/review_char-1_1_11zon.webp" alt="review_char" />
                   </div>
-                  <div class="testimony-profile">
-                    <div class="profile__image">
-                      <img
-                        src="./image/reviews/review_char-1_1_11zon.webp"
-                        alt="review_char"
-                      />
-                    </div>
-                    <p class="description text--black mb-1">Rajesh Chaudhary</p>
-                    <p class="description text--indigo">Devops Engineer</p>
+                  <p class="description text--black mb-1">Rajesh Chaudhary</p>
+                  <p class="description text--indigo">Devops Engineer</p>
+                </div>
+              </div>
+              <div class="testimonial__card">
+                <div class="testimony-content">
+                  <div class="col-11 mx-auto">
+                    <p class="testimony-text">
+                      <img src="./image/left-quotes-sign_11zon.webp" alt="quote_left" />
+                      Impressive ability to balance aesthetics and
+                      practicality. He's design perfectly captured our brand's
+                      identity. Highly recommended.
+                    </p>
                   </div>
                 </div>
-                <div class="testimonial__card">
-                  <div class="testimony-content">
-                    <div class="col-11 mx-auto">
-                      <p class="testimony-text">
-                        <img
-                          src="./image/left-quotes-sign_11zon.webp"
-                          alt="quote_left"
-                        />
-                        Impressive ability to balance aesthetics and
-                        practicality. He's design perfectly captured our brand's
-                        identity. Highly recommended.
-                      </p>
-                    </div>
+                <div class="testimony-profile">
+                  <div class="profile__image">
+                    <img src="./image/reviews/review_char-3_3_11zon.webp" alt="review_char" />
                   </div>
-                  <div class="testimony-profile">
-                    <div class="profile__image">
-                      <img
-                        src="./image/reviews/review_char-3_3_11zon.webp"
-                        alt="review_char"
-                      />
-                    </div>
-                    <p class="description text--black mb-1">Monika Dangol</p>
-                    <p class="description text--indigo">UI Designer</p>
-                  </div>
+                  <p class="description text--black mb-1">Monika Dangol</p>
+                  <p class="description text--indigo">UI Designer</p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section class="favorite-quotes">
-          <div class="container">
-            <div class="text-center">
-              <img
-                class="best__journey"
-                src="./image/favorite-qoute/testimonial_11zon.webp"
-                alt="favorite-qoute"
-              />
-            </div>
-            <div class="text-center section-heading">
-              <h2 class="title text--black">
-                Inspiring Words for Your Journey to Greatness
-              </h2>
-            </div>
-            <div
-              class="col-10 mx-auto"
-              style="
+        </div>
+      </section>
+      <section class="favorite-quotes">
+        <div class="container">
+          <div class="text-center">
+            <img class="best__journey" src="./image/favorite-qoute/testimonial_11zon.webp" alt="favorite-qoute" />
+          </div>
+          <div class="text-center section-heading">
+            <h2 class="title text--black">
+              Inspiring Words for Your Journey to Greatness
+            </h2>
+          </div>
+          <div class="col-10 mx-auto" style="
                 background-image: linear-gradient(
                     rgba(255, 255, 255, 0.85),
                     rgba(255, 255, 255, 0.85)
@@ -1183,344 +839,225 @@
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
-              "
-            >
-              <p class="qoute__text">
-                There are no secrets to success. It is the result of
-                preparation, hard work, and learning from failure.
-              </p>
-              <p class="quote__owner text--bold">- Colin Powell</p>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <svg class="wave-top" width="100" viewBox="0 0 1200 250">
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V-8.5451e-06H1150C1100 -8.5451e-06 1000 -8.5451e-06 900 -8.5451e-06C800 -8.5451e-06 700 -8.5451e-06 600 -8.5451e-06C500 -8.5451e-06 400 -8.5451e-06 300 -8.5451e-06C200 -8.5451e-06 100 -8.5451e-06 50 -8.5451e-06H0V108.306Z"
-            fill="#fff"
-          />
-        </svg>
-        <div class="container h-100 d-flex flex-column justify-content-end">
-          <div class="position-relative mt-auto">
-            <div class="brand-logo brand--white">
-              <img
-                class="brand-logo__image"
-                src="./image/or-vertical-logo.svg"
-                alt="brand-logo"
-              />
-            </div>
-            <p class="subtitle text-uppercase text--white">
-              Code, Learn, and <br />
-              Rise Daily.
+              ">
+            <p class="qoute__text">
+              There are no secrets to success. It is the result of
+              preparation, hard work, and learning from failure.
             </p>
-            <ul class="social-media__list">
-              <li>
-                <a
-                  href="https://www.facebook.com/lalbahadurbudhachhetree"
-                  class="social-media__item"
-                  target="_blank"
-                  title="Facebook"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                  aria-label="Facebook"
-                >
-                  <i class="fa-brands fa-square-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/stu9437l"
-                  class="social-media__item"
-                  target="_blank"
-                  title="Github"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                  aria-label="github"
-                >
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/LalBudhachhetri"
-                  class="social-media__item"
-                  target="_blank"
-                  title="Twitter"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                  aria-label="Twitter"
-                >
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/lal-bahadur-budhachhetri-13668b218/"
-                  class="social-media__item"
-                  target="_blank"
-                  title="Linkedin"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                  aria-label="Linkedin"
-                >
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-            <p class="copyright-text">Design By Me ❤️</p>
+            <p class="quote__owner text--bold">- Colin Powell</p>
           </div>
         </div>
-      </footer>
-    </div>
-    <div class="web-visible">
-      <div class="cursor"></div>
-      <div class="cursor2"></div>
-      <!-- contact up popup -->
-      <div
-        class="offcanvas offcanvas-end w-100 h-100 contact-form__popup border-0"
-        id="contact__popup"
-      >
-        <div class="contact-form__body">
-          <button
-            class="modal-close__button"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close Modal"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-x-lg"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-              />
-            </svg>
-          </button>
-          <div class="container">
-            <div class="row justify-content-between align-items-center">
-              <div class="col-md-5">
-                <div class="contact-form">
-                  <form action="">
-                    <div class="row">
-                      <div class="col-6">
-                        <div class="mb-4">
-                          <label for="first__name"
-                            >First Name <span class="required">*</span></label
-                          >
-                          <input
-                            id="first__name"
-                            type="text"
-                            class="form-control"
-                            disabled
-                          />
-                        </div>
-                      </div>
-                      <div class="col-6">
-                        <div class="mb-4">
-                          <label for="first__name"
-                            >Last Name <span class="required">*</span></label
-                          >
-                          <input
-                            id="last__name"
-                            type="text"
-                            class="form-control"
-                            disabled
-                          />
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="mb-4">
-                          <label for="email"
-                            >Email Address
-                            <span class="required">*</span></label
-                          >
-                          <input
-                            id="email"
-                            type="email"
-                            class="form-control"
-                            disabled
-                          />
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="mb-4">
-                          <label for="subject"
-                            >Subject <span class="required">*</span></label
-                          >
-                          <input
-                            id="subject"
-                            type="text"
-                            class="form-control"
-                            disabled
-                          />
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="mb-4">
-                          <label for="additional__info"
-                            >Additional Information</label
-                          >
-                          <textarea
-                            class="form-control"
-                            name=""
-                            id="additional__info"
-                            rows="3"
-                            disabled
-                          ></textarea>
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <button
-                          class="submit__button"
-                          disabled
-                          aria-label="Send Message"
-                        >
-                          <span class="me-3">Send Message</span>
-                          <i class="fa-solid fa-paper-plane"></i>
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="mb-4">
-                  <h3 class="title text--black">How can i help you?</h3>
-                  <p class="description text--black">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                    quisquam labore maxime dolorum iusto est.s
-                  </p>
-                </div>
-                <ul class="faqs__list">
-                  <li>
-                    <div class="faq__item">
-                      <div class="faq__question" data-target="my_mobile_number">
-                        <p class="subtitle text--black">
-                          What is my mobile number?
-                        </p>
-                        <div class="icon-wrapper">
-                          <i class="bi bi-chevron-down"></i>
-                        </div>
-                      </div>
-                      <div class="faq__content" id="my_mobile_number">
-                        <p class="description text--black text--bold">
-                          9865818795
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="faq__item">
-                      <div class="faq__question" data-target="my_mobile_email">
-                        <p class="subtitle text--black">
-                          What is my email address?
-                        </p>
-                        <div class="icon-wrapper">
-                          <i class="bi bi-chevron-down"></i>
-                        </div>
-                      </div>
-                      <div class="faq__content" id="my_mobile_email">
-                        <p class="description text--black text--bold">
-                          lalbahadurbc2054@gmail.com
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="faq__item">
-                      <div
-                        class="faq__question"
-                        data-target="my_mobile_address"
-                      >
-                        <p class="subtitle text--black">Where i live?</p>
-                        <div class="icon-wrapper">
-                          <i class="bi bi-chevron-down"></i>
-                        </div>
-                      </div>
-                      <div class="faq__content" id="my_mobile_address">
-                        <p class="description text--black text--bold">
-                          Kathmandu, Nepal (Originally form Dhangadhi)
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-                <div class="trusted-client__list">
-                  <p
-                    class="description text--indigo text--black mb-4 text-center text--bold"
-                  >
-                    <span class="me-2">Working for</span> 🏆
-                  </p>
+      </section>
+    </main>
+    <footer>
+      <svg class="wave-top" width="100" viewBox="0 0 1200 250">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V-8.5451e-06H1150C1100 -8.5451e-06 1000 -8.5451e-06 900 -8.5451e-06C800 -8.5451e-06 700 -8.5451e-06 600 -8.5451e-06C500 -8.5451e-06 400 -8.5451e-06 300 -8.5451e-06C200 -8.5451e-06 100 -8.5451e-06 50 -8.5451e-06H0V108.306Z"
+          fill="#fff" />
+      </svg>
+      <div class="container h-100 d-flex flex-column justify-content-end">
+        <div class="position-relative mt-auto">
+          <div class="brand-logo brand--white">
+            <img class="brand-logo__image" src="./image/or-vertical-logo.svg" alt="brand-logo" />
+          </div>
+          <p class="subtitle text-uppercase text--white">
+            Code, Learn, and <br />
+            Rise Daily.
+          </p>
+          <ul class="social-media__list">
+            <li>
+              <a href="https://www.facebook.com/lalbahadurbudhachhetree" class="social-media__item" target="_blank"
+                title="Facebook" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Facebook">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/stu9437l" class="social-media__item" target="_blank" title="Github"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="github">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/LalBudhachhetri" class="social-media__item" target="_blank" title="Twitter"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/lal-bahadur-budhachhetri-13668b218/" class="social-media__item"
+                target="_blank" title="Linkedin" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                aria-label="Linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright-text">@2023 Design By Me ❤️</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="web-visible">
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <!-- contact up popup -->
+    <div class="offcanvas offcanvas-end w-100 h-100 contact-form__popup border-0" id="contact__popup">
+      <div class="contact-form__body">
+        <button class="modal-close__button" data-bs-dismiss="offcanvas" aria-label="Close Modal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+            viewBox="0 0 16 16">
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+          </svg>
+        </button>
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-md-5">
+              <div class="contact-form">
+                <form action="">
                   <div class="row">
-                    <div class="col-md-3 mb-5">
-                      <div class="client-logo__image">
-                        <img
-                          src="./image/projects/neputer_18_11zon.webp"
-                          alt="My project"
-                        />
+                    <div class="col-6">
+                      <div class="mb-4">
+                        <label for="first__name">First Name <span class="required">*</span></label>
+                        <input id="first__name" type="text" class="form-control" disabled />
                       </div>
                     </div>
-                    <div class="col-md-3 mb-5">
-                      <div class="client-logo__image">
-                        <img
-                          src="./image/projects/broadway_2_11zon.webp"
-                          alt="My project"
-                        />
+                    <div class="col-6">
+                      <div class="mb-4">
+                        <label for="first__name">Last Name <span class="required">*</span></label>
+                        <input id="last__name" type="text" class="form-control" disabled />
                       </div>
                     </div>
-                    <div class="col-md-3 mb-5">
-                      <div class="client-logo__image">
-                        <img
-                          src="./image/projects/failure_5_11zon.webp"
-                          alt="My project"
-                        />
+                    <div class="col-12">
+                      <div class="mb-4">
+                        <label for="email">Email Address
+                          <span class="required">*</span></label>
+                        <input id="email" type="email" class="form-control" disabled />
                       </div>
                     </div>
-                    <div class="col-md-3 mb-5">
-                      <div class="client-logo__image">
-                        <img
-                          src="./image/projects/dharmastore_4_11zon.webp"
-                          alt="My project"
-                        />
+                    <div class="col-12">
+                      <div class="mb-4">
+                        <label for="subject">Subject <span class="required">*</span></label>
+                        <input id="subject" type="text" class="form-control" disabled />
                       </div>
                     </div>
-                    <div class="col-md-3 mb-5">
-                      <div class="client-logo__image">
-                        <img
-                          src="./image/projects/sociospotech_22_11zon.webp"
-                          alt="My project"
-                        />
+                    <div class="col-12">
+                      <div class="mb-4">
+                        <label for="additional__info">Additional Information</label>
+                        <textarea class="form-control" name="" id="additional__info" rows="3" disabled></textarea>
                       </div>
                     </div>
-                    <div class="col-md-3 mb-5">
-                      <div class="client-logo__image">
-                        <img
-                          src="./image/projects/creahome_3_11zon.webp"
-                          alt="My project"
-                        />
+                    <div class="col-12">
+                      <button class="submit__button" disabled aria-label="Send Message">
+                        <span class="me-3">Send Message</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="mb-4">
+                <h3 class="title text--black">How can i help you?</h3>
+                <p class="description text--black">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                  quisquam labore maxime dolorum iusto est.s
+                </p>
+              </div>
+              <ul class="faqs__list">
+                <li>
+                  <div class="faq__item">
+                    <div class="faq__question" data-target="my_mobile_number">
+                      <p class="subtitle text--black">
+                        What is my mobile number?
+                      </p>
+                      <div class="icon-wrapper">
+                        <i class="bi bi-chevron-down"></i>
                       </div>
                     </div>
-                    <div class="col-md-3 mb-5">
-                      <div class="client-logo__image">
-                        <img
-                          src="./image/projects/sleep and me_21_11zon.webp"
-                          alt="My project"
-                        />
+                    <div class="faq__content" id="my_mobile_number">
+                      <p class="description text--black text--bold">
+                        9865818795
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq__item">
+                    <div class="faq__question" data-target="my_mobile_email">
+                      <p class="subtitle text--black">
+                        What is my email address?
+                      </p>
+                      <div class="icon-wrapper">
+                        <i class="bi bi-chevron-down"></i>
                       </div>
                     </div>
-                    <div class="col-md-3 mb-5">
-                      <div class="client-logo__image">
-                        <img
-                          src="./image/projects/frankynelly_7_11zon.webp"
-                          alt="My project"
-                        />
+                    <div class="faq__content" id="my_mobile_email">
+                      <p class="description text--black text--bold">
+                        lalbahadurbc2054@gmail.com
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="faq__item">
+                    <div class="faq__question" data-target="my_mobile_address">
+                      <p class="subtitle text--black">Where i live?</p>
+                      <div class="icon-wrapper">
+                        <i class="bi bi-chevron-down"></i>
                       </div>
+                    </div>
+                    <div class="faq__content" id="my_mobile_address">
+                      <p class="description text--black text--bold">
+                        Kathmandu, Nepal (Originally from Dhangadhi)
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="trusted-client__list">
+                <p class="description text--indigo text--black mb-4 text-center text--bold">
+                  <span class="me-2">Working for</span> 🏆
+                </p>
+                <div class="row">
+                  <div class="col-md-3 mb-5">
+                    <div class="client-logo__image">
+                      <img src="./image/projects/neputer_18_11zon.webp" alt="My project" />
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-5">
+                    <div class="client-logo__image">
+                      <img src="./image/projects/broadway_2_11zon.webp" alt="My project" />
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-5">
+                    <div class="client-logo__image">
+                      <img src="./image/projects/failure_5_11zon.webp" alt="My project" />
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-5">
+                    <div class="client-logo__image">
+                      <img src="./image/projects/dharmastore_4_11zon.webp" alt="My project" />
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-5">
+                    <div class="client-logo__image">
+                      <img src="./image/projects/sociospotech_22_11zon.webp" alt="My project" />
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-5">
+                    <div class="client-logo__image">
+                      <img src="./image/projects/creahome_3_11zon.webp" alt="My project" />
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-5">
+                    <div class="client-logo__image">
+                      <img src="./image/projects/sleep and me_21_11zon.webp" alt="My project" />
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-5">
+                    <div class="client-logo__image">
+                      <img src="./image/projects/frankynelly_7_11zon.webp" alt="My project" />
                     </div>
                   </div>
                 </div>
@@ -1529,66 +1066,48 @@
           </div>
         </div>
       </div>
-      <header>
+    </div>
+    <header>
+      <div class="container">
+        <nav class="d-flex align-items-center justify-content-between">
+          <a href="./index.html" class="brand-logo">
+            <img class="brand-logo__image" src="./image/or-horizontal-logo.svg" alt="brand-logo" title="Portfolio Logo"
+              data-bs-toggle="tooltip" data-bs-placement="bottom" />
+          </a>
+          <ul class="nav-link__list">
+            <li>
+              <button type="button" class="nav-link__item" data-bs-toggle="offcanvas" data-bs-target="#contact__popup"
+                aria-label="Lets talk">
+                Lets Talk
+              </button>
+            </li>
+            <li>
+              <a href="./image/lalbahadurbudha-merstack.pdf" class="button-solid button--indigo button--rounded"
+                target="_blank" title="" data-bs-toggle="tooltip" data-bs-placement="bottom">
+                <span class="me-2">Download Resume</span>
+                <i class="fa-solid fa-download"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="banner-section">
         <div class="container">
-          <nav class="d-flex align-items-center justify-content-between">
-            <a href="./index.html" class="brand-logo">
-              <img
-                class="brand-logo__image"
-                src="./image/or-horizontal-logo.svg"
-                alt="brand-logo"
-                title="Portfolio Logo"
-                data-bs-toggle="tooltip"
-                data-bs-placement="bottom"
-              />
-            </a>
-            <ul class="nav-link__list">
-              <li>
-                <button
-                  type="button"
-                  class="nav-link__item"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#contact__popup"
-                  aria-label="Lets talk"
-                >
-                  Lets Talk
-                </button>
-              </li>
-              <li>
-                <a
-                  href="./image/lalbahadurbudha-merstack.pdf"
-                  class="button-outline button--indigo button--rounded"
-                  target="_blank"
-                  title=""
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                >
-                  <span class="me-2">Download Resume</span>
-                  <i class="fa-solid fa-download"></i
-                ></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <main>
-        <section class="banner-section">
-          <div class="container">
-            <div class="banner-profile__image">
-              <img
-                src="./image/banner/bg-remove-profile.png"
-                alt="profile-image"
-              />
-            </div>
-            <h1 class="banner__title">
-              Designer, Frontend Developer & MERN Developer
-            </h1>
-            <p class="banner__description">
-              Creating beautiful and simple designs through coding is my
-              passion.
-            </p>
+          <h1 class="banner__title">
+            Designer, Frontend & MERN Stack Developer
+          </h1>
+          <p class="banner__description">
+            Creating beautiful and simple designs through coding is my
+            passion.
+          </p>
+          <div class="banner-profile__image mb-0">
+            <img src="https://i.pinimg.com/originals/b2/32/55/b2325557a903fdf56b50da4656da9221.gif"
+              alt="profile-image" />
+          </div>
 
-            <ul class="banner__animation">
+
+          <!-- <ul class="banner__animation">
               <li>
                 <img
                   class="animate__slower-6s animate__delay-1s"
@@ -1650,257 +1169,243 @@
                   data-bs-placement="bottom"
                 />
               </li>
-            </ul>
-          </div>
-        </section>
-        <section class="overlapping-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 mx-auto">
-                <div class="text-center">
-                  <h2 class="title text--white">
-                    Hi, I'm Lal Bahadur. It is a pleasure to make your
-                    acquaintance.
-                  </h2>
-                  <p class="description text--white">
-                    "Expert in developing user-facing web applications" <br />
-                    As a web designer with 3 years of experience & Committed to
-                    delivering high-quality code and exceptional user
-                    experiences.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="skill-section">
-          <div class="container">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <div class="skill-card">
-                  <div class="head">
-                    <div class="skill-icon__image">
-                      <img
-                        src="./image/skills/graphics_11zon.webp"
-                        alt="skill"
-                      />
-                    </div>
-                    <h3 class="subtitle text--black">Graphics Designer</h3>
-                    <p class="description text--black">
-                      Design to inspire, create to captivate, and communicate to
-                      connect with the audience
-                    </p>
-                  </div>
-                  <div class="body">
-                    <p class="description text--indigo">
-                      Graphics Design Fluencies
-                    </p>
-                    <p class="description text--dark">
-                      UX, UI, Web, Apps, Logos
-                    </p>
-                  </div>
-                  <div class="foot">
-                    <p class="decription text--indigo">Design Tools:</p>
-                    <ul class="tools__list">
-                      <li>
-                        <p class="description text--black">Figma</p>
-                      </li>
-                      <li>
-                        <p class="description text--black">Adobe Photoshop</p>
-                      </li>
-                      <li>
-                        <p class="description text--black">Font Awesome</p>
-                      </li>
-                      <li>
-                        <p class="description text--black">Pen & Paper</p>
-                      </li>
-                      <li>
-                        <p class="description text--black">Sketch</p>
-                      </li>
-                      <li>
-                        <p class="description text--black">Vector</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="skill-card">
-                  <div class="head">
-                    <div class="skill-icon__image">
-                      <img
-                        src="./image/skills/frontend_11zon.webp"
-                        alt="skill"
-                      />
-                    </div>
-                    <h3 class="subtitle text--black">Frontend Developer</h3>
-                    <p class="description text--black">
-                      User experience is key. Let's make it accessible,
-                      intuitive, and delightful.
-                    </p>
-                  </div>
-                  <div class="body">
-                    <p class="description text--indigo">
-                      Frontend Language Stack
-                    </p>
-                    <p class="description text--dark">
-                      HTML, Javascript, JQuery, CSS, Sass, React JS, Next JS
-                    </p>
-                  </div>
-                  <div class="foot">
-                    <p class="decription text--indigo">Design Tools:</p>
-                    <ul class="tools__list">
-                      <li>
-                        <p class="description text--black">Chrome Devtools</p>
-                      </li>
-                      <li>
-                        <p class="description text--black">Typescript</p>
-                      </li>
-                      <li>
-                        <p class="description text--black">Bootstrap</p>
-                      </li>
-                      <li>
-                        <p class="description text--black">VS Code</p>
-                      </li>
-                      <li>
-                        <p class="description text--black">Vercel</p>
-                      </li>
-                      <li>
-                        <p class="description text--black">NPM</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="skill-card">
-                  <div class="head">
-                    <div class="skill-icon__image">
-                      <img
-                        src="./image/skills/backend_11zon.webp"
-                        alt="skill"
-                      />
-                    </div>
-                    <h3 class="subtitle text--black">Backend Developer</h3>
-                    <p class="description text--black">
-                      Let's build a scalable, secure, and reliable system to
-                      power the application.
-                    </p>
-                  </div>
-                  <div class="body">
-                    <p class="description text--indigo">
-                      Backend Language Stack
-                    </p>
-                    <p class="description text--dark">
-                      Node, Express, Mongoose, Mongo, GraphQL
-                    </p>
-                  </div>
-                  <div class="foot">
-                    <p class="decription text--indigo">Design Tools:</p>
-                    <ul class="tools__list">
-                      <li>
-                        <p class="description text--black">VS Code</p>
-                      </li>
-
-                      <li>
-                        <p class="description text--black">Terminal</p>
-                      </li>
-                      <li>
-                        <p class="description text--black">Apollo Server</p>
-                      </li>
-                      <li>
-                        <p class="description text--black">Postman</p>
-                      </li>
-                      <li>
-                        <p class="description text--black">Atlas Database</p>
-                      </li>
-                      <li>
-                        <p class="description text--black">Compass</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="recent-work-section">
-          <div class="container">
+            </ul> -->
+        </div>
+      </section>
+      <section class="overlapping-section">
+        <div class="container">
+          <div class="row">
             <div class="col-md-8 mx-auto">
-              <div class="section-heading">
-                <h2 class="title text--dark">
-                  Building a Better Future: A Look at My Recent Work
+              <div class="text-center">
+                <h2 class="title text--black">
+                  Hi, I'm <span class="text-decoration-underline text--indigo">Lal Bahadur</span> . It is a pleasure to
+                  make your
+                  acquaintance.
                 </h2>
-                <p class="description text--dark">
-                  Check out some of my previous design projects - a testament to
-                  my skills and creativity.
+                <p class="description text--black">
+                  "Expert in developing user-facing web applications" <br />
+                  As a web designer with 3 years of experience & Committed to
+                  delivering high-quality code and exceptional user
+                  experiences.
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="skill-section">
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <div class="skill-card">
+                <div class="head">
+                  <div class="skill-icon__image">
+                    <img src="./image/skills/graphics_11zon.webp" alt="skill" />
+                  </div>
+                  <h3 class="subtitle fw-bold text--black">Graphics Designer</h3>
+                  <p class="description text--black">
+                    Design to inspire, create to captivate, and communicate to
+                    connect with the audience
+                  </p>
+                </div>
+                <div class="body">
+                  <p class="description text--indigo">
+                    Graphics Design Fluencies
+                  </p>
+                  <p class="description text--dark">
+                    UX, UI, Web, Apps, Logos
+                  </p>
+                </div>
+                <div class="foot">
+                  <p class="decription text--indigo">Design Tools:</p>
+                  <ul class="tools__list">
+                    <li>
+                      <p class="description text--black">Figma</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Adobe Photoshop</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Font Awesome</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Pen & Paper</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Sketch</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Vector</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="skill-card">
+                <div class="head">
+                  <div class="skill-icon__image">
+                    <img src="./image/skills/frontend_11zon.webp" alt="skill" />
+                  </div>
+                  <h3 class="subtitle fw-bold text--black">Frontend Developer</h3>
+                  <p class="description text--black">
+                    User experience is key. Let's make it accessible,
+                    intuitive, and delightful.
+                  </p>
+                </div>
+                <div class="body">
+                  <p class="description text--indigo">
+                    Frontend Language Stack
+                  </p>
+                  <p class="description text--dark">
+                    HTML, Javascript, JQuery, CSS, Sass, React JS, Next JS
+                  </p>
+                </div>
+                <div class="foot">
+                  <p class="decription text--indigo">Design Tools:</p>
+                  <ul class="tools__list">
+                    <li>
+                      <p class="description text--black">Chrome Devtools</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Typescript</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Bootstrap</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">VS Code</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Vercel</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">NPM</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="skill-card">
+                <div class="head">
+                  <div class="skill-icon__image">
+                    <img src="./image/skills/backend_11zon.webp" alt="skill" />
+                  </div>
+                  <h3 class="subtitle fw-bold text--black">Backend Developer</h3>
+                  <p class="description text--black">
+                    Let's build a scalable, secure, and reliable system to
+                    power the application.
+                  </p>
+                </div>
+                <div class="body">
+                  <p class="description text--indigo">
+                    Backend Language Stack
+                  </p>
+                  <p class="description text--dark">
+                    Node, Express, Mongoose, Mongo, GraphQL
+                  </p>
+                </div>
+                <div class="foot">
+                  <p class="decription text--indigo">Design Tools:</p>
+                  <ul class="tools__list">
+                    <li>
+                      <p class="description text--black">VS Code</p>
+                    </li>
 
-            <ul class="recent-work__list">
-              <li>
-                <div class="recent-work__item">
-                  <div class="row align-items-center">
-                    <div class="col-7">
-                      <div class="project__thumbnail">
-                        <img
-                          src="./image/projects/broadbiography.svg"
-                          alt="recent-project"
-                        />
-                        <!-- <button
+                    <li>
+                      <p class="description text--black">Terminal</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Apollo Server</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Postman</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Atlas Database</p>
+                    </li>
+                    <li>
+                      <p class="description text--black">Compass</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recent-work-section">
+        <div class="container">
+          <div class="col-md-8 mx-auto">
+            <div class="section-heading">
+              <h2 class="title text--dark">
+                Building a Better Future: A Look at My Recent Work
+              </h2>
+              <p class="description text--dark">
+                Check out some of my previous design projects - a testament to
+                my skills and creativity.
+              </p>
+            </div>
+          </div>
+
+          <ul class="recent-work__list">
+            <li>
+              <div class="recent-work__item">
+                <div class="row align-items-center">
+                  <div class="col-7">
+                    <div class="project__thumbnail">
+                      <img src="./image/projects/broadbiography.svg" alt="recent-project" />
+                      <!-- <button
                           class="button-outline button--white button--rounded"
                           aria-label="Visit Website"
                         >
                           <span class="me-2">Visit Website</span>
                           <i class="fa-solid fa-globe"></i>
                         </button> -->
-                      </div>
                     </div>
-                    <div class="col-5">
-                      <div class="text-end">
-                        <h3 class="title text--black">Broad Biography</h3>
-                        <div class="project-description">
-                          <p class="decription text--indigo mb-0">
-                            Broad Biography is a website featuring concise and
-                            informative articles about notable individuals from
-                            various fields, offering insights into their lives,
-                            careers, and achievements.
-                          </p>
-                        </div>
-                        <p class="description text--black">
-                          #VSCode, #Figma, #HTML, #CSS, #JQuery, #Slick
+                  </div>
+                  <div class="col-5">
+                    <div class="text-end">
+                      <h3 class="title text--indigo">Broad Biography</h3>
+                      <div class="project-description">
+                        <p class="decription text--black mb-0">
+                          Broad Biography is a website featuring concise and
+                          informative articles about notable individuals from
+                          various fields, offering insights into their lives,
+                          careers, and achievements.
                         </p>
                       </div>
+                      <p class="description text--black">
+                        #VSCode, #Figma, #HTML, #CSS, #JQuery, #Slick
+                      </p>
                     </div>
                   </div>
                 </div>
-              </li>
-              <li class="mb-5">
-                <div class="recent-work__item">
-                  <div class="row align-items-center">
-                    <div class="col-5">
-                      <div class="text-y">
-                        <h3 class="title text--black">Bedding Theme</h3>
-                        <div class="project-description">
-                          <p class="decription text--indigo mb-0">
-                            This theme about Bedding sells high-quality bedding
-                            products, including duvet covers, pillowcases,
-                            fitted sheets, and flat sheets.
-                          </p>
-                        </div>
-                        <p class="description text--black">
-                          #VSCode, #Figma, #HTML, #CSS, #JQuery, #Slick
+              </div>
+            </li>
+            <li class="mb-5">
+              <div class="recent-work__item">
+                <div class="row align-items-center">
+                  <div class="col-5">
+                    <div class="text-y">
+                      <h3 class="title text--indigo">Bedding Theme</h3>
+                      <div class="project-description">
+                        <p class="decription text--black mb-0">
+                          This theme about Bedding sells high-quality bedding
+                          products, including duvet covers, pillowcases,
+                          fitted sheets, and flat sheets.
                         </p>
                       </div>
+                      <p class="description text--black">
+                        #VSCode, #Figma, #HTML, #CSS, #JQuery, #Slick
+                      </p>
                     </div>
-                    <div class="col-7">
-                      <div class="project__thumbnail">
-                        <img
-                          src="./image/projects/rinoland.svg"
-                          alt="recent-project"
-                        />
-                        <!-- <button
+                  </div>
+                  <div class="col-7">
+                    <div class="project__thumbnail">
+                      <img src="./image/projects/rinoland.svg" alt="recent-project" />
+                      <!-- <button
                           type="button"
                           class="button-outline button--white button--rounded"
                           target="_blank"
@@ -1909,736 +1414,505 @@
                           <span class="me-2">Visit Website</span>
                           <i class="fa-solid fa-globe"></i>
                         </button> -->
-                      </div>
                     </div>
                   </div>
                 </div>
-              </li>
-            </ul>
-            <div class="d-flex justify-content-center pt-5">
-              <a
-                href="https://github.com/stu9437l"
-                class="button-outline button--indigo button--rounded"
-                target="_blank"
-                title="See more on github"
-                data-bs-toggle="tooltip"
-                data-bs-placement="bottom"
-              >
-                <span class="me-2">See more on github</span>
-                <i class="fa-brands fa-gitlab"></i>
-              </a>
-            </div>
+              </div>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-center pt-5">
+            <a href="https://github.com/stu9437l" class="button-solid button--indigo button--rounded" target="_blank"
+              title="See more on github" data-bs-toggle="tooltip" data-bs-placement="bottom">
+              <span class="me-2">See more on github</span>
+              <i class="fa-brands fa-github"></i>
+            </a>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="overlapping-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 mx-auto">
-                <div class="text-center">
-                  <h2 class="title text--white">
-                    The Journey of My Startup Projects
-                  </h2>
-                  <p class="description text--white">
-                    As a software developer, I have embarked on a remarkable
-                    journey of designing and building digital products. With
-                    extensive experience in using numerous web and mobile
-                    applications across different industries and verticals, I
-                    have embraced the challenge of creating my own innovative
-                    solutions. My project life has been nothing short of
-                    thrilling, and my passion for developing cutting-edge
-                    software continues to drive my success.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="startup-project-section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4 mb-5">
-                <div class="startup-project__card">
-                  <div class="project__logo">
-                    <img
-                      src="./image/projects/failure_5_11zon.webp"
-                      alt="Failure.gg"
-                    />
-                  </div>
-                  <p class="description text--black">
-                    Failure.gg accepts multiple payment methods, delivers
-                    in-game currency to user's account shortly after payment.
-                  </p>
-                  <div class="d-flex justify-content-center pb-4">
-                    <a
-                      href="https://failure.gg/"
-                      class="button-outline button--indigo button--rounded"
-                      target="_blank"
-                      title="Visit Website"
-                    >
-                      <span class="me-2">Visit Website</span>
-                      <i class="fa-solid fa-globe"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-5">
-                <div class="startup-project__card">
-                  <div class="project__logo">
-                    <img
-                      src="./image/projects/sociospotech_22_11zon.webp"
-                      alt="Sociospotech"
-                    />
-                  </div>
-                  <p class="description text--black">
-                    It offers digital marketing content and resources for
-                    individuals and businesses to improve their online presence.
-                  </p>
-                  <div class="d-flex justify-content-center pb-4">
-                    <a
-                      href="https://sociospotech.com/"
-                      class="button-outline button--indigo button--rounded"
-                      target="_blank"
-                      title="Visit Website"
-                    >
-                      <span class="me-2">Visit Website</span>
-                      <i class="fa-solid fa-globe"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-5">
-                <div class="startup-project__card">
-                  <div class="project__logo">
-                    <img
-                      src="./image/projects/Ayeshalogo_1_11zon.webp"
-                      alt="Yew"
-                    />
-                  </div>
-                  <p class="description text--black">
-                    Bewithyew offers medical products and services online via
-                    website and mobile app.
-                  </p>
-                  <div class="d-flex justify-content-center pb-4">
-                    <a
-                      href="https://bewithyew.com/"
-                      class="button-outline button--indigo button--rounded"
-                      target="_blank"
-                      title="Visit Website"
-                    >
-                      <span class="me-2">Visit Website</span>
-                      <i class="fa-solid fa-globe"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-5">
-                <div class="startup-project__card">
-                  <div class="project__logo">
-                    <img
-                      src="./image/projects/broadway_2_11zon.webp"
-                      alt="Broadway Infosys"
-                    />
-                  </div>
-                  <p class="description text--black">
-                    Broadway Infosys provides professional IT training in
-                    Kathmandu, Nepal since 2008 with expert instructors.
-                  </p>
-                  <div class="d-flex justify-content-center pb-4">
-                    <a
-                      href="https://broadwayinfosys.com/"
-                      class="button-outline button--indigo button--rounded"
-                      target="_blank"
-                      title="Visit Website"
-                    >
-                      <span class="me-2">Visit Website</span>
-                      <i class="fa-solid fa-globe"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-5">
-                <div class="startup-project__card">
-                  <div class="project__logo">
-                    <img
-                      src="./image/projects/creahome_3_11zon.webp"
-                      alt="CreaHome Bedding"
-                    />
-                  </div>
-                  <p class="description text--black">
-                    Creamhome Bedding sells high-quality bedding products,
-                    including duvet covers, pillowcases, fitted sheets, and flat
-                    sheets for 25+ years.
-                  </p>
-                  <div class="d-flex justify-content-center pb-4">
-                    <a
-                      href="https://creahomebedding.myshopify.com/"
-                      class="button-outline button--indigo button--rounded"
-                      target="_blank"
-                      title="Visit Website"
-                    >
-                      <span class="me-2">Visit Website</span>
-                      <i class="fa-solid fa-globe"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-5">
-                <div class="startup-project__card">
-                  <div class="project__logo">
-                    <img
-                      src="./image/projects/dharmastore_4_11zon.webp"
-                      alt="DharmaStore"
-                    />
-                  </div>
-                  <p class="description text--black">
-                    Dharmastore sells Hindu and Buddhist religious products like
-                    books, statues, prayer beads, incense, and meditation
-                    cushions.
-                  </p>
-                  <div class="d-flex justify-content-center pb-4">
-                    <a
-                      href="https://dharmaastore.com/"
-                      class="button-outline button--indigo button--rounded"
-                      target="_blank"
-                      title="Visit Website"
-                    >
-                      <span class="me-2">Visit Website</span>
-                      <i class="fa-solid fa-globe"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-5">
-                <div class="startup-project__card">
-                  <div class="project__logo">
-                    <img
-                      src="./image/projects/good_8_11zon.webp"
-                      alt="In Good Company"
-                    />
-                  </div>
-                  <p class="description text--black">
-                    Ingoodcompanynails sells nail polish, nail art tools, and
-                    other nail care products for home manicures.
-                  </p>
-                  <div class="d-flex justify-content-center pb-4">
-                    <a
-                      href="https://ingoodcompanynails.myshopify.com/"
-                      class="button-outline button--indigo button--rounded"
-                      target="_blank"
-                      title="Visit Website"
-                    >
-                      <span class="me-2">Visit Website</span>
-                      <i class="fa-solid fa-globe"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-5">
-                <div class="startup-project__card">
-                  <div class="project__logo">
-                    <img
-                      src="./image/projects/sleep and me_21_11zon.webp"
-                      alt="Sleep & Me"
-                    />
-                  </div>
-                  <p class="description text--black">
-                    Sleep&Me offers a variety of products for your bedroom -
-                    find your perfect fit today!
-                  </p>
-                  <div class="d-flex justify-content-center pb-4">
-                    <a
-                      href="https://sleepandme.co.uk/"
-                      class="button-outline button--indigo button--rounded"
-                      target="_blank"
-                      title="Visit Website"
-                    >
-                      <span class="me-2">Visit Website</span>
-                      <i class="fa-solid fa-globe"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-5">
-                <div class="startup-project__card">
-                  <div class="project__logo">
-                    <img
-                      src="./image/projects/frankynelly_7_11zon.webp"
-                      alt="frankynelly"
-                    />
-                  </div>
-                  <p class="description text--black">
-                    Frankynelly is a music production website that offers free
-                    sound packs, courses, and plugins.
-                  </p>
-                  <div class="d-flex justify-content-center pb-4">
-                    <a
-                      href="https://frankynelly.com"
-                      class="button-outline button--indigo button--rounded"
-                      target="_blank"
-                      title="Visit Website"
-                    >
-                      <span class="me-2">Visit Website</span>
-                      <i class="fa-solid fa-globe"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="contact-section">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-12">
-                <div class="section-heading">
-                  <h3 class="title text--dark">
-                    Let's collaborate and create magic.
-                  </h3>
-                  <p class="description text--dark mb-5">
-                    Time is of the essence for me. <br />
-                    Let's connect to discuss product design and partnership
-                    opportunities.
-                  </p>
-                  <div class="clock-container">
-                    <div class="clock">
-                      <div class="clock__big-tick clock__big-tick--1"></div>
-                      <div class="clock__big-tick clock__big-tick--2"></div>
-                      <div class="clock__big-tick clock__big-tick--3"></div>
-                      <div class="clock__big-tick clock__big-tick--4"></div>
-                      <div class="clock__big-tick clock__big-tick--5"></div>
-                      <div class="clock__big-tick clock__big-tick--6"></div>
-                      <div class="clock__big-tick clock__big-tick--7"></div>
-                      <div class="clock__big-tick clock__big-tick--8"></div>
-                      <div class="clock__big-tick clock__big-tick--9"></div>
-                      <div class="clock__big-tick clock__big-tick--10"></div>
-                      <div class="clock__big-tick clock__big-tick--11"></div>
-                      <div class="clock__big-tick clock__big-tick--12"></div>
-
-                      <div class="clock__small-tick clock__small-tick--1"></div>
-                      <div class="clock__small-tick clock__small-tick--2"></div>
-                      <div class="clock__small-tick clock__small-tick--3"></div>
-                      <div class="clock__small-tick clock__small-tick--4"></div>
-                      <div class="clock__small-tick clock__small-tick--5"></div>
-                      <div class="clock__small-tick clock__small-tick--6"></div>
-                      <div class="clock__small-tick clock__small-tick--7"></div>
-                      <div class="clock__small-tick clock__small-tick--8"></div>
-                      <div class="clock__small-tick clock__small-tick--9"></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--10"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--11"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--12"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--13"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--14"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--15"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--16"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--17"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--18"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--19"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--20"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--21"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--22"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--23"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--24"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--25"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--26"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--27"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--28"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--29"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--30"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--31"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--32"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--33"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--34"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--35"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--36"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--37"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--38"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--39"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--40"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--41"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--42"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--43"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--44"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--45"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--46"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--47"
-                      ></div>
-                      <div
-                        class="clock__small-tick clock__small-tick--48"
-                      ></div>
-                    </div>
-                    <div class="center-bottom"></div>
-                    <div class="sec-hand"></div>
-                    <div class="small-hand"></div>
-                    <div class="big-hand"></div>
-                    <div class="center-up"></div>
-                  </div>
-                </div>
-                <div class="text-center">
-                  <img
-                    class="coversation-icon animate__animated animate__swing animate__infinite"
-                    src="./image/contact/or-conversation-transformed.png"
-                    alt="talk me"
-                  />
-                </div>
-                <div class="d-flex justify-content-center">
-                  <button
-                    class="button-outline button--indigo button--rounded"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#contact__popup"
-                    aria-label="Lets Talk"
-                  >
-                    <span class="ms-2">Let's talk</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="testimonial-section">
-          <div class="container box-shadow padding-lg">
-            <div class="row">
-              <div class="col-md-8 mx-auto">
-                <div class="section-heading">
-                  <h3 class="title text--black">
-                    Raving Reviews: What People are Saying About 😎
-                  </h3>
-                  <p class="decription text--black">
-                    The people I've worked with <br />
-                    have said some great things about me and my work.
-                  </p>
-                </div>
-                <ul class="testimony-user__image-list">
-                  <li>
-                    <div
-                      class="testimony-user__image"
-                      data-target="first__person"
-                    >
-                      <img
-                        src="./image/reviews/review_char-1_1_11zon.webp"
-                        alt="review-character"
-                      />
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      class="testimony-user__image active"
-                      data-target="second__person"
-                    >
-                      <img
-                        src="./image/reviews/review_char-2_2_11zon.webp"
-                        alt="review-character"
-                      />
-                    </div>
-                  </li>
-                  <li>
-                    <div
-                      class="testimony-user__image"
-                      data-target="third__person"
-                    >
-                      <img
-                        src="./image/reviews/review_char-3_3_11zon.webp"
-                        alt="review-character"
-                      />
-                    </div>
-                  </li>
-                </ul>
-                <ul class="testimony-content__list">
-                  <li class="testimony-content__item" id="first__person">
-                    <div>
-                      <p class="description-lg text--black mb-5">
-                        <i class="fa-solid fa-quote-left me-1"></i> The
-                        designer's keen eye for detail and exceptional talent
-                        delivered a beautiful and functional design that
-                        perfectly captured our vision. Highly recommend for an
-                        outstanding design experience!
-                        <i class="fa-solid fa-quote-right ms-1"></i>
-                      </p>
-                      <p class="subtitle text--bold text--black mb-2">
-                        Rajesh Chaudhary
-                      </p>
-                      <p class="description text--black">Devops Engineer</p>
-                    </div>
-                  </li>
-                  <li class="testimony-content__item show" id="second__person">
-                    <div>
-                      <p class="description-lg text--black mb-5">
-                        <i class="fa-solid fa-quote-left me-1"></i> With
-                        impressive ability to balance aesthetics and
-                        practicality, the designer perfectly captured our
-                        brand's identity with exceptional design skills. Highly
-                        recommended for delivering a flawless outcome!
-                        <i class="fa-solid fa-quote-right ms-1"></i>
-                      </p>
-                      <p class="subtitle text--bold text--black mb-2">
-                        Jivan Gautam
-                      </p>
-                      <p class="description text--black">Software Developer</p>
-                    </div>
-                  </li>
-                  <li class="testimony-content__item" id="third__person">
-                    <div>
-                      <p class="description-lg text--black mb-5">
-                        <i class="fa-solid fa-quote-left me-1"></i> We were
-                        blown away by the designer's stunning work that
-                        surpassed our expectations. Highly recommend for their
-                        exceptional professionalism and creativity in design. A
-                        truly outstanding experience!
-                        <i class="fa-solid fa-quote-right ms-1"></i>
-                      </p>
-                      <p class="subtitle text--bold text--black mb-2">
-                        Monika Dangol
-                      </p>
-                      <p class="description text--black">UI Designer</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="quote-section pb-0">
-          <div class="container">
-            <div class="text-center">
-              <img
-                class="best__journey"
-                src="./image/favorite-qoute/testimonial_11zon.webp"
-                alt="Favorite Quote"
-              />
-            </div>
-            <div class="section-heading">
-              <h3 class="title text--dark">
-                Inspiring Words for Your Journey to Greatness
-              </h3>
-              <p class="description text--dark">
-                Good design is obvious. Great design is transparent.
-              </p>
-            </div>
+      <section class="overlapping-section">
+        <div class="container">
+          <div class="row">
             <div class="col-md-8 mx-auto">
-              <div class="quote__item">
-                <div class="quote__title">
-                  <p class="subtitle text--bold text--dark mb-0">
-                    There are no secrets to success. It is the result of
-                    preparation, hard work, and learning from failure.
-                  </p>
-                </div>
-                <p
-                  class="description text--indigo text--bold mt-3 pb-0 ms-5 ps-3"
-                >
-                  - Colin Powell
+              <div class="text-center">
+                <h2 class="title text--black">
+                  The Journey of My Startup Projects
+                </h2>
+                <p class="description text--black">
+                  As a software developer, I
+                  have embraced the challenge of creating my own innovative
+                  solutions. My project life has been nothing short of
+                  thrilling, and my passion for developing cutting-edge
+                  software continues to drive my success.
                 </p>
               </div>
             </div>
           </div>
-        </section>
-      </main>
-      <footer>
-        <svg class="wave-top" width="100" viewBox="0 0 1200 250">
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V-8.5451e-06H1150C1100 -8.5451e-06 1000 -8.5451e-06 900 -8.5451e-06C800 -8.5451e-06 700 -8.5451e-06 600 -8.5451e-06C500 -8.5451e-06 400 -8.5451e-06 300 -8.5451e-06C200 -8.5451e-06 100 -8.5451e-06 50 -8.5451e-06H0V108.306Z"
-            fill="#fff"
-          />
-        </svg>
-        <div class="container h-100 d-flex flex-column justify-content-end">
-          <div class="position-relative mt-auto">
-            <div class="brand-logo brand--white">
-              <img
-                class="brand-logo__image"
-                src="./image/or-transparent-horizontal.svg"
-                alt="brand-logo"
-              />
+        </div>
+      </section>
+      <section class="startup-project-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img src="./image/projects/failure_5_11zon.webp" alt="Failure.gg" />
+                </div>
+                <p class="description text--black">
+                  Failure.gg accepts multiple payment methods, delivers
+                  in-game currency to user's account shortly after payment.
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a href="https://failure.gg/" class="button-outline button--indigo button--rounded" target="_blank"
+                    title="Visit Website">
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-            <p class="subtitle text-uppercase text--white">
-              Code, Learn, and Rise Daily.
-            </p>
-            <ul class="social-media__list">
-              <li>
-                <a
-                  href="https://www.facebook.com/lalbahadurbudhachhetree"
-                  class="social-media__item"
-                  target="_blank"
-                  title="Facebook"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                  aria-label="Facebook"
-                >
-                  <i class="fa-brands fa-square-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/stu9437l"
-                  class="social-media__item"
-                  target="_blank"
-                  title="Github"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                  aria-label="github"
-                >
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/LalBudhachhetri"
-                  class="social-media__item"
-                  target="_blank"
-                  title="Twitter"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                  aria-label="Twitter"
-                >
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/lal-bahadur-budhachhetri-13668b218/"
-                  class="social-media__item"
-                  target="_blank"
-                  title="Linkedin"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="bottom"
-                  aria-label="Linkedin"
-                >
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-            <p class="copyright-text">Design By Me ❤️</p>
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img src="./image/projects/sociospotech_22_11zon.webp" alt="Sociospotech" />
+                </div>
+                <p class="description text--black">
+                  It offers digital marketing content and resources for
+                  individuals and businesses to improve their online presence.
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a href="https://sociospotech.com/" class="button-outline button--indigo button--rounded"
+                    target="_blank" title="Visit Website">
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img src="./image/projects/Ayeshalogo_1_11zon.webp" alt="Yew" />
+                </div>
+                <p class="description text--black">
+                  Bewithyew offers medical products and services online via
+                  website and mobile app.
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a href="https://bewithyew.com/" class="button-outline button--indigo button--rounded" target="_blank"
+                    title="Visit Website">
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img src="./image/projects/broadway_2_11zon.webp" alt="Broadway Infosys" />
+                </div>
+                <p class="description text--black">
+                  Broadway Infosys provides professional IT training in
+                  Kathmandu, Nepal since 2008 with expert instructors.
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a href="https://broadwayinfosys.com/" class="button-outline button--indigo button--rounded"
+                    target="_blank" title="Visit Website">
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img src="./image/projects/creahome_3_11zon.webp" alt="CreaHome Bedding" />
+                </div>
+                <p class="description text--black">
+                  Creamhome Bedding sells high-quality bedding products,
+                  including duvet covers, pillowcases, fitted sheets, and flat
+                  sheets for 25+ years.
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a href="https://creahomebedding.myshopify.com/" class="button-outline button--indigo button--rounded"
+                    target="_blank" title="Visit Website">
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img src="./image/projects/dharmastore_4_11zon.webp" alt="DharmaStore" />
+                </div>
+                <p class="description text--black">
+                  Dharmastore sells Hindu and Buddhist religious products like
+                  books, statues, prayer beads, incense, and meditation
+                  cushions.
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a href="https://dharmaastore.com/" class="button-outline button--indigo button--rounded"
+                    target="_blank" title="Visit Website">
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img src="./image/projects/good_8_11zon.webp" alt="In Good Company" />
+                </div>
+                <p class="description text--black">
+                  Ingoodcompanynails sells nail polish, nail art tools, and
+                  other nail care products for home manicures.
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a href="https://ingoodcompanynails.myshopify.com/"
+                    class="button-outline button--indigo button--rounded" target="_blank" title="Visit Website">
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img src="./image/projects/sleep and me_21_11zon.webp" alt="Sleep & Me" />
+                </div>
+                <p class="description text--black">
+                  Sleep&Me offers a variety of products for your bedroom -
+                  find your perfect fit today!
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a href="https://sleepandme.co.uk/" class="button-outline button--indigo button--rounded"
+                    target="_blank" title="Visit Website">
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-5">
+              <div class="startup-project__card">
+                <div class="project__logo">
+                  <img src="./image/projects/frankynelly_7_11zon.webp" alt="frankynelly" />
+                </div>
+                <p class="description text--black">
+                  Frankynelly is a music production website that offers free
+                  sound packs, courses, and plugins.
+                </p>
+                <div class="d-flex justify-content-center pb-4">
+                  <a href="https://frankynelly.com" class="button-outline button--indigo button--rounded"
+                    target="_blank" title="Visit Website">
+                    <span class="me-2">Visit Website</span>
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </section>
+      <section class="contact-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="section-heading">
+                <h3 class="title text--dark">
+                  Let's collaborate and create magic.
+                </h3>
+                <p class="description text--dark mb-5">
+                  Time is of the essence for me. <br />
+                  Let's connect to discuss product design and partnership
+                  opportunities.
+                </p>
+                <div class="clock-container">
+                  <div class="clock">
+                    <div class="clock__big-tick clock__big-tick--1"></div>
+                    <div class="clock__big-tick clock__big-tick--2"></div>
+                    <div class="clock__big-tick clock__big-tick--3"></div>
+                    <div class="clock__big-tick clock__big-tick--4"></div>
+                    <div class="clock__big-tick clock__big-tick--5"></div>
+                    <div class="clock__big-tick clock__big-tick--6"></div>
+                    <div class="clock__big-tick clock__big-tick--7"></div>
+                    <div class="clock__big-tick clock__big-tick--8"></div>
+                    <div class="clock__big-tick clock__big-tick--9"></div>
+                    <div class="clock__big-tick clock__big-tick--10"></div>
+                    <div class="clock__big-tick clock__big-tick--11"></div>
+                    <div class="clock__big-tick clock__big-tick--12"></div>
 
-    <!-- bootstrap cdn -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- jquery cdn -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+                    <div class="clock__small-tick clock__small-tick--1"></div>
+                    <div class="clock__small-tick clock__small-tick--2"></div>
+                    <div class="clock__small-tick clock__small-tick--3"></div>
+                    <div class="clock__small-tick clock__small-tick--4"></div>
+                    <div class="clock__small-tick clock__small-tick--5"></div>
+                    <div class="clock__small-tick clock__small-tick--6"></div>
+                    <div class="clock__small-tick clock__small-tick--7"></div>
+                    <div class="clock__small-tick clock__small-tick--8"></div>
+                    <div class="clock__small-tick clock__small-tick--9"></div>
+                    <div class="clock__small-tick clock__small-tick--10"></div>
+                    <div class="clock__small-tick clock__small-tick--11"></div>
+                    <div class="clock__small-tick clock__small-tick--12"></div>
+                    <div class="clock__small-tick clock__small-tick--13"></div>
+                    <div class="clock__small-tick clock__small-tick--14"></div>
+                    <div class="clock__small-tick clock__small-tick--15"></div>
+                    <div class="clock__small-tick clock__small-tick--16"></div>
+                    <div class="clock__small-tick clock__small-tick--17"></div>
+                    <div class="clock__small-tick clock__small-tick--18"></div>
+                    <div class="clock__small-tick clock__small-tick--19"></div>
+                    <div class="clock__small-tick clock__small-tick--20"></div>
+                    <div class="clock__small-tick clock__small-tick--21"></div>
+                    <div class="clock__small-tick clock__small-tick--22"></div>
+                    <div class="clock__small-tick clock__small-tick--23"></div>
+                    <div class="clock__small-tick clock__small-tick--24"></div>
+                    <div class="clock__small-tick clock__small-tick--25"></div>
+                    <div class="clock__small-tick clock__small-tick--26"></div>
+                    <div class="clock__small-tick clock__small-tick--27"></div>
+                    <div class="clock__small-tick clock__small-tick--28"></div>
+                    <div class="clock__small-tick clock__small-tick--29"></div>
+                    <div class="clock__small-tick clock__small-tick--30"></div>
+                    <div class="clock__small-tick clock__small-tick--31"></div>
+                    <div class="clock__small-tick clock__small-tick--32"></div>
+                    <div class="clock__small-tick clock__small-tick--33"></div>
+                    <div class="clock__small-tick clock__small-tick--34"></div>
+                    <div class="clock__small-tick clock__small-tick--35"></div>
+                    <div class="clock__small-tick clock__small-tick--36"></div>
+                    <div class="clock__small-tick clock__small-tick--37"></div>
+                    <div class="clock__small-tick clock__small-tick--38"></div>
+                    <div class="clock__small-tick clock__small-tick--39"></div>
+                    <div class="clock__small-tick clock__small-tick--40"></div>
+                    <div class="clock__small-tick clock__small-tick--41"></div>
+                    <div class="clock__small-tick clock__small-tick--42"></div>
+                    <div class="clock__small-tick clock__small-tick--43"></div>
+                    <div class="clock__small-tick clock__small-tick--44"></div>
+                    <div class="clock__small-tick clock__small-tick--45"></div>
+                    <div class="clock__small-tick clock__small-tick--46"></div>
+                    <div class="clock__small-tick clock__small-tick--47"></div>
+                    <div class="clock__small-tick clock__small-tick--48"></div>
+                  </div>
+                  <div class="center-bottom"></div>
+                  <div class="sec-hand"></div>
+                  <div class="small-hand"></div>
+                  <div class="big-hand"></div>
+                  <div class="center-up"></div>
+                </div>
+              </div>
+              <div class="text-center">
+                <img class="coversation-icon animate__animated animate__swing animate__infinite"
+                  src="./image/contact/or-conversation-transformed.png" alt="talk me" />
+              </div>
+              <div class="d-flex justify-content-center">
+                <button class="button-solid button--indigo button--rounded" data-bs-toggle="offcanvas"
+                  data-bs-target="#contact__popup" aria-label="Lets Talk">
+                  <span class="ms-2">Let's talk</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial-section">
+        <div class="container box-shadow padding-lg">
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+              <div class="section-heading">
+                <h3 class="title text--black">
+                  Raving Reviews: What People are Saying About 😎
+                </h3>
+                <p class="decription text--black">
+                  The people I've worked with <br />
+                  have said some great things about me and my work.
+                </p>
+              </div>
+              <ul class="testimony-user__image-list">
+                <li>
+                  <div class="testimony-user__image" data-target="first__person">
+                    <img src="./image/reviews/review_char-1_1_11zon.webp" alt="review-character" />
+                  </div>
+                </li>
+                <li>
+                  <div class="testimony-user__image active" data-target="second__person">
+                    <img src="./image/reviews/review_char-2_2_11zon.webp" alt="review-character" />
+                  </div>
+                </li>
+                <li>
+                  <div class="testimony-user__image" data-target="third__person">
+                    <img src="./image/reviews/review_char-3_3_11zon.webp" alt="review-character" />
+                  </div>
+                </li>
+              </ul>
+              <ul class="testimony-content__list">
+                <li class="testimony-content__item" id="first__person">
+                  <div>
+                    <p class="description-lg text--black mb-5">
+                      <i class="fa-solid fa-quote-left me-1"></i> The
+                      designer's keen eye for detail and exceptional talent
+                      delivered a beautiful and functional design that
+                      perfectly captured our vision. Highly recommend for an
+                      outstanding design experience!
+                      <i class="fa-solid fa-quote-right ms-1"></i>
+                    </p>
+                    <p class="subtitle text--bold text--black mb-2">
+                      Rajesh Chaudhary
+                    </p>
+                    <p class="description text--black">Devops Engineer</p>
+                  </div>
+                </li>
+                <li class="testimony-content__item show" id="second__person">
+                  <div>
+                    <p class="description-lg text--black mb-5">
+                      <i class="fa-solid fa-quote-left me-1"></i> With
+                      impressive ability to balance aesthetics and
+                      practicality, the designer perfectly captured our
+                      brand's identity with exceptional design skills. Highly
+                      recommended for delivering a flawless outcome!
+                      <i class="fa-solid fa-quote-right ms-1"></i>
+                    </p>
+                    <p class="subtitle text--bold text--black mb-2">
+                      Jivan Gautam
+                    </p>
+                    <p class="description text--black">Software Developer</p>
+                  </div>
+                </li>
+                <li class="testimony-content__item" id="third__person">
+                  <div>
+                    <p class="description-lg text--black mb-5">
+                      <i class="fa-solid fa-quote-left me-1"></i> We were
+                      blown away by the designer's stunning work that
+                      surpassed our expectations. Highly recommend for their
+                      exceptional professionalism and creativity in design. A
+                      truly outstanding experience!
+                      <i class="fa-solid fa-quote-right ms-1"></i>
+                    </p>
+                    <p class="subtitle text--bold text--black mb-2">
+                      Monika Dangol
+                    </p>
+                    <p class="description text--black">UI Designer</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quote-section pb-0">
+        <div class="container">
+          <div class="text-center">
+            <img class="best__journey" src="./image/favorite-qoute/testimonial_11zon.webp" alt="Favorite Quote" />
+          </div>
+          <div class="section-heading">
+            <h3 class="title text--dark">
+              Inspiring Words for Your Journey to Greatness
+            </h3>
+            <p class="description text--dark">
+              Good design is obvious. Great design is transparent.
+            </p>
+          </div>
+          <div class="col-md-8 mx-auto">
+            <div class="quote__item">
+              <div class="quote__title">
+                <p class="subtitle text--bold text--red mb-0">
+                  There are no secrets to success. It is the result of
+                  preparation, hard work, and learning from failure.
+                </p>
+              </div>
+              <p class="description text--black text--bold mt-3 pb-0 ms-5 ps-3">
+                - Colin Powell
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <svg class="wave-top" width="100" viewBox="0 0 1200 250">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V-8.5451e-06H1150C1100 -8.5451e-06 1000 -8.5451e-06 900 -8.5451e-06C800 -8.5451e-06 700 -8.5451e-06 600 -8.5451e-06C500 -8.5451e-06 400 -8.5451e-06 300 -8.5451e-06C200 -8.5451e-06 100 -8.5451e-06 50 -8.5451e-06H0V108.306Z"
+          fill="#fff" />
+      </svg>
+      <div class="container h-100 d-flex flex-column justify-content-end">
+        <div class="position-relative mt-auto">
+          <div class="brand-logo brand--white">
+            <img class="brand-logo__image" src="./image/or-transparent-horizontal.svg" alt="brand-logo" />
+          </div>
+          <p class="subtitle text-uppercase text--white">
+            Code, Learn, and Rise Daily.
+          </p>
+          <ul class="social-media__list">
+            <li>
+              <a href="https://www.facebook.com/lalbahadurbudhachhetree" class="social-media__item" target="_blank"
+                title="Facebook" data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Facebook">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/stu9437l" class="social-media__item" target="_blank" title="Github"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="github">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/LalBudhachhetri" class="social-media__item" target="_blank" title="Twitter"
+                data-bs-toggle="tooltip" data-bs-placement="bottom" aria-label="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/lal-bahadur-budhachhetri-13668b218/" class="social-media__item"
+                target="_blank" title="Linkedin" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                aria-label="Linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright-text">@2023 Design By Me ❤️</p>
+        </div>
+      </div>
+    </footer>
+  </div>
 
-    <!-- anime cdn -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
-      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+  <!-- bootstrap cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- gasp cdn -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
-      integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+  <!-- anime cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- mojs -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/mo-js/1.5.1/mo.umd.js"
-      integrity="sha512-xnckEH6BsYzW8fGrwjUqa4IO22FKLXzj/Eet4q24REX1MN14wdqVpiwABQ94hXT/CzZEXKZl4hT8/zHnt6LjNQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+  <!-- gasp cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+    integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- slick slider -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+  <!-- mojs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mo-js/1.5.1/mo.umd.js"
+    integrity="sha512-xnckEH6BsYzW8fGrwjUqa4IO22FKLXzj/Eet4q24REX1MN14wdqVpiwABQ94hXT/CzZEXKZl4hT8/zHnt6LjNQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- custom js file -->
-    <script src="./script/script.js"></script>
+  <!-- slick slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script>
+  <!-- custom js file -->
+  <script src="./script/script.js"></script>
+
+  <script>
       // animated clock
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
