@@ -532,9 +532,9 @@ label {
 
 .cus-slider-arrows {
   .slick-arrow {
-    height: 45px;
-    width: 45px;
-    border: 2px solid rgba($indigo-color, 0.2);
+    height: 50px;
+    width: 50px;
+    border: 2px solid #ffc1078c;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -543,7 +543,7 @@ label {
     background-color: white;
 
     &.slick-next {
-      right: calc(100% - 115px);
+      right: calc(100% - 130px);
 
       &::before {
         content: "👉";
@@ -911,7 +911,7 @@ header {
   text-align: center;
   background-color: white;
   padding: 48px 40px;
-  // border-radius: $rounded;
+  border-radius: $rounded;
   box-shadow: $box-shadow;
 
   &:hover {
@@ -932,7 +932,7 @@ header {
     position: absolute;
     transform: translateZ(-1px);
     transition: $transition;
-    //   border-radius: $rounded;
+    border-radius: $rounded;
   }
 
   .project__logo {
