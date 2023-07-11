@@ -620,13 +620,17 @@ label .required {
 }
 @keyframes zoom-in {
   0% {
-    transform: scale(1.2);
+    height: 54px;
+    width: 54px;
   }
   50% {
-    transform: scale(1.4);
+    height: 70px;
+    width: 70px;
+    opacity: 0.5;
   }
   100% {
-    transform: scale(1.2);
+    height: 54px;
+    width: 54px;
   }
 }
 @keyframes lineH {
@@ -1322,20 +1326,20 @@ footer .footer-back {
   .mobile-visible .zoom-in-animation::after {
     content: "";
     position: absolute;
-    top: 42%;
-    left: 45%;
-    width: 40px;
-    height: 40px;
+    top: 50%;
+    left: 50%;
+    width: 58px;
+    height: 58px;
     border-radius: 50%;
-    background-color: rgba(47, 79, 255, 0.3);
-    transform: scale(1.2) translate(-50%, -50%);
-    animation: 2s ease-in-out 0s infinite normal none running zoom-in;
+    background-color: rgba(47, 79, 255, 0.43);
+    transform: translate(-50%, -50%);
+    animation: 1.5s ease-in-out 0s infinite normal none running zoom-in;
     z-index: 1;
   }
   .mobile-visible .zoom-in-animation .profile__view {
     position: absolute;
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     background-color: white;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -1349,8 +1353,7 @@ footer .footer-back {
     transform: translate(-50%, -50%);
   }
   .mobile-visible .zoom-in-animation .profile__view i {
-    color: #141c3a;
-    font-size: 16px;
+    font-size: 18px;
   }
   .mobile-visible .mob-skill {
     padding: 40px 0;
@@ -1385,8 +1388,8 @@ footer .footer-back {
     display: none;
     height: 100%;
     flex-shrink: 0;
-    width: 85%;
-    margin: 0 8px;
+    width: 90%;
+    margin: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 20px;
     background-color: #fff;
@@ -1402,7 +1405,7 @@ footer .footer-back {
     position: absolute;
     height: 100%;
     width: 100%;
-    left: calc(100% + 15px);
+    left: calc(100% + 10px);
     top: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -1414,7 +1417,7 @@ footer .footer-back {
     position: absolute;
     height: 100%;
     width: 100%;
-    right: calc(100% + 15px);
+    right: calc(100% + 10px);
     top: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 20px;

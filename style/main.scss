@@ -580,15 +580,19 @@ label {
 // zoom in animation
 @keyframes zoom-in {
   0% {
-    transform: scale(1.2);
+    height: 54px;
+    width: 54px;
   }
 
   50% {
-    transform: scale(1.4);
+    height: 70px;
+    width: 70px;
+    opacity: 0.5;
   }
 
   100% {
-    transform: scale(1.2);
+    height: 54px;
+    width: 54px;
   }
 }
 
